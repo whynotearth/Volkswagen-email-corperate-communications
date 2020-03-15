@@ -1,0 +1,253 @@
+body {
+  background: $body-background;
+}
+
+p,
+span,
+a {
+  margin-bottom: 0;
+  line-height: 1.2;
+  font-weight: 500;
+  font-size: $global-font-size;
+  @media only screen and (min-width: #{$global-breakpoint}) {
+    font-size: $global-font-size * $global-mobile-font-size-ratio-inversed  !important;
+  }
+}
+// small font size like prices
+.font-size-small {
+  p,
+  a,
+  span {
+    font-weight: 300;
+    font-size: $small-font-size * $small-mobile-font-size-ratio;
+    @media only screen and (min-width: #{$global-breakpoint}) {
+      font-size: $small-font-size  !important;
+    }
+  }
+}
+small {
+  font-weight: 300;
+  font-size: $small-font-size * $small-mobile-font-size-ratio;
+  @media only screen and (min-width: #{$global-breakpoint}) {
+    font-size: $small-font-size  !important;
+  }
+}
+h1 {
+  font-weight: bold;
+  line-height: 56px;
+  line-height: 1;
+  @media only screen and (min-width: #{$global-breakpoint}) {
+    font-size: $h1-font-size * $headers-mobile-font-size-ratio-inversed  !important;
+  }
+}
+h2 {
+  font-weight: 800;
+  line-height: 1.25;
+  @media only screen and (min-width: #{$global-breakpoint}) {
+    font-size: $h2-font-size * $headers-mobile-font-size-ratio-inversed  !important;
+  }
+}
+h3 {
+  font-weight: normal;
+  line-height: 1.25;
+  @media only screen and (min-width: #{$global-breakpoint}) {
+    font-size: $h3-font-size * $headers-mobile-font-size-ratio-inversed  !important;
+  }
+}
+h4 {
+  font-weight: normal;
+  line-height: 1.25;
+  @media only screen and (min-width: #{$global-breakpoint}) {
+    font-size: $h4-font-size * $headers-mobile-font-size-ratio-inversed  !important;
+  }
+}
+hr {
+  border-color: $light;
+  border-width: 1px;
+  margin: 0;
+  border-top: none;
+}
+
+th,
+td {
+  vertical-align: middle;
+}
+
+.container-inner {
+  @media only screen and (min-width: #{$global-breakpoint}) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+.text-underline {
+  text-decoration: underline;
+  text-decoration-skip: ink;
+}
+
+.button-outlined {
+  border: 1px solid $light;
+  padding: map-get($button-padding, "large");
+  border-radius: $button-radius;
+  color: $light;
+  font-size: 20px;
+  line-height: 1.2;
+  &:hover {
+    color: $light;
+  }
+}
+
+.vertical-align-middle-childs {
+  * {
+    vertical-align: middle;
+  }
+}
+
+.font-weight-semibold {
+  font-weight: 800;
+}
+
+.brand-background {
+  background: #141527;
+  background: linear-gradient(180deg, #010101 0%, rgba(20, 21, 39, 0) 100%),
+    linear-gradient(166deg, #141527 9%, #3a3b5e 95%);
+}
+
+.resort-content {
+  h2 {
+    font-weight: 800;
+    font-size: $h4-font-size;
+    line-height: 1.25;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    @media only screen and (min-width: #{$global-breakpoint}) {
+      font-size: $h4-font-size * $headers-mobile-font-size-ratio-inversed  !important;
+    }
+  }
+  p {
+    line-height: 1.25;
+  }
+}
+
+// .booking-info {
+//   display: flex;
+//   flex-direction: column;
+//   width: 580px;
+//   height: 870px;
+//   background: #191c21;
+// }
+// .top-image {
+//   margin: 0 -64px;
+//   width: 580px;
+//   height: 272px;
+// }
+// .hero-image {
+//   position: relative;
+//   margin: 0;
+//   width: 580px;
+//   height: 272px;
+//   left: 0px;
+//   top: 0px;
+//   background: linear-gradient(360deg, rgba(25, 28, 33, 0.8) 0%, rgba(25, 28, 33, 0) 100%);
+//   padding: 0px;
+//   border: none;
+// }
+// .accom-name {
+//   position: relative;
+//   text-align: center;
+//   bottom: 25%;
+// }
+
+// .icon {
+//   margin: 0;
+//   width: 24px;
+//   height: 24px;
+// }
+// .icon2 {
+//   margin: 5;
+//   width: 16px;
+//   height: 16px;
+// }
+
+// .icon3 {
+//   margin: 5px 5px 5px 20px;
+//   height: 10.92px;
+//   right: 15.11px;
+// }
+
+// .mg-1 {
+//   margin: 0 24px;
+// }
+
+// .mg-2 {
+//   margin: 24px 0;
+// }
+
+// .br-line {
+//   border: 1px solid #b9bcc1;
+// }
+
+// .mg-3 {
+//   margin: 0;
+// }
+
+// .mg-4 {
+//   margin: 0 0 0 auto;
+// }
+
+// .mg-5 {
+//   margin: 4px 0;
+// }
+
+// .mg-6 {
+//   margin: 32px 0 0 0;
+// }
+
+// .mg-7 {
+//   margin: 16px 0 4px 0;
+// }
+
+// .mg-8 {
+//   margin: 48px 0 16px 0;
+// }
+
+// .mg-9 {
+//   margin: 8px 0;
+// }
+
+// .mg-10 {
+//   margin: 0 0 16px 0;
+// }
+
+// .mg-11 {
+//   margin: 16px 0 32px 0;
+// }
+
+// .magenta {
+//   color: #e5b5ce;
+// }
+
+// a {
+//   text-decoration: underline #b9bcc1;
+// }
+
+// .button {
+//   background-color: #4caf50; /* Green */
+//   border: none;
+//   color: white;
+//   text-align: center;
+//   text-decoration: none;
+//   display: inline-block;
+//   font-size: 16px;
+//   margin: 4px 2px;
+//   cursor: pointer;
+// }
+
+// .button1 {
+//   padding-left: 37px;
+//   width: 256px;
+//   height: 66px;
+//   background-color: transparent;
+//   color: black;
+//   border: 2px solid #b9bcc1;
+// }
