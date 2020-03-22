@@ -2,18 +2,28 @@
   <mj-head>
     <mj-font name="Work Sans" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" />
     <mj-attributes>
+      <mj-all font-family="'Work Sans', Arial, 'sans-serif'" />
+
+      <mj-class name="primary" background-color="#011D51" />
+      <mj-class name="primary-text" color="#011D51" />
+      <mj-class name="secondary" background-color="#03B3F9" />
+      <mj-class name="secondary-text" color="#03B3F9" />
+      <mj-class name="background" background-color="#FFFFFF" />
+      <mj-class name="background-text" color="#FFFFFF" />
+      <mj-class name="surface" background-color="#FFFFFF" />
+      <mj-class name="surface-text" color="#FFFFFF" />
+      <mj-class name="error" background-color="#FF5959" />
+      <mj-class name="error-text" color="#FF5959" />
       <mj-class name="display-1" font-size="36px" font-weight="bold" line-height="40px" />
       <mj-class name="display-2" font-size="48px" font-weight="normal" line-height="40px" />
       <mj-class name="display-3" font-size="48px" font-weight="bold" line-height="40px" />
-      <mj-all font-family="'Work Sans', Arial, 'sans-serif'" />
-      
     </mj-attributes>
-  
+
   </mj-head>
-  <mj-body background-color="#ffffff">
+  <mj-body mj-class="background">
     <mj-section>
       <mj-column>
-        <mj-text mj-class="display-3">
+        <mj-text mj-class="display-3 primary-text">
           Project Blue Delta
         </mj-text>
       </mj-column>
