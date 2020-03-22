@@ -1,0 +1,22 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Work Sans" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" />
+    <mj-attributes>
+      <mj-class name="display-1" font-size="36px" font-weight="bold" line-height="40px" />
+      <mj-class name="display-2" font-size="48px" font-weight="normal" line-height="40px" />
+      <mj-class name="display-3" font-size="48px" font-weight="bold" line-height="40px" />
+      <mj-all font-family="'Work Sans', Arial, 'sans-serif'" />
+      
+    </mj-attributes>
+  
+  </mj-head>
+  <mj-body background-color="#ffffff">
+    <mj-section>
+      <mj-column>
+        <mj-text mj-class="display-3">
+          Project Blue Delta
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
