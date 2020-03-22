@@ -23,6 +23,14 @@
       <mj-class name="surface-text" color="#FFFFFF" />
       <mj-class name="error" background-color="#FF5959" />
       <mj-class name="error-text" color="#FF5959" />
+
+      <mj-class name="print-text" color="#000000" />
+      <mj-class name="body-emphasis-color" color="#1972b3" />
+      <mj-class name="priority-color" color="#c70102" />
+      <mj-class name="people-color" color="#01b1ec" />
+      <mj-class name="plant-color" color="#8894a0" />
+      <mj-class name="community-color" color="#52ae31" />
+      <mj-class name="events-color" color="#ffba03" />
       <!-- font -->
       <mj-class name="display-1" font-size="36px" font-weight="bold" line-height="40px" />
       <mj-class name="display-2" font-size="48px" font-weight="normal" line-height="40px" />
