@@ -17,15 +17,30 @@
       <mj-class name="display-1" font-size="36px" font-weight="bold" line-height="40px" />
       <mj-class name="display-2" font-size="48px" font-weight="normal" line-height="40px" />
       <mj-class name="display-3" font-size="48px" font-weight="bold" line-height="40px" />
+      <mj-class name="border-light" border-width="1px" border-color="rgba(0, 0, 0, 0.1)" />
     </mj-attributes>
 
   </mj-head>
   <mj-body mj-class="background">
     <mj-section>
       <mj-column>
-        <mj-text mj-class="display-3 primary-text">
-          Project Blue Delta
-        </mj-text>
+        <mj-text mj-class="display-3 primary-text">Project Blue Delta!</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-table width="100%">
+          <tr>
+            <td>
+              <mj-divider mj-class="border-light" />
+            </td>
+            <td></td>
+            <td>
+              <mj-divider mj-class="border-light" />
+            </td>
+          </tr>
+        </mj-table>
       </mj-column>
     </mj-section>
   </mj-body>
