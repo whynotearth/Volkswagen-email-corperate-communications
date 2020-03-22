@@ -7,7 +7,7 @@
   "scripts": {
     "build": "mkdir dist -p && mjml src/templates/newsletter.mjml -o dist/newsletter.html",
     "watch": "mkdir dist -p && mjml -w src/templates/newsletter.mjml -o dist/newsletter.html",
-    "dev": "live-server dist/"
+    "dev": "live-server dist/ --host='localhost'"
   },
   "dependencies": {
     "mjml": "4.6.2"

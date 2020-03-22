@@ -2,7 +2,6 @@
   <mj-head>
     <mj-title>Title of document</mj-title>
     <mj-breakpoint width="460px" />
-    <mj-font name="Work Sans" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" />
 
     <mj-style>
       .brand-gradient-1 {
@@ -65,6 +64,11 @@
       <mj-class name="em-divider" opacity="0.12" />
     </mj-attributes>
 
+    <mj-raw>
+      <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet" type="text/css">
+
+    </mj-raw>
+
   </mj-head>
   <mj-body mj-class="background">
     <mj-section>
@@ -73,19 +77,12 @@
       </mj-column>
     </mj-section>
 
+    <mj-divider mj-class="border-light" />
+
     <mj-section>
-      <mj-column>
-        <mj-table width="100%">
-          <tr>
-            <td>
-              <mj-divider mj-class="border-light" />
-            </td>
-            <td></td>
-            <td>
-              <mj-divider mj-class="border-light" />
-            </td>
-          </tr>
-        </mj-table>
+      <mj-column width="100%">
+
+        
       </mj-column>
     </mj-section>
   </mj-body>
