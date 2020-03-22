@@ -1,6 +1,59 @@
 <mjml>
   <mj-head>
+    <mj-title>Title of document</mj-title>
+    <mj-breakpoint width="460px" />
     <mj-font name="Work Sans" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" />
+
+    <mj-style>
+      .brand-gradient-1 {
+        background: radial-gradient(50% 49.2% at 0% 0.8%, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #011d51;
+      }
+
+      .shadow-1 {
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 0px 2px rgba(0, 0, 0, 0.14);
+      }
+
+      .shadow-2 {
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14);
+      }
+
+      .shadow-3 {
+        box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 3px 3px rgba(0, 0, 0, 0.14);
+      }
+
+      .shadow-4 {
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2), 0px 4px 5px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14);
+      }
+
+      .shadow-6 {
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2), 0px 1px 18px rgba(0, 0, 0, 0.12), 0px 6px 10px rgba(0, 0, 0, 0.14);
+      }
+
+      .shadow-8 {
+        box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2), 0px 3px 14px rgba(0, 0, 0, 0.12), 0px 8px 10px rgba(0, 0, 0, 0.14);
+      }
+
+      .shadow-9 {
+        box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.2), 0px 3px 16px rgba(0, 0, 0, 0.12), 0px 9px 12px rgba(0, 0, 0, 0.14);
+      }
+
+      .shadow-12 {
+        box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.2), 0px 5px 22px rgba(0, 0, 0, 0.12), 0px 12px 17px rgba(0, 0, 0, 0.14);
+      }
+
+      .shadow-16 {
+        box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2), 0px 6px 30px rgba(0, 0, 0, 0.12), 0px 16px 24px rgba(0, 0, 0, 0.14);
+      }
+
+      .shadow-24 {
+        box-shadow: 0px 11px 15px rgba(0, 0, 0, 0.2), 0px 9px 46px rgba(0, 0, 0, 0.12), 0px 24px 38px rgba(0, 0, 0, 0.14);
+      }
+
+      .shadow-n8 {
+        box-shadow: 0px -4px 5px rgba(0, 0, 0, 0.2), 0px -3px 14px rgba(0, 0, 0, 0.12), 0px -8px 10px rgba(0, 0, 0, 0.14);
+      }
+    </mj-style>
+
     <mj-attributes>
       <mj-all font-family="'Work Sans', Arial, 'sans-serif'" />
 
@@ -17,7 +70,17 @@
       <mj-class name="display-1" font-size="36px" font-weight="bold" line-height="40px" />
       <mj-class name="display-2" font-size="48px" font-weight="normal" line-height="40px" />
       <mj-class name="display-3" font-size="48px" font-weight="bold" line-height="40px" />
+      <mj-class name="h1" font-weight="normal" font-size="32px" line-height="38px" />
+      <mj-class name="h2" font-weight="600" font-size="22px" line-height="26px" />
+      <mj-class name="h3" font-weight="500" font-size="20px" line-height="24px" />
+      <mj-class name="body-1" font-weight="400" font-size="16px" line-height="20px" />
+      <mj-class name="body-1-em-high" font-weight="600" font-size="16px" line-height="20px" />
+      <mj-class name="body-1-em-medium" font-weight="500" font-size="16px" line-height="20px" />
+      <mj-class name="caption" font-weight="400" font-size="12px" line-height="16px" />
+      <mj-class name="label" font-weight="500" font-size="14px" line-height="24px" />
       <mj-class name="border-light" border-width="1px" border-color="rgba(0, 0, 0, 0.1)" />
+
+      <mj-class name="em-high" opacity="0.84" />
     </mj-attributes>
 
   </mj-head>
