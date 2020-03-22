@@ -24,7 +24,7 @@
   <mj-body mj-class="background">
     <mj-section>
       <mj-column>
-        <mj-text mj-class="display-3 primary-text">Project Blue Delta!</mj-text>
+        <mj-text mj-class="display-3 primary-text">Project Blue Delta</mj-text>
       </mj-column>
     </mj-section>
 

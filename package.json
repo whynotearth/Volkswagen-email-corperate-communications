@@ -6,7 +6,8 @@
   "license": "AGPL-3.0",
   "scripts": {
     "build": "mkdir dist -p && mjml src/templates/newsletter.mjml -o dist/newsletter.html",
-    "start": "mkdir dist -p && mjml -w src/templates/newsletter.mjml -o dist/newsletter.html"
+    "watch": "mkdir dist -p && mjml -w src/templates/newsletter.mjml -o dist/newsletter.html",
+    "dev": "live-server dist/"
   },
   "dependencies": {
     "mjml": "4.6.2"
