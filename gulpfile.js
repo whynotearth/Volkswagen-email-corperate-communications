@@ -4,6 +4,7 @@ const browsersync = require("browser-sync").create();
 const mjmlEngine = require("mjml");
 const hb = require("gulp-hb");
 const rename = require("gulp-rename");
+const del = require("del");
 
 function changeExtension(ext) {
   return rename(function(path) {
@@ -13,6 +14,10 @@ function changeExtension(ext) {
       extname: ext
     };
   });
+}
+
+function clean() {
+  return del(["./build/"]);
 }
 
 function mjmlTask() {
@@ -54,6 +59,8 @@ function watchTask(done) {
   done();
 }
 
-const watch = gulp.series(handlebars, gulp.parallel(watchTask, browserSync));
+const build = gulp.series(clean, handlebars, mjmlTask);
+const watch = gulp.series(clean, handlebars, mjmlTask, gulp.parallel(watchTask, browserSync));
 
+exports.build = build;
 exports.default = watch;

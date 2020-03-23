@@ -5,7 +5,7 @@
   "author": "Morteza Ziyae <m.ziaeemehr@gmail.com>",
   "license": "AGPL-3.0",
   "scripts": {
-    "build": "mkdir dist -p && mjml src/templates/newsletter.mjml -o dist/newsletter.html",
+    "build": "gulp build",
     "serve": "gulp"
   },
   "dependencies": {
@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
     "gulp": "4.0.2",
     "gulp-hb": "^8.0.0",
     "gulp-mjml": "4.0.2",
