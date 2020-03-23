@@ -17,13 +17,14 @@ function changeExtension(ext) {
 }
 
 function clean() {
-  return del(["./build/"]);
+  return del(["./build/", "./dist/"]);
 }
 
 function mjmlTask() {
   return gulp
     .src("./build/mjml/*.mjml", { allowEmpty: true })
     .pipe(mjml(mjmlEngine, { validationLevel: "strict", minify: false }))
+    .pipe(changeExtension(".html"))
     .pipe(gulp.dest("./dist"))
     .pipe(browsersync.stream());
 }
@@ -37,6 +38,7 @@ function handlebars() {
         .helpers("./src/helpers/*.js")
         .data("./src/data/**/*.{js,json}")
     )
+    .pipe(changeExtension(""))
     .pipe(changeExtension(".mjml"))
     .pipe(gulp.dest("./build/mjml/"));
 }
@@ -54,8 +56,8 @@ function browserSync(done) {
 
 // Watch files
 function watchTask(done) {
-  gulp.watch("./src/**/*.html", handlebars);
-  gulp.watch("./build/mjml/**/*.mjml", mjmlTask);
+  gulp.watch("./src/**/*.html", gulp.series(handlebars, mjmlTask));
+  gulp.watch("./src/**/*.hbs", gulp.series(handlebars, mjmlTask));
   done();
 }
 
