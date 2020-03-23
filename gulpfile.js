@@ -16,14 +16,11 @@ function changeExtension(ext) {
 }
 
 function mjmlTask() {
-  return (
-    gulp
-      .src("./build/mjml/*.mjml", { allowEmpty: true })
-      // validationLevel: "strict"
-      .pipe(mjml(mjmlEngine, { minify: false }))
-      .pipe(gulp.dest("./dist"))
-      .pipe(browsersync.stream())
-  );
+  return gulp
+    .src("./build/mjml/*.mjml", { allowEmpty: true })
+    .pipe(mjml(mjmlEngine, { validationLevel: "strict", minify: false }))
+    .pipe(gulp.dest("./dist"))
+    .pipe(browsersync.stream());
 }
 
 function handlebars() {
