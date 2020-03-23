@@ -9,7 +9,7 @@
       <mj-all font-family="'Work Sans', Arial, 'sans-serif'" font-size="16px" />
 
       <mj-class name="background" background-color="#ffffff" />
-      
+
       <!-- border -->
       <mj-class name="border-light" border-width="1px" border-color="rgba(0, 0, 0, 0.1)" />
       <!-- shadows -->
@@ -38,20 +38,31 @@
 
   </mj-head>
   <mj-body mj-class="background">
-    <mj-section>
-      <mj-column>
-        <mj-text css-class="primary-text display-3">Project Blue Delta</mj-text>
-      </mj-column>
-    </mj-section>
+
+    <mj-wrapper full-width="full-width" padding="0">
+      <mj-section>
+        <mj-column>
+          <mj-text css-class="primary-text display-3">Project Blue Delta</mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
 
     <mj-divider mj-class="border-light" />
 
-    <mj-section>
-      <mj-column width="100%">
-      <mj-text css-class="h1">
-        salam
-      </mj-text>
-      </mj-column>
-    </mj-section>
+    <mj-wrapper css-class="secondary">
+      <mj-section>
+        <mj-column width="5%">
+          empty
+        </mj-column>
+        <mj-column width="20%" mj-class="priority">
+          <mj-raw>
+            <div class="priority box-label sans-serif">Priority</div>
+          </mj-raw>
+        </mj-column>
+        <mj-column width="75%">
+          
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
   </mj-body>
 </mjml>

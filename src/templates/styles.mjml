@@ -15,13 +15,14 @@
   .error-text, .error-text > * {color: #FF5959 !important;}
 
   .print-text, .print-text > *{color: #000000 !important;}
-  .body-emphasis-color, .body-emphasis-color > *{color: #1972b3 !important;}
-  .priority-color, .priority-color > *{color: #c70102 !important;}
-  .people-color, .people-color > *{color: #01b1ec !important;}
-  .plant-color, .plant-color > *{color: #8894a0 !important;}
-  .community-color, .community-color > *{color: #52ae31 !important;}
-  .events-color, .events-color > *{color: #ffba03 !important;}
+  .body-emphasis, .body-emphasis > *{background-color: #1972b3 !important;}
+  .priority, .priority > *{background-color: #c70102 !important;}
+  .people, .people > *{background-color: #01b1ec !important;}
+  .plant, .plant > *{background-color: #8894a0 !important;}
+  .community, .community > *{background-color: #52ae31 !important;}
+  .events, .events > *{background-color: #ffba03 !important;}
 
+  .sans-serif {font-family: 'Work Sans', Arial, 'sans-serif' !important;}
   .display-3, .display-3 > * {
   font-size: 48px !important;
   font-weight: bold !important;
@@ -60,6 +61,16 @@
   }
   .label, .label > * {
   font-weight:500 !important; font-size:14px !important; line-height:24px !important;
+  }
+
+  .box-label, .box-label > * {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+    font-size: 9px !important;
+    color: #ffffff !important;
+    border-radius: 4px 4px 0 0 !important;
   }
 
 </mj-style>
