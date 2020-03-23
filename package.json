@@ -6,13 +6,14 @@
   "license": "AGPL-3.0",
   "scripts": {
     "build": "mkdir dist -p && mjml src/templates/newsletter.mjml -o dist/newsletter.html",
-    "watch": "mkdir dist -p && mjml -w src/templates/newsletter.mjml -o dist/newsletter.html",
-    "dev": "live-server dist/ --host='localhost'"
+    "serve": "gulp"
   },
   "dependencies": {
     "mjml": "4.6.2"
   },
   "devDependencies": {
-    "live-server": "^1.2.1"
+    "browser-sync": "^2.26.7",
+    "gulp": "4.0.2",
+    "gulp-mjml": "4.0.2"
   }
 }

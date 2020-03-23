@@ -1,0 +1,18 @@
+<mjml>
+  <mj-head>
+    <mj-title>Templates Index</mj-title>
+  </mj-head>
+  <mj-body mj-class="background">
+
+    <mj-wrapper full-width="full-width" padding="0">
+      <mj-section>
+        <mj-column>
+          <mj-raw>
+            <a style="font-size:22px;" href="./newsletter.html">newsletter</a>
+          </mj-raw>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+  </mj-body>
+</mjml>
