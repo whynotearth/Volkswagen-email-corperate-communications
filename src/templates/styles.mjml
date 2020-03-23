@@ -1,0 +1,65 @@
+<mj-style inline="inline">
+  .brand-gradient-1 {
+  background: radial-gradient(50% 49.2% at 0% 0.8%, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #011d51;
+  }
+
+  .primary, .primary > * {background-color: #011D51 !important;}
+  .primary-text, .primary-text > * {color: #011D51 !important;}
+  .secondary, .secondary > * {background-color: #03B3F9 !important;}
+  .secondary-text, .secondary-text > * {color: #03B3F9 !important;}
+  .background, .background > * {background-color: #FFFFFF !important;}
+  .background-text, .background-text > * {color: #FFFFFF !important;}
+  .surface, .surface > * {background-color: #FFFFFF !important;}
+  .surface-text, .surface-text > * {color: #FFFFFF !important;}
+  .error, .error > * {background-color: #FF5959 !important;}
+  .error-text, .error-text > * {color: #FF5959 !important;}
+
+  .print-text, .print-text > *{color: #000000 !important;}
+  .body-emphasis-color, .body-emphasis-color > *{color: #1972b3 !important;}
+  .priority-color, .priority-color > *{color: #c70102 !important;}
+  .people-color, .people-color > *{color: #01b1ec !important;}
+  .plant-color, .plant-color > *{color: #8894a0 !important;}
+  .community-color, .community-color > *{color: #52ae31 !important;}
+  .events-color, .events-color > *{color: #ffba03 !important;}
+
+  .display-3, .display-3 > * {
+  font-size: 48px !important;
+  font-weight: bold !important;
+  line-height: 40px !important;
+  }
+  .display-2, .display-2 > * {
+  font-size: 48px !important;
+  font-weight: normal !important;
+  line-height: 40px !important;
+  }
+  .display-1, .display-1 > * {
+  font-size: 36px !important;
+  font-weight: bold !important;
+  line-height: 40px !important;
+  }
+  .h1, .h1 > * {
+  font-weight:normal !important; font-size:32px !important; line-height:38px !important;
+  }
+  .h2, .h2 > * {
+  font-weight:600 !important; font-size:22px !important; line-height:26px !important;
+  }
+  .h3, .h3 > * {
+  font-weight:500 !important; font-size:20px !important; line-height:24px !important;
+  }
+  .body-1, .body-1 > * {
+  font-weight:400 !important; font-size:16px !important; line-height:20px !important;
+  }
+  .body-1-em-high, .body-1-em-high > * {
+  font-weight:600 !important; font-size:16px !important; line-height:20px !important;
+  }
+  .body-1-em-medium, .body-1-em-medium > * {
+  font-weight:500 !important; font-size:16px !important; line-height:20px !important;
+  }
+  .caption, .caption > * {
+  font-weight:400 !important; font-size:12px !important; line-height:16px !important;
+  }
+  .label, .label > * {
+  font-weight:500 !important; font-size:14px !important; line-height:24px !important;
+  }
+
+</mj-style>
