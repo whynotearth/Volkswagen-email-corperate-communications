@@ -19,6 +19,9 @@ function changeExtension(ext) {
 function clean() {
   return del(["./build/", "./dist/"]);
 }
+function copyAssets() {
+  return gulp.src(["./public/**/*"]).pipe(gulp.dest("./dist/"));
+}
 
 function mjmlTask() {
   return gulp
@@ -61,8 +64,8 @@ function watchTask(done) {
   done();
 }
 
-const build = gulp.series(clean, handlebars, mjmlTask);
-const watch = gulp.series(clean, handlebars, mjmlTask, gulp.parallel(watchTask, browserSync));
+const build = gulp.series(clean, copyAssets, handlebars, mjmlTask);
+const watch = gulp.series(clean, copyAssets, handlebars, mjmlTask, gulp.parallel(watchTask, browserSync));
 
 exports.build = build;
 exports.default = watch;

@@ -14,32 +14,27 @@
   <mj-body mj-class="background">
 
     <mj-wrapper full-width="full-width" padding="0">
-      <mj-section>
+      <mj-section padding="8px 0">
         <mj-column>
           <mj-text css-class="primary-text display-3">Project Blue Delta</mj-text>
         </mj-column>
       </mj-section>
     </mj-wrapper>
 
-    <mj-wrapper full-width="full-width">
-      <mj-section>
+    <mj-wrapper full-width="full-width" padding="0">
+      <mj-section padding="0">
         <mj-column width="100%">
-          <mj-divider mj-class="border-light" />
+          <mj-divider mj-class="border-light" padding="0" />
+          <mj-spacer height="8px" />
         </mj-column>
       </mj-section>
     </mj-wrapper>
 
-    <mj-wrapper css-class="secondary">
-      <mj-section>
-        <mj-column width="5%">
-          <!-- empty -->
-        </mj-column>
-        <mj-column width="20%" mj-class="priority">
-          <mj-raw>
-            <div class="priority box-label sans-serif">Priority</div>
-          </mj-raw>
-        </mj-column>
-        <mj-column width="75%">
+    <mj-wrapper mj-class="px-wrapper">
+      <mj-section padding="0">
+        <mj-column width="100%" padding-left="24px" mj-class="priority">
+
+          {{> article-box }}
 
         </mj-column>
       </mj-section>
