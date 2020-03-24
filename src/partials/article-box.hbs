@@ -1,10 +1,10 @@
 <mj-wrapper mj-class="px-wrapper">
   <mj-section padding="0">
-    <mj-column width="100%" padding-left="24px" mj-class="priority">
+    <mj-column width="100%" padding-left="24px">
       <mj-raw>
-        <div class="box-label {{type}} radius-sm">
-          <img width="8px" src="{{labelIcon}}" alt="" />
-          <span class="sans-serif">
+        <div class="box-label {{type}}-text border-width-2 radius-sm">
+          {{!-- <img width="8px" src="{{labelIcon}}" alt="" /> --}}
+          <span class="sans-serif {{type}}-text">
             {{label}}
           </span>
         </div>

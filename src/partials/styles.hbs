@@ -14,14 +14,6 @@
   .error, .error > * {background-color: #FF5959 !important;}
   .error-text, .error-text > * {color: #FF5959 !important;}
 
-  .print-text, .print-text > *{color: #000000 !important;}
-  .body-emphasis, .body-emphasis > *{background-color: #1972b3 !important;}
-  .priority, .priority > *{background-color: #c70102 !important;}
-  .people, .people > *{background-color: #01b1ec !important;}
-  .plant, .plant > *{background-color: #8894a0 !important;}
-  .community, .community > *{background-color: #52ae31 !important;}
-  .events, .events > *{background-color: #ffba03 !important;}
-
   .sans-serif {font-family: 'Work Sans', Arial, 'sans-serif' !important;}
   .display-3, .display-3 > * {
   font-size: 48px !important;
@@ -63,10 +55,15 @@
   font-weight:500 !important; font-size:14px !important; line-height:24px !important;
   }
 
+  .border-width-1 { border-width: 1px !important; }
+  .border-width-2 { border-width: 2px !important; }
   .box-label {
+  top:2px;
+  border-top-style: solid !important;
+  border-left-style: solid !important;
+  border-right-style: solid !important;
   padding: 0 8px !important;
   font-size: 9px !important;
-  color: #ffffff !important;
   width: 172px;
   text-align: left;
   }
@@ -74,6 +71,28 @@
     vertical-align: middle;
     line-height: 16px;
   }
+
+  .box-content {
+  border-left-style: solid !important;
+  border-right-style: solid !important;
+  border-bottom-style: solid !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
   .radius-sm {border-radius: 3px 3px 0 0 !important;}
+
+  .print-text, .print-text > *{color: #000000 !important;}
+  .body-emphasis, .body-emphasis > *{background-color: #1972b3 !important; border-color: #1972b3 !important;}
+  .body-emphasis-text {color: #1972b3 !important;}
+  .priority, .priority > *{background-color: #c70102 !important; border-color: #c70102 !important;}
+  .priority-text {color: #c70102 !important;}
+  .people, .people > *{background-color: #01b1ec !important; border-color: #01b1ec !important;}
+  .people-text {color: #01b1ec !important;}
+  .plant, .plant > *{background-color: #8894a0 !important; border-color: #8894a0 !important;}
+  .plant-text {color: #8894a0 !important;}
+  .community, .community > *{background-color: #52ae31 !important; border-color: #52ae31 !important;}
+  .community-text {color: #52ae31 !important;}
+  .events, .events > *{background-color: #ffba03 !important; border-color: #ffba03 !important;}
+  .events-text {color: #ffba03 !important;}
 
 </mj-style>
