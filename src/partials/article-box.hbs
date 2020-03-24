@@ -1,8 +1,32 @@
-<mj-raw>
-  <div class="box-label {{type}} radius-sm">
-    <img width="8px" src="{{labelIcon}}" alt="" />
-    <span class="sans-serif">
-      {{label}}
-    </span>
-  </div>
-</mj-raw>
+<mj-wrapper mj-class="px-wrapper">
+  <mj-section padding="0">
+    <mj-column width="100%" padding-left="24px" mj-class="priority">
+      <mj-raw>
+        <div class="box-label {{type}} radius-sm">
+          <img width="8px" src="{{labelIcon}}" alt="" />
+          <span class="sans-serif">
+            {{label}}
+          </span>
+        </div>
+      </mj-raw>
+    </mj-column>
+
+    <mj-column width="100%">
+      {{> (lookup . 'contentPartial') }}
+    </mj-column>
+
+  </mj-section>
+</mj-wrapper>
+
+
+{{!-- <div style="background: gray; font-size: 40px;">
+    {{> (lookup . 'contentPartial') }}
+  </div> --}}
+
+{{!-- <mj-wrapper mj-class="px-wrapper">
+    <mj-section padding="0">
+      <mj-column width="100%">
+
+      </mj-column>
+    </mj-section>
+  </mj-wrapper> --}}
