@@ -1,9 +1,5 @@
 .sidebar-column {
   vertical-align: top;
-  // > table {
-  //   background: url("../assets/img/sidebar-bg.png") no-repeat $light-gray;
-  //   min-height: 500px;
-  // }
 }
 .sidebar-image-p1 {
   height: 100px;
@@ -12,10 +8,27 @@
 }
 .sidebar-image-p2 {
   background: url("https://res.cloudinary.com/whynotearth/image/upload/v1585148743/Volkswagen/newsletter1/sidebar-bg-p2_be5elv.png") no-repeat $light-gray;
-  padding: 0 !important;
+  padding: 10px 0 !important;
 }
-// .sidebar-image {
-// }
+.sidebar-answers-title {
+  padding-bottom: 64px;
+  .answers-title {
+    font-size: 18px !important;
+  }
+  .answers-title--at {
+    font-size: 9px;
+    font-weight: 500;
+  }
+}
 .main-column {
   vertical-align: top;
+}
+
+.square-16 {
+  width: 16px;
+  height: 16px;
+  img {
+    padding-top: 4px;
+    margin: auto;
+  }
 }
