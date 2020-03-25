@@ -47,27 +47,27 @@ $secondary-color: $secondary;
 $success-color: $success;
 $warning-color: $warning;
 $alert-color: $error;
-$light-gray: $light;
+$light-gray: #EDEDED;
 $medium-gray: $dark;
 $dark-gray: $dark;
 $black: #000000;
 $white: #ffffff;
 $pre-color: #ff6908;
-$global-width: 580px;
+$global-width: 594px;
 $global-width-small: 100%;
-$global-gutter: 16px;
+$global-gutter: 10px;
 $body-background: $white;
 $container-background: $white;
-$global-padding: 16px;
-$global-margin: 16px;
-$global-radius: 4px;
+$global-padding: 10px;
+$global-margin: 10px;
+$global-radius: 3px;
 $global-rounded: 500px;
 $global-breakpoint: $global-width + $global-gutter;
 
 // 2. Grid
 // -------
 
-$grid-column-count: 12;
+$grid-column-count: 24;
 $column-padding-bottom: $global-padding;
 $container-radius: 0;
 

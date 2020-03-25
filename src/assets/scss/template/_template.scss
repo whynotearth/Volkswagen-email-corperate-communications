@@ -62,7 +62,6 @@ h4 {
   }
 }
 hr {
-  border-color: $light;
   border-width: 1px;
   margin: 0;
   border-top: none;
@@ -305,8 +304,7 @@ td {
 }
 
 .border-light {
-  border-width: 1px;
-  border-color: rgba($black, 0.1);
+  border-color: rgba($black, 0.1) !important;
 }
 
 .shadow-1 {
