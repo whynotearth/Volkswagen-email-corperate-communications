@@ -9,74 +9,39 @@ a {
   line-height: 1.2;
   font-weight: 500;
   font-size: $global-font-size;
-  @media only screen and (min-width: #{$global-breakpoint}) {
-    font-size: $global-font-size * $global-mobile-font-size-ratio-inversed !important;
-  }
 }
 // small font size like prices
 .font-size-small {
   p,
   a,
   span {
-    font-weight: 300;
-    font-size: $small-font-size * $small-mobile-font-size-ratio;
-    @media only screen and (min-width: #{$global-breakpoint}) {
-      font-size: $small-font-size !important;
-    }
+    font-size: $small-font-size;
   }
 }
 small {
-  font-weight: 300;
-  font-size: $small-font-size * $small-mobile-font-size-ratio;
-  @media only screen and (min-width: #{$global-breakpoint}) {
-    font-size: $small-font-size !important;
-  }
+  font-size: $small-font-size;
 }
 h1 {
   font-weight: bold;
   line-height: 56px;
   line-height: 1;
-  @media only screen and (min-width: #{$global-breakpoint}) {
-    font-size: $h1-font-size * $headers-mobile-font-size-ratio-inversed !important;
-  }
 }
 h2 {
   font-weight: 800;
   line-height: 1.25;
-  @media only screen and (min-width: #{$global-breakpoint}) {
-    font-size: $h2-font-size * $headers-mobile-font-size-ratio-inversed !important;
-  }
 }
 h3 {
   font-weight: normal;
   line-height: 1.25;
-  @media only screen and (min-width: #{$global-breakpoint}) {
-    font-size: $h3-font-size * $headers-mobile-font-size-ratio-inversed !important;
-  }
 }
 h4 {
   font-weight: normal;
   line-height: 1.25;
-  @media only screen and (min-width: #{$global-breakpoint}) {
-    font-size: $h4-font-size * $headers-mobile-font-size-ratio-inversed !important;
-  }
 }
 hr {
   border-width: 1px;
   margin: 0;
   border-top: none;
-}
-
-th,
-td {
-  vertical-align: middle;
-}
-
-.container-inner {
-  @media only screen and (min-width: #{$global-breakpoint}) {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
 }
 
 .text-underline {
@@ -196,10 +161,14 @@ td {
   font-size: 16px;
   line-height: 20px;
 }
-.body-1-em-medium  {
+.body-1-em-medium {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+}
+.body-small {
+  font-size: $small-font-size;
+  line-height: 1.4;
 }
 .caption {
   font-weight: 400;
@@ -224,7 +193,7 @@ td {
   border-left-style: solid;
   border-right-style: solid;
   padding: 0 8px;
-  font-size: 9px;
+  font-size: $small-font-size;
   width: 172px;
   text-align: left;
   > * {
