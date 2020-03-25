@@ -10,7 +10,7 @@ a {
   font-weight: 500;
   font-size: $global-font-size;
   @media only screen and (min-width: #{$global-breakpoint}) {
-    font-size: $global-font-size * $global-mobile-font-size-ratio-inversed  !important;
+    font-size: $global-font-size * $global-mobile-font-size-ratio-inversed !important;
   }
 }
 // small font size like prices
@@ -21,7 +21,7 @@ a {
     font-weight: 300;
     font-size: $small-font-size * $small-mobile-font-size-ratio;
     @media only screen and (min-width: #{$global-breakpoint}) {
-      font-size: $small-font-size  !important;
+      font-size: $small-font-size !important;
     }
   }
 }
@@ -29,7 +29,7 @@ small {
   font-weight: 300;
   font-size: $small-font-size * $small-mobile-font-size-ratio;
   @media only screen and (min-width: #{$global-breakpoint}) {
-    font-size: $small-font-size  !important;
+    font-size: $small-font-size !important;
   }
 }
 h1 {
@@ -37,28 +37,28 @@ h1 {
   line-height: 56px;
   line-height: 1;
   @media only screen and (min-width: #{$global-breakpoint}) {
-    font-size: $h1-font-size * $headers-mobile-font-size-ratio-inversed  !important;
+    font-size: $h1-font-size * $headers-mobile-font-size-ratio-inversed !important;
   }
 }
 h2 {
   font-weight: 800;
   line-height: 1.25;
   @media only screen and (min-width: #{$global-breakpoint}) {
-    font-size: $h2-font-size * $headers-mobile-font-size-ratio-inversed  !important;
+    font-size: $h2-font-size * $headers-mobile-font-size-ratio-inversed !important;
   }
 }
 h3 {
   font-weight: normal;
   line-height: 1.25;
   @media only screen and (min-width: #{$global-breakpoint}) {
-    font-size: $h3-font-size * $headers-mobile-font-size-ratio-inversed  !important;
+    font-size: $h3-font-size * $headers-mobile-font-size-ratio-inversed !important;
   }
 }
 h4 {
   font-weight: normal;
   line-height: 1.25;
   @media only screen and (min-width: #{$global-breakpoint}) {
-    font-size: $h4-font-size * $headers-mobile-font-size-ratio-inversed  !important;
+    font-size: $h4-font-size * $headers-mobile-font-size-ratio-inversed !important;
   }
 }
 hr {
@@ -113,141 +113,232 @@ td {
     linear-gradient(166deg, #141527 9%, #3a3b5e 95%);
 }
 
-.resort-content {
-  h2 {
-    font-weight: 800;
-    font-size: $h4-font-size;
-    line-height: 1.25;
-    margin-top: 32px;
-    margin-bottom: 16px;
-    @media only screen and (min-width: #{$global-breakpoint}) {
-      font-size: $h4-font-size * $headers-mobile-font-size-ratio-inversed  !important;
-    }
-  }
-  p {
-    line-height: 1.25;
+.brand-gradient-1 {
+  background: radial-gradient(50% 49.2% at 0% 0.8%, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), $primary;
+}
+
+.primary {
+  background-color: $primary;
+}
+.primary-text {
+  color: $primary;
+}
+.secondary {
+  background-color: $secondary;
+}
+.secondary-text {
+  color: $secondary;
+}
+.background {
+  background-color: #ffffff;
+}
+.background-text {
+  color: #ffffff;
+}
+.surface {
+  background-color: #ffffff;
+}
+.background {
+  background-color: $background;
+}
+.background-text {
+  color: $background;
+}
+.surface-text {
+  color: #ffffff;
+}
+.error {
+  background-color: $error;
+}
+.error-text {
+  color: $error;
+}
+
+.sans-serif {
+  font-family: "Work Sans", Arial, "sans-serif";
+}
+.display-3 {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 40px;
+}
+.display-2 {
+  font-size: 48px;
+  font-weight: normal;
+  line-height: 40px;
+}
+.display-1 {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 40px;
+}
+.h1 {
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 38px;
+}
+.h2 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+}
+.h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+.body-1 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.body-1-em-high {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+.body-1-em-medium  {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+.caption {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+.label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.border-width-1 {
+  border-width: 1px;
+}
+.border-width-2 {
+  border-width: 2px;
+}
+.box-label {
+  top: 2px;
+  border-top-style: solid;
+  border-left-style: solid;
+  border-right-style: solid;
+  padding: 0 8px;
+  font-size: 9px;
+  width: 172px;
+  text-align: left;
+  > * {
+    vertical-align: middle;
+    line-height: 16px;
   }
 }
 
-// .booking-info {
-//   display: flex;
-//   flex-direction: column;
-//   width: 580px;
-//   height: 870px;
-//   background: #191c21;
-// }
-// .top-image {
-//   margin: 0 -64px;
-//   width: 580px;
-//   height: 272px;
-// }
-// .hero-image {
-//   position: relative;
-//   margin: 0;
-//   width: 580px;
-//   height: 272px;
-//   left: 0px;
-//   top: 0px;
-//   background: linear-gradient(360deg, rgba(25, 28, 33, 0.8) 0%, rgba(25, 28, 33, 0) 100%);
-//   padding: 0px;
-//   border: none;
-// }
-// .accom-name {
-//   position: relative;
-//   text-align: center;
-//   bottom: 25%;
-// }
+.box-content {
+  border-left-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
-// .icon {
-//   margin: 0;
-//   width: 24px;
-//   height: 24px;
-// }
-// .icon2 {
-//   margin: 5;
-//   width: 16px;
-//   height: 16px;
-// }
+.radius-sm {
+  border-radius: 3px 3px 0 0;
+}
 
-// .icon3 {
-//   margin: 5px 5px 5px 20px;
-//   height: 10.92px;
-//   right: 15.11px;
-// }
+.print-text {
+  color: $print;
+}
+.body-emphasis {
+  background-color: $body-em;
+  border-color: $body-em;
+}
+.body-emphasis-text {
+  color: $body-em;
+}
+.priority {
+  background-color: $priority;
+  border-color: $priority;
+}
+.priority-text {
+  color: $priority;
+}
+.people {
+  background-color: $people;
+  border-color: $people;
+}
+.people-text {
+  color: $people;
+}
+.plant {
+  background-color: $plant;
+  border-color: $plant;
+}
+.plant-text {
+  color: $plant;
+}
+.community {
+  background-color: $community;
+  border-color: $community;
+}
+.community-text {
+  color: $community;
+}
+.events {
+  background-color: $events;
+  border-color: $events;
+}
+.events-text {
+  color: $events;
+}
 
-// .mg-1 {
-//   margin: 0 24px;
-// }
+.em-high {
+  opacity: 0.84;
+}
+.em-medium {
+  opacity: 0.54;
+}
+.em-disabled {
+  opacity: 0.38;
+}
+.em-divider {
+  opacity: 0.12;
+}
 
-// .mg-2 {
-//   margin: 24px 0;
-// }
+.border-light {
+  border-width: 1px;
+  border-color: rgba($black, 0.1);
+}
 
-// .br-line {
-//   border: 1px solid #b9bcc1;
-// }
-
-// .mg-3 {
-//   margin: 0;
-// }
-
-// .mg-4 {
-//   margin: 0 0 0 auto;
-// }
-
-// .mg-5 {
-//   margin: 4px 0;
-// }
-
-// .mg-6 {
-//   margin: 32px 0 0 0;
-// }
-
-// .mg-7 {
-//   margin: 16px 0 4px 0;
-// }
-
-// .mg-8 {
-//   margin: 48px 0 16px 0;
-// }
-
-// .mg-9 {
-//   margin: 8px 0;
-// }
-
-// .mg-10 {
-//   margin: 0 0 16px 0;
-// }
-
-// .mg-11 {
-//   margin: 16px 0 32px 0;
-// }
-
-// .magenta {
-//   color: #e5b5ce;
-// }
-
-// a {
-//   text-decoration: underline #b9bcc1;
-// }
-
-// .button {
-//   background-color: #4caf50; /* Green */
-//   border: none;
-//   color: white;
-//   text-align: center;
-//   text-decoration: none;
-//   display: inline-block;
-//   font-size: 16px;
-//   margin: 4px 2px;
-//   cursor: pointer;
-// }
-
-// .button1 {
-//   padding-left: 37px;
-//   width: 256px;
-//   height: 66px;
-//   background-color: transparent;
-//   color: black;
-//   border: 2px solid #b9bcc1;
-// }
+.shadow-1 {
+  box-shadow: 0px 1px 3px rgba($black, 0.2), 0px 2px 2px rgba($black, 0.12), 0px 0px 2px rgba($black, 0.14);
+}
+.shadow-2 {
+  box-shadow: 0px 1px 5px rgba($black, 0.2), 0px 3px 4px rgba($black, 0.12), 0px 2px 4px rgba($black, 0.14);
+}
+.shadow-3 {
+  box-shadow: 0px 1px 8px rgba($black, 0.2), 0px 3px 4px rgba($black, 0.12), 0px 3px 3px rgba($black, 0.14);
+}
+.shadow-4 {
+  box-shadow: 0px 1px 10px rgba($black, 0.2), 0px 4px 5px rgba($black, 0.12), 0px 2px 4px rgba($black, 0.14);
+}
+.shadow-6 {
+  box-shadow: 0px 3px 5px rgba($black, 0.2), 0px 1px 18px rgba($black, 0.12), 0px 6px 10px rgba($black, 0.14);
+}
+.shadow-8 {
+  box-shadow: 0px 4px 5px rgba($black, 0.2), 0px 3px 14px rgba($black, 0.12), 0px 8px 10px rgba($black, 0.14);
+}
+.shadow-9 {
+  box-shadow: 0px 5px 6px rgba($black, 0.2), 0px 3px 16px rgba($black, 0.12), 0px 9px 12px rgba($black, 0.14);
+}
+.shadow-12 {
+  box-shadow: 0px 7px 8px rgba($black, 0.2), 0px 5px 22px rgba($black, 0.12), 0px 12px 17px rgba($black, 0.14);
+}
+.shadow-16 {
+  box-shadow: 0px 8px 10px rgba($black, 0.2), 0px 6px 30px rgba($black, 0.12), 0px 16px 24px rgba($black, 0.14);
+}
+.shadow-24 {
+  box-shadow: 0px 11px 15px rgba($black, 0.2), 0px 9px 46px rgba($black, 0.12), 0px 24px 38px rgba($black, 0.14);
+}
+.shadow-n8 {
+  box-shadow: 0px -4px 5px rgba($black, 0.2), 0px -3px 14px rgba($black, 0.12), 0px -8px 10px rgba($black, 0.14);
+}

@@ -22,25 +22,25 @@ $small-mobile-font-size-ratio: 12 / 14;
 // 1. Global
 // ---------
 
-$primary: #e5b5ce;
-$secondary: #4b7f52;
+$primary: #011d51;
+$secondary: #03b3f9;
 $success: #4b7f52;
 $green: #4b7f52;
 $anchor: #e5b5ce;
-$error: #eb5757;
-$red: #eb5757;
-$pink: #e5b5ce;
+$error: #ff5959;
 $warning: #f7b947;
-$yellow: #f7b947;
-$bright: #fff;
-$light: #b9bcc1;
-$dark: #191c21;
-$gray-4f: #4f4f4f;
-$gray-82: #828282;
-$brand-1: #191c21;
-$brand-2: #e1e7ed;
-$brand-3: #b9bcc1;
-$brand-4: #77c381;
+
+$background: #ffffff;
+$print: #000000;
+$body-em: #1972b3;
+$priority: #c70102;
+$people: #01b1ec;
+$plant: #8894a0;
+$community: #52ae31;
+$events: #ffba03;
+$light: #ffffff;
+$dark: #000000;
+
 
 $primary-color: $primary;
 $secondary-color: $secondary;
@@ -48,8 +48,8 @@ $success-color: $success;
 $warning-color: $warning;
 $alert-color: $error;
 $light-gray: $light;
-$medium-gray: $brand-2;
-$dark-gray: $gray-82;
+$medium-gray: $dark;
+$dark-gray: $dark;
 $black: #000000;
 $white: #ffffff;
 $pre-color: #ff6908;
@@ -80,12 +80,12 @@ $block-grid-gutter: $global-gutter;
 // 4. Typography
 // -------------
 
-$global-font-color: $light;
-$body-font-family: Montserrat, Helvetica, Arial, sans-serif;
+$global-font-color: $dark;
+$body-font-family: 'Work Sans', Arial, 'sans-serif';
 $global-font-weight: normal;
 $header-color: inherit;
 $global-line-height: 1.2;
-$global-font-size: 16px;
+$global-font-size: 12px;
 $body-line-height: $global-line-height;
 $header-font-family: $body-font-family;
 $header-font-weight: $global-font-weight;
