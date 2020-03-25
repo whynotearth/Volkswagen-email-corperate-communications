@@ -54,12 +54,12 @@ $global-padding: 10px;
 $global-margin: 10px;
 $global-radius: 3px;
 $global-rounded: 500px;
-$global-breakpoint: $global-width;
+$global-breakpoint: $global-width + $global-gutter;
 
 // 2. Grid
 // -------
 
-$grid-column-count: 24;
+$grid-column-count: 12;
 $column-padding-bottom: $global-padding;
 $container-radius: 0;
 
