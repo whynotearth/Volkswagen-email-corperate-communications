@@ -251,6 +251,25 @@ hr {
     line-height: 1.4;
   }
 }
+.print-body {
+  &,
+  * {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 1.4;
+  }
+}
+// TODO to em-high?
+.print-body-em {
+  &,
+  * {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 1.4;
+  }
+}
 
 .print-caps {
   letter-spacing: 0.05em;
