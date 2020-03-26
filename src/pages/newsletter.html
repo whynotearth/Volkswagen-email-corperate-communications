@@ -18,12 +18,29 @@ subject: Volkswagon template
       <row class="text-center date-line">
         <columns class="py-2" small="4" large="6"></columns>
         <columns class="py-2" small="4" large="4"
-          ><span class="px-2 text-nowrap background">Monday | Aug. 5, 2019</span></columns
+          ><span class="px-2 text-nowrap background em-high">Monday | Aug. 5, 2019</span></columns
         >
         <columns class="py-2" small="4" large="2"></columns>
       </row>
 
-      {{> article }}
+      <row class="mb-2">
+        <columns>
+          {{> article-bold type="priority" labelTitle="PRIORITY" borderWidth="2" boxColorHex="d84e4e" contentBoxClass="border-width-2 shadow-noname-1" boxIconSrc="https://res.cloudinary.com/whynotearth/image/upload/w_16,h_16/e_colorize,co_rgb:d84e4e/v1585211750/Volkswagen/newsletter1/Priority_dpmg21.png" }}
+        </columns>
+      </row>
+
+      <row>
+        <columns small="12" large="6">
+          <div class="pr-1">
+            {{> article-light type="plant" labelTitle="PLANT" borderWidth="1" boxColorHex="8894a0" contentBoxClass="border-width-1 shadow-noname-1 border-bottom-none" boxIconSrc="https://res.cloudinary.com/whynotearth/image/upload/w_16,h_16/e_colorize,co_rgb:8894a0/v1585211750/Volkswagen/newsletter1/Plant_fc01dz.png" }}
+          </div>
+        </columns>
+        <columns small="12" large="6">
+          <div class="pl-1">
+            {{> article-light type="plant" labelTitle="PLANT" borderWidth="1" boxColorHex="8894a0" contentBoxClass="border-width-1 shadow-noname-1 border-bottom-none" boxIconSrc="https://res.cloudinary.com/whynotearth/image/upload/w_16,h_16/e_colorize,co_rgb:8894a0/v1585211750/Volkswagen/newsletter1/Priority_dpmg21.png" }}
+          </div>
+        </columns>
+      </row>
     </columns>
 
     <!-- sidebar -->

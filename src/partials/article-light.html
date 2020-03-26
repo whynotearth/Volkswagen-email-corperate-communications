@@ -1,25 +1,30 @@
 <!-- article top -->
 <row>
   <columns class="pb-0">
+
     <table class="w-100 layout-fixed">
       <tr height="26">
-        <td width="200px">
+        <td width="120px">
+          <!-- line left -->
           <img
-            width="200px"
+            width="120px"
             height="26"
-            src="https://res.cloudinary.com/whynotearth/image/upload/l_text:Work%20Sans_14_bold:PRIORITY,co_rgb:d84e4e,g_west,x_36,y_-2/v1585236221/Volkswagen/newsletter1/article-tab_hmh3aj.png"
+            src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{boxColorHex}}/l_text:Work%20Sans_14_bold:{{this.labelTitle}},co_rgb:{{boxColorHex}},g_west,x_36,y_-2/v1585236221/Volkswagen/newsletter1/article-tab_hmh3aj.png"
             alt=""
           />
         </td>
-        <td class="article-tab-line"></td>
+        <!-- line center -->
+        <td style="background-image: url('https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{boxColorHex}}/v1585254282/Volkswagen/newsletter1/line-{{this.borderWidth}}px.png')" class="article-tab-line {{this.type}}-text"></td>
         <td width="32" class="">
+          <!-- corner icon -->
           <img
             class="article-top-icon"
-            src="https://res.cloudinary.com/whynotearth/image/upload/w_16,h_16/v1585211750/Volkswagen/newsletter1/Priority_dpmg21.png"
+            src="{{boxIconSrc}}"
             alt=""
           />
         </td>
-        <td width="32" class="article-top-right"></td>
+        <!-- line right -->
+        <td style="background-image: url('https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{boxColorHex}}/v1585232788/Volkswagen/newsletter1/article-top-right-border_n56sl3.png');" width="32" class="article-top-right"></td>
       </tr>
     </table>
   </columns>
@@ -27,7 +32,7 @@
 
 <!-- article content -->
 <row>
-  <columns class="article-content priority-border pb-0">
+  <columns class="article-content {{this.contentBoxClass}} {{this.type}}-border pb-0">
     <div class="p-2">
       <h2 class="large-title primary-text">We need your help to rename our Company newsletter!</h2>
       <div class="em-high body-small">
