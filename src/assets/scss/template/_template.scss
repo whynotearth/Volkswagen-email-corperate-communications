@@ -140,6 +140,12 @@ hr {
     font-weight: bold;
     line-height: 40px;
   }
+  @media all and (max-width: $global-breakpoint) {
+    &,
+    * {
+      font-size: 36px;
+    }
+  }
 }
 .display-2 {
   &,
