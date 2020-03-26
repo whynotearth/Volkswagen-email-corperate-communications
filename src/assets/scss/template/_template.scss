@@ -5,6 +5,7 @@ body {
 ul {
   padding-left: 0;
   list-style-position: inside;
+  margin: 0;
 }
 p,
 span,
@@ -131,70 +132,112 @@ hr {
 .sans-serif {
   font-family: "Work Sans", Arial, "sans-serif";
 }
+
 .display-3 {
-  font-size: 48px;
-  font-weight: bold;
-  line-height: 40px;
+  &,
+  * {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 40px;
+  }
 }
 .display-2 {
-  font-size: 48px;
-  font-weight: normal;
-  line-height: 40px;
+  &,
+  * {
+    font-size: 48px;
+    font-weight: normal;
+    line-height: 40px;
+  }
 }
 .display-1 {
-  font-size: 36px;
-  font-weight: bold;
-  line-height: 40px;
+  &,
+  * {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 40px;
+  }
 }
 .h1 {
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 38px;
+  &,
+  * {
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 38px;
+  }
 }
 .h2 {
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 26px;
+  &,
+  * {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26px;
+  }
 }
 .h3 {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
+  &,
+  * {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+  }
 }
 .body-1 {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  &,
+  * {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+  }
 }
 .body-1-em-high {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
+  &,
+  * {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+  }
 }
 .body-1-em-medium {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
+  &,
+  * {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+  }
 }
 .body-small {
-  font-size: $small-font-size;
-  line-height: 1.4;
+  &,
+  * {
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 1.4;
+  }
 }
 .caption {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
+  &,
+  * {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+  }
 }
 .label {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
+  &,
+  * {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+  }
 }
 .large-title {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 14px;
+  &,
+  * {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14px;
+  }
 }
+
 .print-caps {
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -232,50 +275,72 @@ hr {
   border-radius: 3px 3px 0 0;
 }
 
+.print-border {
+  border-color: $print !important;
+}
 .print-text {
-  color: $print;
+  color: $print !important;
 }
-.body-emphasis {
+.body-em {
   background-color: $body-em;
-  border-color: $body-em;
+  border-color: $body-em !important;
 }
-.body-emphasis-text {
-  color: $body-em;
+.body-em-border {
+  border-color: $body-em !important;
+}
+.body-em-text {
+  color: $body-em !important;
+  font-weight: 600;
 }
 .priority {
   background-color: $priority;
-  border-color: $priority;
+  border-color: $priority !important;
+}
+.priority-border {
+  border-color: $priority !important;
 }
 .priority-text {
-  color: $priority;
+  color: $priority !important;
 }
 .people {
   background-color: $people;
-  border-color: $people;
+  border-color: $people !important;
+}
+.people-border {
+  border-color: $people !important;
 }
 .people-text {
-  color: $people;
+  color: $people !important;
 }
 .plant {
   background-color: $plant;
-  border-color: $plant;
+  border-color: $plant !important;
+}
+.plant-border {
+  border-color: $plant !important;
 }
 .plant-text {
-  color: $plant;
+  color: $plant !important;
 }
 .community {
   background-color: $community;
-  border-color: $community;
+  border-color: $community !important;
+}
+.community-border {
+  border-color: $community !important;
 }
 .community-text {
-  color: $community;
+  color: $community !important;
 }
 .events {
   background-color: $events;
-  border-color: $events;
+  border-color: $events !important;
+}
+.events-border {
+  border-color: $events !important;
 }
 .events-text {
-  color: $events;
+  color: $events !important;
 }
 
 .em-high {
@@ -292,7 +357,7 @@ hr {
 }
 
 .border-light {
-  border-color: rgba($black, 0.1) !important;
+  border-color: rgba($black, 0.1) !important !important;
 }
 
 .shadow-1 {

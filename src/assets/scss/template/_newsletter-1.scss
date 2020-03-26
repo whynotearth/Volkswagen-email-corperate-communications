@@ -39,6 +39,11 @@
   background-position: bottom 8px left;
 }
 
+.article-top-right {
+  background: url("https://res.cloudinary.com/whynotearth/image/upload/v1585232788/Volkswagen/newsletter1/article-top-right-border_n56sl3.png") no-repeat;
+  background-position: right bottom;
+}
+
 .article-top-icon {
   width: 16px;
   height: 16px;
@@ -47,8 +52,15 @@
   vertical-align: middle;
 }
 
+
 .date-line {
   background: url("https://res.cloudinary.com/whynotearth/image/upload/e_colorize:90,co_rgb:ffffff/v1585227021/Volkswagen/newsletter1/dot_bqwnub.png") repeat-x;
   background-position: center;
 }
 
+// article content
+.article-content {
+  border-left: 2px solid;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+}
