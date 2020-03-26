@@ -243,6 +243,14 @@ hr {
     line-height: 14px;
   }
 }
+.print-title {
+  &,
+  * {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+}
 
 .print-caps {
   letter-spacing: 0.05em;
@@ -310,6 +318,16 @@ hr {
 }
 .people-text {
   color: $people !important;
+}
+.oneteam {
+  background-color: $oneteam;
+  border-color: $oneteam !important;
+}
+.oneteam-border {
+  border-color: $oneteam !important;
+}
+.oneteam-text {
+  color: $oneteam !important;
 }
 .plant {
   background-color: $plant;
