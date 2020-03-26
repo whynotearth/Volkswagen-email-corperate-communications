@@ -264,11 +264,11 @@ hr {
   }
 }
 
-.box-content {
-  border-left-style: solid;
-  border-right-style: solid;
-  border-bottom-style: solid;
+.article-content {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-left: 2px solid;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
 }
 
 .radius-sm {
