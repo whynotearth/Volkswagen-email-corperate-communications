@@ -1,10 +1,12 @@
 .sidebar-image-p1 {
   height: 100px;
-  background: url("https://res.cloudinary.com/whynotearth/image/upload/v1585148695/Volkswagen/newsletter1/sidebar-bg_v5faqc.png") no-repeat $light-gray;
+  background: url("https://res.cloudinary.com/whynotearth/image/upload/v1585207065/Volkswagen/newsletter1/sidebar-bg-p1_o7cjzs.png") no-repeat;
+  background-position: bottom left;
   padding: 0 !important;
 }
 .sidebar-image-p2 {
-  background: url("https://res.cloudinary.com/whynotearth/image/upload/v1585148743/Volkswagen/newsletter1/sidebar-bg-p2_be5elv.png") no-repeat $light-gray;
+  background: url("https://res.cloudinary.com/whynotearth/image/upload/v1585206966/Volkswagen/newsletter1/sidebar-bg-p2_s4fuhz.png") no-repeat $light-gray;
+  background-position: top left;
   padding: 10px 0 !important;
 }
 .sidebar-answers-title {
@@ -15,6 +17,8 @@
   .answers-title--at {
     font-size: 9px;
     font-weight: 500;
+    border-bottom: 1px solid rgba(25, 114, 179, 0.2);
+    padding-bottom: 4px;
   }
 }
 .main-column {
