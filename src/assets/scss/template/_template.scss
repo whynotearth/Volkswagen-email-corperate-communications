@@ -2,6 +2,10 @@ body {
   background: $body-background;
 }
 
+ul {
+  padding-left: 0;
+  list-style-position: inside;
+}
 p,
 span,
 a {
@@ -185,6 +189,15 @@ hr {
   font-weight: 500;
   font-size: 14px;
   line-height: 24px;
+}
+.large-title {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+}
+.print-caps {
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 .border-width-1 {
