@@ -15,7 +15,7 @@
   "license": "AGPL-3.0",
   "dependencies": {
     "bootstrap": "^4.4.1",
-    "foundation-emails": "^2.2.1"
+    "foundation-emails": "https://github.com/foundation/foundation-emails.git"
   },
   "devDependencies": {
     "babel-core": "^6.3.26",
