@@ -1,0 +1,16 @@
+<row>
+  <columns class="pb-0">
+
+    <img src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{boxColorHex}}/l_text:Work%20Sans_14_bold:{{labelTitle}},co_rgb:{{boxColorHex}},g_west,x_36,y_-6/l_{{boxIconSrc}}{{boxIconTransformations}}/Volkswagen/newsletter1/box-top-light-bigger_wfnfnp.png" alt="">
+  </columns>
+</row>
+<!-- https://res.cloudinary.com/whynotearth/image/upload/v1585326738/Volkswagen/newsletter1/box-top-light_qisle7.png -->
+
+<!-- article content -->
+<row>
+  <columns class="article-content {{this.contentBoxClass}} {{this.type}}-border pb-0">
+    <div class="p-2">
+      {{> (lookup . 'contentPartial') }}
+    </div>
+  </columns>
+</row>
