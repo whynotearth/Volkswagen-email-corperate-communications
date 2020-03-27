@@ -1,17 +1,22 @@
 // TODO rename
 .sidebar-image-p1 {
-  height: 102px;
-  background: url("https://res.cloudinary.com/whynotearth/image/upload/v1585208946/Volkswagen/newsletter1/sidebar-bg-p1_uffust.png")
-    no-repeat;
-  background-position: bottom left;
+  height: 211px;
+  // background: no-repeat;
+  // background-image: url("https://res.cloudinary.com/whynotearth/image/upload/v1585295757/Volkswagen/newsletter1/sidebar-whole-bg_miaasm.png");
+  // background-position: top left;
+  // background-size: 133px 211px;
+  // background-position: bottom left;
   padding: 0 !important;
+  display: none;
+  height: 0;
+  @media all and (min-width: $global-breakpoint + 1px) {
+    display: table-cell !important;
+    height: auto;
+  }
 }
-// TODO rename
-.sidebar-image-p2 {
-  background: no-repeat $light-gray;
-  background-image: url("https://res.cloudinary.com/whynotearth/image/upload/v1585208947/Volkswagen/newsletter1/sidebar-bg-p2_laoqcc.png");
-  background-position: top left;
+.sidebar-content {
   padding: 10px 0 110px !important;
+  background: no-repeat $light-gray;
   @media all and (max-width: $global-breakpoint) {
     background-image: url("https://res.cloudinary.com/whynotearth/image/upload/v1585260782/Volkswagen/newsletter1/sidebar-bg-mobile_hgs7w1.png") !important;
     background-position: bottom right !important;
@@ -20,6 +25,9 @@
 .sidebar-answers-title {
   padding-bottom: 64px;
   padding-left: 24px;
+  @media all and (min-width: $global-breakpoint + 1px) {
+    display: none !important;
+  }
   @media all and (max-width: $global-breakpoint) {
     padding-left: 0 !important;
     padding-bottom: 32px !important;
@@ -62,8 +70,8 @@
 }
 
 .article-top-icon {
-  width: 16px;
-  height: 16px;
+  width: 16px !important;
+  height: 16px !important;
   padding-left: 8px;
   padding-top: 8px;
   vertical-align: middle;
