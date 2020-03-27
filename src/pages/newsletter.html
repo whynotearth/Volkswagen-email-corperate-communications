@@ -26,33 +26,28 @@ subject: Volkswagon template
       <row>
         <columns class="mb-4">
           {{> article-bold type="priority" labelTitle="PRIORITY" borderWidth="2" boxColorHex="d84e4e"
-          contentBoxClass="border-width-2"
-          contentPartial="article-content-1"
-          boxIconTransformations=",h_16,w_16,g_east,x_40"
-          boxIconSrc="Volkswagen:newsletter1:Priority_dpmg21"
-          }}
+          contentBoxClass="border-width-2" contentPartial="article-content-1"
+          boxIconTransformations=",h_16,w_16,g_east,x_40" boxIconSrc="Volkswagen:newsletter1:Priority_dpmg21" }}
         </columns>
       </row>
 
       <row>
         <columns class="mb-4" small="12" large="6">
-          <div class="mr-1 pr-0">
-            {{> article-light type="oneteam" labelTitle="ONE%20TEAM" borderWidth="1" boxColorHex="8894a0"
-            contentBoxClass="border-width-1"
-            contentPartial="article-content-2"
-            boxIconTransformations=",h_16,w_16,g_east,x_22"
-            boxIconSrc="Volkswagen:newsletter1:One_Team_cplk6n"
-            }}
-          </div>
+          <table class="pr-1">
+            <tr>
+              <td>
+                {{> article-light type="oneteam" labelTitle="ONE%20TEAM" borderWidth="1" boxColorHex="8894a0"
+                contentBoxClass="border-width-1" contentPartial="article-content-2"
+                boxIconTransformations=",h_16,w_16,g_east,x_22" boxIconSrc="Volkswagen:newsletter1:One_Team_cplk6n" }}
+              </td>
+            </tr>
+          </table>
         </columns>
         <columns class="mb-4" small="12" large="6">
-          <div class="ml-1 pl-0">
+          <div class="pl-1">
             {{> article-light type="plant" labelTitle="PLANT" borderWidth="1" boxColorHex="8894a0"
-            contentBoxClass="border-width-1"
-            contentPartial="article-content-2"
-            boxIconTransformations=",h_16,w_16,g_east,x_22"
-            boxIconSrc="Volkswagen:newsletter1:Plant_fc01dz"
-            }}
+            contentBoxClass="border-width-1" contentPartial="article-content-2"
+            boxIconTransformations=",h_16,w_16,g_east,x_22" boxIconSrc="Volkswagen:newsletter1:Plant_fc01dz" }}
           </div>
         </columns>
       </row>
@@ -60,65 +55,71 @@ subject: Volkswagon template
       <row>
         <columns>
           {{> article-light-big type="plant" labelTitle="PLANT" borderWidth="1" boxColorHex="8894a0"
-          contentBoxClass="border-width-1"
-          contentPartial="article-content-3"
-          boxIconTransformations=",h_16,w_16,g_east,x_22"
-          boxIconSrc="Volkswagen:newsletter1:Plant_fc01dz"
-          }}
+          contentBoxClass="border-width-1" contentPartial="article-content-3"
+          boxIconTransformations=",h_16,w_16,g_east,x_22" boxIconSrc="Volkswagen:newsletter1:Plant_fc01dz" }}
         </columns>
       </row>
     </columns>
 
     <!-- sidebar -->
     <columns small="12" large="3" class="sidebar-column pr-2">
-      <spacer class="background" size="6"></spacer>
-      <row>
-        <columns class="sidebar-image-p1 d-block">
-        <img width="131" src="https://res.cloudinary.com/whynotearth/image/upload/v1585302716/Volkswagen/newsletter1/sidebar-whole-bg-white_fbzz55.png" alt="">
-        </columns>
-      </row>
-      <row>
-        <columns class="sidebar-content">
-          <!-- <div class="sidebar-answers-title d-none">
-            <h2 class="answers-title primary-text pl-2 mb-0">
-              Answers<br /><sup class="answers-title--at">at a</sup> Glance
-            </h2>
-          </div> -->
-          <div class="px-1">
-            <div class="mb-4">
-              <img
-                class="d-block mb-2"
-                src="https://res.cloudinary.com/whynotearth/image/upload/v1585156310/Volkswagen/newsletter1/question-icon_bqj7rs.png"
-                alt=""
-              />
-              <div class="pl-2">
-                <small class="mb-0 print-body-em">Why are fans on the bridge running even though it’s cold outside?</small>
-              </div>
-            </div>
-            <div class="mb-4">
-              <img
-                class="d-block mb-2"
-                src="https://res.cloudinary.com/whynotearth/image/upload/v1585156310/Volkswagen/newsletter1/answer-icon_rubvj4.png"
-                alt=""
-              />
-              <div class="pl-2">
-                <small class="mb-0 body-small"
-                  >We utilized fans to help dry condensation on the bridge floor. You may occasionally see these fans
-                  running despite the cooler temperature.</small
-                >
-              </div>
+      <spacer class="background" size="6"></spacer
+      ><row class="mb-0"
+        ><columns class="sidebar-image-p1 d-block mb-0 no-td-spacing"
+          ><img
+            width="131"
+            src="https://res.cloudinary.com/whynotearth/image/upload/v1585302716/Volkswagen/newsletter1/sidebar-whole-bg-white_fbzz55.png"
+            alt=""/></columns></row
+      ><row
+        ><columns class="sidebar-content"
+          ><div class="mb-4">
+            <img
+              class="d-block mb-2"
+              src="https://res.cloudinary.com/whynotearth/image/upload/v1585156310/Volkswagen/newsletter1/question-icon_bqj7rs.png"
+              alt=""
+            />
+            <div class="pl-2">
+              <small class="mb-0 print-body-em"
+                >Why are fans on the bridge running even though it’s cold outside?</small
+              >
             </div>
           </div>
-        </columns>
+          <div class="mb-4">
+            <img
+              class="d-block mb-2"
+              src="https://res.cloudinary.com/whynotearth/image/upload/v1585156310/Volkswagen/newsletter1/answer-icon_rubvj4.png"
+              alt=""
+            />
+            <div class="pl-2">
+              <small class="mb-0 body-small"
+                >We utilized fans to help dry condensation on the bridge floor. You may occasionally see these fans
+                running despite the cooler temperature.</small
+              >
+            </div>
+          </div></columns
+        >
       </row>
     </columns>
   </row>
 
   <row class="footer d-print-none">
-    <columns class="primary py-4 text-center">
-      <div class="d-table mx-auto">
-        <a download href="https://res.cloudinary.com/whynotearth/image/upload/v1585307027/Volkswagen/newsletter1/newsletter-1_y9u5k5.pdf" class="footer-link"><img height="18"  src="https://res.cloudinary.com/whynotearth/image/upload/v1585304432/Volkswagen/newsletter1/icon-print_ywhb8r.png" alt=""></a>
-      </div>
+    <columns class="primary text-center">
+      <spacer size="22"></spacer>
+      <row>
+        <columns valign="middle" align="center">
+          <a
+            download
+            href="https://res.cloudinary.com/whynotearth/image/upload/v1585307027/Volkswagen/newsletter1/newsletter-1_y9u5k5.pdf"
+            class="footer-link"
+            ><img
+              class="d-inline"
+              height="18"
+              src="https://res.cloudinary.com/whynotearth/image/upload/v1585304432/Volkswagen/newsletter1/icon-print_ywhb8r.png"
+              alt=""
+          /></a>
+        </columns>
+      </row>
+      <spacer size="8"></spacer>
     </columns>
   </row>
 </container>
