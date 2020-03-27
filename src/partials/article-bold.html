@@ -34,7 +34,7 @@
 <row>
   <columns class="article-content {{this.contentBoxClass}} {{this.type}}-border pb-0">
     <div class="p-2">
-      {{> article-content-1 }}
+      {{> (lookup . 'contentPartial') }}
     </div>
   </columns>
 </row>
