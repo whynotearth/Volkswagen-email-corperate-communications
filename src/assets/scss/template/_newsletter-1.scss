@@ -13,22 +13,22 @@
   background-position: top left;
   padding: 10px 0 110px !important;
   @media all and (max-width: $global-breakpoint) {
-    background-image: url("https://res.cloudinary.com/whynotearth/image/upload/v1585260782/Volkswagen/newsletter1/sidebar-bg-mobile_hgs7w1.png");
-    background-position: bottom right;
+    background-image: url("https://res.cloudinary.com/whynotearth/image/upload/v1585260782/Volkswagen/newsletter1/sidebar-bg-mobile_hgs7w1.png") !important;
+    background-position: bottom right !important;
   }
 }
 .sidebar-answers-title {
   padding-bottom: 64px;
   padding-left: 24px;
   @media all and (max-width: $global-breakpoint) {
-    padding-left: 0;
-    padding-bottom: 32px;
+    padding-left: 0 !important;
+    padding-bottom: 32px !important;
   }
   .answers-title {
     font-size: 18px !important;
     text-align: left;
     @media all and (max-width: $global-breakpoint) {
-      text-align: center;
+      text-align: center !important;
     }
   }
   .answers-title--at {
