@@ -36,19 +36,14 @@ subject: Volkswagon template
 
       <row>
         <columns class="mb-4" small="12" large="6">
-
-          <callout class="secondary">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quas optio totam quidem, placeat sunt, sit iusto fugit. Harum omnis deleniti enim nihil iure, quis laudantium veniam velit animi debitis. <a href="#">Click It!</a>
-          </callout>
-
-          
+          {{> article-light type="oneteam" labelTitle="ONE%20TEAM" borderWidth="1" boxColorHex="8894a0"
+          contentBoxClass="border-width-1" contentPartial="article-content-2"
+          boxIconTransformations=",h_16,w_16,g_east,x_22" boxIconSrc="Volkswagen:newsletter1:One_Team_cplk6n" }}
         </columns>
         <columns class="mb-4" small="12" large="6">
-          <div class="pl-1">
-            {{> article-light type="plant" labelTitle="PLANT" borderWidth="1" boxColorHex="8894a0"
-            contentBoxClass="border-width-1" contentPartial="article-content-2"
-            boxIconTransformations=",h_16,w_16,g_east,x_22" boxIconSrc="Volkswagen:newsletter1:Plant_fc01dz" }}
-          </div>
+          {{> article-light type="plant" labelTitle="PLANT" borderWidth="1" boxColorHex="8894a0"
+          contentBoxClass="border-width-1" contentPartial="article-content-2"
+          boxIconTransformations=",h_16,w_16,g_east,x_22" boxIconSrc="Volkswagen:newsletter1:Plant_fc01dz" }}
         </columns>
       </row>
 

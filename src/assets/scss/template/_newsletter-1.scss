@@ -1,5 +1,6 @@
 .sidebar-column {
-  background: url("https://res.cloudinary.com/whynotearth/image/upload/v1585302462/Volkswagen/newsletter1/sidebar-bg-gray_yryair.png") no-repeat;
+  background: url("https://res.cloudinary.com/whynotearth/image/upload/v1585302462/Volkswagen/newsletter1/sidebar-bg-gray_yryair.png")
+    no-repeat;
   background-position: bottom 20px right 8px;
 }
 // TODO rename
@@ -89,22 +90,28 @@
 
 // article content
 .article-content {
+  .callout {
+    margin-bottom: 0;
+  }
+}
+.article-callout {
   &.border-width-1 {
-    border-left: 1px solid $plant;
-    border-right: 1px solid $plant;
-    border-bottom: 1px solid $plant;
+    border-left: 1px solid $plant !important;
+    border-right: 1px solid $plant !important;
+    border-bottom: 1px solid $plant !important;
+    border-top: none !important;
   }
   &.border-width-2 {
-    border-left: 2px solid $priority;
-    border-right: 2px solid $priority;
-    border-bottom: 2px solid $priority;
+    border-left: 2px solid $priority !important;
+    border-right: 2px solid $priority !important;
+    border-bottom: 2px solid $priority !important;
+    border-top: none !important;
   }
 }
 
 .footer-link:hover {
   cursor: pointer;
 }
-
 
 .border-date {
   border-bottom: 1px solid $light-gray;

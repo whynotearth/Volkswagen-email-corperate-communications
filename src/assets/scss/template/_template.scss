@@ -282,12 +282,6 @@ hr {
   text-transform: uppercase;
 }
 
-.border-width-1 {
-  border-width: 1px;
-}
-.border-width-2 {
-  border-width: 2px;
-}
 .box-label {
   top: 2px;
   border-top-style: solid;
@@ -441,10 +435,3 @@ hr {
 .shadow-n8 {
   box-shadow: 0px -4px 5px rgba($black, 0.2), 0px -3px 14px rgba($black, 0.12), 0px -8px 10px rgba($black, 0.14);
 }
-
-
-// // fix outlook
-// .no-td-spacing, .no-td-spacing * {
-//   line-height: 0 !important;
-//   font-size: 0 !important;
-// }
