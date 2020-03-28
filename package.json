@@ -14,8 +14,9 @@
   "author": "ZURB <foundation@zurb.com>",
   "license": "AGPL-3.0",
   "dependencies": {
+    "@babel/register": "^7.9.0",
     "bootstrap": "^4.4.1",
-    "foundation-emails": "https://github.com/foundation/foundation-emails.git"
+    "foundation-emails": "^2.2.1"
   },
   "devDependencies": {
     "babel-core": "^6.3.26",
