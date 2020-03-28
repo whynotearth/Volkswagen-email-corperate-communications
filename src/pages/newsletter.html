@@ -28,30 +28,59 @@ subject: Volkswagon template
 
       <row>
         <columns class="mb-4">
-          {{> article-bold type="priority" labelTitle="PRIORITY" borderWidth="2" boxColorHex="d84e4e"
-          contentBoxClass="border-width-2" contentPartial="article-content-1"
-          boxIconTransformations=",h_16,w_16,g_east,x_40" boxIconSrc="Volkswagen:newsletter1:Priority_dpmg21" }}
+          {{> article-bold type="priority" labelTitle="PRIORITY" boxColorHex="d84e4e" contentBoxClass="border-width-2"
+          contentPartial="article-content-1" boxIconTransformations=",h_16,w_16,g_east,x_40"
+          boxIconSrc="Volkswagen:newsletter1:Priority_dpmg21" }}
         </columns>
       </row>
 
-      <row>
-        <columns class="mb-4" small="12" large="6">
-          {{> article-light type="oneteam" labelTitle="ONE%20TEAM" borderWidth="1" boxColorHex="8894a0"
-          contentBoxClass="border-width-1" contentPartial="article-content-2"
-          boxIconTransformations=",h_16,w_16,g_east,x_22" boxIconSrc="Volkswagen:newsletter1:One_Team_cplk6n" }}
-        </columns>
-        <columns class="mb-4" small="12" large="6">
-          {{> article-light type="plant" labelTitle="PLANT" borderWidth="1" boxColorHex="8894a0"
-          contentBoxClass="border-width-1" contentPartial="article-content-2"
-          boxIconTransformations=",h_16,w_16,g_east,x_22" boxIconSrc="Volkswagen:newsletter1:Plant_fc01dz" }}
-        </columns>
-      </row>
+      <table align="center" class="container">
+        <tbody>
+          <tr>
+            <td>
+              <table class="row">
+                <tbody>
+                  <tr>
+                    <th class="mb-4 small-12 large-6 columns first pr-1">
+                      <table>
+                        <tr>
+                          <th>
+                            {{> article-light type="oneteam" labelTitle="ONE%20TEAM" boxColorHex="8894a0"
+                            contentBoxClass="border-width-1" contentPartial="article-content-2"
+                            boxIconTransformations=",h_16,w_16,g_east,x_22"
+                            boxIconSrc="Volkswagen:newsletter1:One_Team_cplk6n" }}
+                          </th>
+                          <th class="expander"></th>
+                        </tr>
+                      </table>
+                    </th>
+
+                    <th class="mb-4 small-12 large-6 columns last pl-1">
+                      <table>
+                        <tr>
+                          <th>
+                            {{> article-light type="plant" labelTitle="PLANT" boxColorHex="8894a0"
+                            contentBoxClass="border-width-1" contentPartial="article-content-2"
+                            boxIconTransformations=",h_16,w_16,g_east,x_22"
+                            boxIconSrc="Volkswagen:newsletter1:Plant_fc01dz" }}
+                          </th>
+                          <th class="expander"></th>
+                        </tr>
+                      </table>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
       <row>
         <columns>
-          {{> article-light-big type="plant" labelTitle="PLANT" borderWidth="1" boxColorHex="8894a0"
-          contentBoxClass="border-width-1" contentPartial="article-content-3"
-          boxIconTransformations=",h_16,w_16,g_east,x_36" boxIconSrc="Volkswagen:newsletter1:Plant_fc01dz" }}
+          {{> article-light-big type="plant" labelTitle="PLANT" boxColorHex="8894a0" contentBoxClass="border-width-1"
+          contentPartial="article-content-3" boxIconTransformations=",h_16,w_16,g_east,x_36"
+          boxIconSrc="Volkswagen:newsletter1:Plant_fc01dz" }}
         </columns>
       </row>
     </columns>

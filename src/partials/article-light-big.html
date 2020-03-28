@@ -1,15 +1,5 @@
-<row>
-  <columns class="pb-0">
-
-    <img src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{boxColorHex}}/l_text:Work%20Sans_14_bold:{{labelTitle}},co_rgb:{{boxColorHex}},g_west,x_36,y_-6/l_{{boxIconSrc}}{{boxIconTransformations}}/Volkswagen/newsletter1/box-top-light-bigger_bxlqbu.png" alt="">
-  </columns>
-</row>
-
-<!-- article content -->
-<row>
-  <columns class="article-content {{this.contentBoxClass}} {{this.type}}-border pb-0">
-    <div class="p-2">
-      {{> (lookup . 'contentPartial') }}
-    </div>
-  </columns>
-</row>
+<wrapper class="article-content {{this.type}}-border p-2">
+  <callout class="article-callout {{this.contentBoxClass}}">
+    {{> (lookup . 'contentPartial') }}
+  </callout>
+</wrapper>
