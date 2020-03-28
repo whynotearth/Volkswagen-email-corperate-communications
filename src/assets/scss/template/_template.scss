@@ -134,9 +134,13 @@ hr {
 .error-text {
   color: $error;
 }
-
 .sans-serif {
   font-family: "Work Sans", Arial, "sans-serif";
+}
+
+// custom
+.lightgray {
+  background-color: $light-gray !important;
 }
 
 .display-3 {

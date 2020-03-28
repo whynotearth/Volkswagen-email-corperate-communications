@@ -2,6 +2,9 @@
   background: url("https://res.cloudinary.com/whynotearth/image/upload/v1585302462/Volkswagen/newsletter1/sidebar-bg-gray_yryair.png")
     no-repeat;
   background-position: bottom 20px right 8px;
+  th.callout-inner {
+    border: none;
+  }
 }
 .sidebar-content {
   padding: 10px 0 110px !important;
