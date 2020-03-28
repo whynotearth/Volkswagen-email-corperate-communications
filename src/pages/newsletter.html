@@ -15,12 +15,15 @@ subject: Volkswagon template
       <spacer size="4"></spacer>
 
       <!-- time row -->
-      <row class="text-center date-line">
-        <columns class="py-2" small="4" large="6"></columns>
+      <row class="text-center">
+        <columns small="4" large="6" valign="center">
+          <!-- <div class="border-date"></div> -->
+        </columns>
         <columns class="py-2" small="4" large="4"
-          ><span class="px-2 text-nowrap background em-high">Monday | Aug. 5, 2019</span></columns
-        >
-        <columns class="py-2" small="4" large="2"></columns>
+          ><span class="px-2 text-nowrap background em-high pb-2">Monday | Aug. 5, 2019</span></columns
+        ><columns small="4" large="2" valign="center">
+          <!-- <div class="border-date"></div> -->
+        </columns>
       </row>
 
       <row>
@@ -56,7 +59,7 @@ subject: Volkswagon template
         <columns>
           {{> article-light-big type="plant" labelTitle="PLANT" borderWidth="1" boxColorHex="8894a0"
           contentBoxClass="border-width-1" contentPartial="article-content-3"
-          boxIconTransformations=",h_16,w_16,g_east,x_22" boxIconSrc="Volkswagen:newsletter1:Plant_fc01dz" }}
+          boxIconTransformations=",h_16,w_16,g_east,x_36" boxIconSrc="Volkswagen:newsletter1:Plant_fc01dz" }}
         </columns>
       </row>
     </columns>

@@ -81,11 +81,11 @@
   vertical-align: middle;
 }
 
-.date-line {
-  background: url("https://res.cloudinary.com/whynotearth/image/upload/e_colorize:10,co_rgb:000000/v1585254282/Volkswagen/newsletter1/line-1px.png")
-    repeat-x;
-  background-position: center;
-}
+// .date-line {
+//   background: url("https://res.cloudinary.com/whynotearth/image/upload/e_colorize:10,co_rgb:000000/v1585254282/Volkswagen/newsletter1/line-1px.png")
+//     repeat-x;
+//   background-position: center;
+// }
 
 // article content
 .article-content {
@@ -103,4 +103,9 @@
 
 .footer-link:hover {
   cursor: pointer;
+}
+
+
+.border-date {
+  border-bottom: 1px solid $light-gray;
 }
