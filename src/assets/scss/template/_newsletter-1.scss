@@ -3,22 +3,6 @@
     no-repeat;
   background-position: bottom 20px right 8px;
 }
-// TODO rename
-.sidebar-image-p1 {
-  height: 211px;
-  // background: no-repeat;
-  // background-image: url("https://res.cloudinary.com/whynotearth/image/upload/v1585295757/Volkswagen/newsletter1/sidebar-whole-bg_miaasm.png");
-  // background-position: top left;
-  // background-size: 133px 211px;
-  // background-position: bottom left;
-  padding: 0 !important;
-  display: none;
-  height: 0;
-  @media all and (min-width: $global-breakpoint + 1px) {
-    display: table-cell !important;
-    height: auto;
-  }
-}
 .sidebar-content {
   padding: 10px 0 110px !important;
   background: no-repeat $light-gray;
