@@ -446,3 +446,17 @@ hr {
 .shadow-n8 {
   box-shadow: 0px -4px 5px rgba($black, 0.2), 0px -3px 14px rgba($black, 0.12), 0px -8px 10px rgba($black, 0.14);
 }
+
+// fix foundation center tag bug
+td,
+th {
+  &.columns,
+  &.column {
+    .column,
+    .columns {
+      center {
+        min-width: 0 !important;
+      }
+    }
+  }
+}
