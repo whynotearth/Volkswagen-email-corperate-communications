@@ -14,25 +14,7 @@ subject: Volkswagon template
       </row>
       <spacer size="4"></spacer>
 
-      <!-- time row -->
-      <row class="text-center">
-          <columns small="4" large="6" valign="middle">
-            <!--[if (mso)|(IE)]>
-              <td valign="bottom" class="border-date-outlook"
-                style="background:#ededed;width:100%;height:1px;">
-            <![endif]-->
-            <div class="border-date"></div>
-          </columns> 
-          <columns class="py-2" small="4" large="4"
-          ><span class="px-2 text-nowrap background em-high pb-2">Monday | Aug. 5, 2019</span></columns
-        ><columns small="4" large="2" valign="middle">
-          <!--[if (mso)|(IE)]>
-            <td valign="bottom" class="border-date-outlook"
-              style="background:#ededed;width:100%;height:1px;">
-          <![endif]-->
-          <div class="border-date"></div>
-        </columns>
-      </row>
+      {{> date-row }}
 
       <row>
         <columns class="mb-4">
@@ -95,29 +77,7 @@ subject: Volkswagon template
 
     {{> sidebar }}
   </row>
-
-  <row class="footer d-print-none">
-    <columns class="primary" valign="middle" align="center">
-      <spacer size="22"></spacer>
-      <row>
-        <columns>
-          <a
-            download
-            href="https://res.cloudinary.com/whynotearth/image/upload/v1585307027/Volkswagen/newsletter1/newsletter-1_y9u5k5.pdf"
-            class="footer-link"
-            >
-            <center>
-              <img
-                class="d-block float-center"
-                align="center"
-                height="18"
-                src="https://res.cloudinary.com/whynotearth/image/upload/v1585304432/Volkswagen/newsletter1/icon-print_ywhb8r.png"
-                alt=""
-                />
-            </center>
-          </a>
-        </columns>
-      </row>
-    </columns>
-  </row>
+  
+  {{> footer }}
+  
 </container>
