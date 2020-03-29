@@ -101,5 +101,16 @@
 }
 
 .border-date {
-  border-bottom: 1px solid $light-gray;
+  //border-bottom: 1px solid $light-gray;
+    height: 1px;
+    width: 100%;
+    background: yellow;
+    line-height: 2;
+    margin-top: 6px;
+}
+
+.float-center {
+  margin: 0 auto!important;
+  float: none!important;
+  text-align: center!important;
 }
