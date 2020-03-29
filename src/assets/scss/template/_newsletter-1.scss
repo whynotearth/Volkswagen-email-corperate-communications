@@ -1,8 +1,19 @@
-.sidebar-column {
-  background: url("https://res.cloudinary.com/whynotearth/image/upload/v1585485531/Volkswagen/newsletter1/sidebar-bg-gray_wxbuid.png")
-    no-repeat;
+.sidebar-column.sidebar-column.sidebar-column {
+  background-image: url("https://res.cloudinary.com/whynotearth/image/upload/v1585485531/Volkswagen/newsletter1/sidebar-bg-gray_wxbuid.png");
+  background-repeat: no-repeat;
   background-position: bottom 20px left 10px;
   background-size: 126px auto;
+  @media all and (max-width: $global-breakpoint) {
+    background: $light-gray !important;
+    padding: 0 !important;
+    .callout-inner {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+      .sidebar-content--text {
+        padding-left: 20px !important;
+      }
+    }
+  }
   th.callout-inner {
     border: none;
   }
@@ -10,11 +21,10 @@
     word-wrap: break-word;
   }
 }
-.sidebar-content {
-  padding: 10px 0 110px !important;
-  background: no-repeat $light-gray;
+.sidebar-bg-mobile {
   @media all and (max-width: $global-breakpoint) {
-    background-image: url("https://res.cloudinary.com/whynotearth/image/upload/v1585260782/Volkswagen/newsletter1/sidebar-bg-mobile_hgs7w1.png") !important;
+    height: 150px !important;
+    background: no-repeat url("https://res.cloudinary.com/whynotearth/image/upload/v1585260782/Volkswagen/newsletter1/sidebar-bg-mobile_hgs7w1.png") !important;
     background-position: bottom right !important;
   }
 }
