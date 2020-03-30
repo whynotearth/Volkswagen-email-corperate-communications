@@ -479,3 +479,16 @@ th {
     line-height: inherit !important;
   }
 }
+
+// @media all and (min-width: $global-breakpoint + 1px) {
+//   .has-cols-padding {
+//     > .columns.large-6 {
+//       &.first {
+//         padding-right: 4px !important;
+//       }
+//       &.last {
+//         padding-left: 4px !important;
+//       }
+//     }
+//   }
+// }
