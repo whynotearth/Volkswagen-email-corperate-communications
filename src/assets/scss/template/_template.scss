@@ -1,6 +1,9 @@
 body {
   background: $body-background;
 }
+* {
+  word-wrap: break-word;
+}
 img {
   border: 0;
   height: auto;
