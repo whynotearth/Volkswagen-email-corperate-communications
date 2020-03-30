@@ -1,5 +1,14 @@
 <wrapper class="article-content {{this.type}}-border p-2">
-  <callout class="article-callout {{this.contentBoxClass}}">
-    {{> (lookup . 'contentPartial') }}
-  </callout>
+  <table class="callout">
+    <tr>
+      <th
+        class="callout-inner"
+        class="article-callout {{this.contentBoxClass}}"
+        style="border-left:1px solid #{{this.boxColorHex}}; border-right:1px solid #{{this.boxColorHex}}; border-bottom:1px solid #{{this.boxColorHex}}; border-top: none;"
+      >
+        {{> (lookup . 'contentPartial') }}
+      </th>
+      <th class="expander"></th>
+    </tr>
+  </table>
 </wrapper>
