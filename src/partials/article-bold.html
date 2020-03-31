@@ -1,6 +1,7 @@
 <row class="hide-for-large2">
   <columns class="pb-0">
-    <table class="w-100 layout-fixed">
+    <!-- TODO 424 only for outlook not responsive -->
+    <table class="w-100 layout-fixed" width="424" style="width: 424px">
       <tr height="26">
         <th valign="bottom" width="200px">
           <!-- line left -->
@@ -26,7 +27,9 @@
         </th>
         <th valign="bottom" width="32">
           <!-- corner icon -->
-          <img width="16" style="width: 16px;" class="article-top-icon" src="{{boxIconSrc}}" alt="" />
+          <center>
+            <img width="16" style="width: 16px;" class="article-top-icon" src="{{boxIconSrc}}" alt="" />
+          </center>
         </th>
         <!-- line right -->
         <th
@@ -48,7 +51,7 @@
   </columns>
 </row>
 
-<wrapper class="article-content {{this.type}}-border p-2">
+<wrapper class="article-content {{this.type}}-border">
   <table class="callout">
     <tr>
       <th
