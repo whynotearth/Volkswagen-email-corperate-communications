@@ -3,45 +3,52 @@
     <!-- TODO 424 only for outlook not responsive -->
     <table class="layout-fixed" width="424" style="width: 424px" cellspacing="0" cellpadding="0" border="0">
       <tr height="26">
-        <th valign="bottom" width="200px">
+        <th width="200" height="26" style="width:200px;height:26px" valign="bottom">
           <!-- line left -->
           <img
-            width="200px"
+            width="200"
             height="26"
+            style="width:200px; height:26px;"
             src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{boxColorHex}}/l_text:Work%20Sans_14_bold:PRIORITY,co_rgb:d84e4e,g_west,x_36,y_-2/v1585236222/Volkswagen/newsletter1/article-tab_hmh3aj.png"
             alt=""
           />
         </th>
-        <!-- line center -->
+        <!-- line center TODO make responsive -->
         <th
+          width="160"
+          height="26"
+          style="width:160px;height:26px;"
           valign="bottom"
-          style="background-image: url('https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{boxColorHex}}/v1585254282/Volkswagen/newsletter1/line-2px.png')"
           class="article-tab-line {{this.type}}-text"
         >
           <img
+            height="26"
+            width="160"
+            style="height:26px;width:160px;"
             class="float-left"
-            width="100%"
-            style="width:100%;"
-            src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{boxColorHex}}/Volkswagen/newsletter1/2x/line_vaahso.png"
+            src="https://res.cloudinary.com/whynotearth/image/upload/v1585726249/Volkswagen/newsletter1/line-160px-2px-96dpi_j1l509.png"
             alt=""
           />
         </th>
-        <th valign="bottom" width="32" style="width: 32px;">
+        <th valign="bottom" width="32" height="26" style="width:32px; height:26px;">
           <!-- corner icon -->
-          <img height="16" width="32" style="width: 32px; height:16px;" class="article-top-icon" src="{{boxIconSrc}}" alt="" />
+          <img
+            height="16"
+            width="32"
+            style="width: 32px; height:16px;"
+            class="article-top-icon float-left"
+            src="{{boxIconSrc}}"
+            alt=""
+          />
         </th>
         <!-- line right -->
-        <th
-          valign="bottom"
-          style="background-image: url('https://res.cloudinary.com/whynotearth/image/upload/co_rgb:{{boxColorHex}},e_colorize/v1585257348/Volkswagen/newsletter1/article-top-right-2px.png');"
-          width="32"
-          class="article-top-right"
-        >
+        <th valign="bottom" width="32" height="26" class="article-top-right">
           <img
             class="float-right"
             width="32"
-            style="width: 32px;"
-            src="https://res.cloudinary.com/whynotearth/image/upload/co_rgb:{{boxColorHex}},e_colorize/Volkswagen/newsletter1/2x/line-2_bakghn.png"
+            height="26"
+            style="width: 32px; height:26px;"
+            src="https://res.cloudinary.com/whynotearth/image/upload/v1585726413/Volkswagen/newsletter1/line-32px-hv-2px-96dpi_sgzrry.png"
             alt=""
           />
         </th>
@@ -50,7 +57,7 @@
   </columns>
 </row>
 
-<wrapper class="article-content {{this.type}}-border">
+<wrapper class="article-content {{this.type}}-border" width="424" style="width:424px;">
   <table class="callout">
     <tr>
       <th
