@@ -118,7 +118,7 @@ hr {
   background-color: $secondary;
 }
 .secondary-text {
-  color: $secondary;
+  color: $secondary !important;
 }
 .background {
   background-color: #ffffff;
