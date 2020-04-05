@@ -1,19 +1,24 @@
 <row class="hide-for-large2">
   <columns class="pb-0">
-    <!-- TODO 424 only for outlook not responsive -->
-    <table class="layout-fixed" width="424" style="width: 424px" cellspacing="0" cellpadding="0" border="0">
-      <tr height="26">
-        <th width="200" height="26" style="width:200px;height:26px" valign="bottom">
-          <!-- line left -->
+
+    <!--[if !mso]>-->
+    <table class="layout-fixed" cellspacing="0" cellpadding="0" border="0" width="100%" style="width:100%;">
+    <!--<![endif]-->
+
+
+      <tr>
+        <th width="200" height="26" style="width:200px;height:26px;" valign="bottom">
+          <!-- line left - NOTE: 201.5 is outlook fix -->
           <img
-            width="200"
+            width="201.5"
             height="26"
             style="width:200px; height:26px;"
-            src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{boxColorHex}}/l_text:Work%20Sans_14_bold:PRIORITY,co_rgb:d84e4e,g_west,x_36,y_-2/v1585236222/Volkswagen/newsletter1/article-tab_hmh3aj.png"
+            src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{boxColorHex}}/l_text:Work%20Sans_28_bold:PRIORITY,co_rgb:d84e4e,g_west,x_72,y_-4/v1585236222/Volkswagen/newsletter1/curve-tab-200-26-96dpi-2x_vhrnwv.png"
             alt=""
           />
         </th>
-        <!-- line center TODO make responsive -->
+
+        <!--[if mso]>
         <th
           width="160"
           height="26"
@@ -21,7 +26,19 @@
           valign="bottom"
           class="article-tab-line {{this.type}}-text"
         >
-          <img
+        <![endif]-->
+      
+        <!--[if !mso]>-->
+        <th
+          height="26"
+          style="height:26px; background:url(https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{boxColorHex}}/Volkswagen/newsletter1/line-160px-2px-96dpi_rdzowd.png) repeat-x;"
+          valign="bottom"
+          class="article-tab-line {{this.type}}-text"
+          >
+        <!--<![endif]-->
+        
+        <!--[if mso]>
+        <img
             height="26"
             width="160"
             style="height:26px;width:160px;"
@@ -29,6 +46,8 @@
             src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{boxColorHex}}/Volkswagen/newsletter1/line-160px-2px-96dpi_rdzowd.png"
             alt=""
           />
+        <![endif]-->
+          
         </th>
         <th valign="bottom" width="32" height="26" style="width:32px; height:26px;">
           <!-- corner icon -->
@@ -42,13 +61,13 @@
           />
         </th>
         <!-- line right -->
-        <th valign="bottom" width="32" height="26" class="article-top-right">
+        <th valign="bottom" width="32" height="26" style="width: 32px;" class="article-top-right">
           <img
             class="float-right"
             width="32"
             height="26"
             style="width: 32px; height:26px;"
-            src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{boxColorHex}}/Volkswagen/newsletter1/line-32px-hv-2px-96dpi_lo2x2h.png"
+            src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{boxColorHex}}/Volkswagen/newsletter1/line-hv-32-26-96dpi_lewyes.png"
             alt=""
           />
         </th>
@@ -57,17 +76,22 @@
   </columns>
 </row>
 
-<wrapper class="article-content {{this.type}}-border" width="424" style="width:424px;">
-  <table class="callout">
-    <tr>
-      <th
-        class="callout-inner"
-        class="article-callout {{this.contentBoxClass}}"
-        style="border-left:2px solid #{{this.boxColorHex}}; border-right:2px solid #{{this.boxColorHex}}; border-bottom:2px solid #{{this.boxColorHex}}; border-top: none;"
-      >
-        {{> (lookup . 'contentPartial') }}
-      </th>
-      <th class="expander"></th>
-    </tr>
-  </table>
-</wrapper>
+<table class="wrapper article-content {{this.type}}-border" width="100%" style="width:100%;" cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td class="wrapper-inner">
+      <table class="callout" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <th
+            class="callout-inner"
+            class="article-callout {{this.contentBoxClass}}"
+            style="border-left:2px solid #{{this.boxColorHex}}; border-right:2px solid #{{this.boxColorHex}}; border-bottom:2px solid #{{this.boxColorHex}}; border-top: none;"
+          >
+            {{> (lookup . 'contentPartial') }}
+          </th>
+          <th class="expander"></th>
+        </tr>
+      </table>
+
+    </td>
+  </tr>
+</table>

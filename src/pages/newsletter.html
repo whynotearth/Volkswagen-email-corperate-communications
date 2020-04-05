@@ -3,7 +3,7 @@ subject: Volkswagon template
 ---
 
 <container>
-  <row class="layout-fixed">
+  <row class="layout-fixed main-row">
     <!-- main-column -->
     <columns small="12" large="9" class="main-column" width="424" style="width: 424px">
       <spacer size="6"></spacer>
@@ -28,74 +28,23 @@ subject: Volkswagon template
         </columns>
       </row>
 
-      <spacer size="8"></spacer>
-
-      <table align="center" class="container">
-        <tbody>
-          <tr>
-            <td>
-              <table class="row layout-fixed" cellspacing="0" cellpadding="0" border="0">
-                <tbody>
-                  <tr>
-                    <th class="small-12 large-6 columns first">
-                      <!-- left article -->
-                      <table>
-                        <tr>
-                          <th>
-                            {{> article-light type="oneteam" labelTitle="ONE%20TEAM" boxColorHex="8894a0"
-                            contentBoxClass="border-width-1" contentPartial="article-content-2"
-                            boxIconPath="Volkswagen:newsletter1:One_Team_cplk6n"
-                            boxIconSrc="https://res.cloudinary.com/whynotearth/image/upload/v1585211750/Volkswagen/newsletter1/Plant_fc01dz.png"
-                            }}
-                          </th>
-                          <th class="expander"></th>
-                        </tr>
-                      </table>
-                    </th>
-                    <!--[if mso]>
-                      <th class="show-for-large" width="8" style="width: 8px; font-size:20px;line-height:0;">&nbsp;</th>
-                    <![endif]-->
-                    <!--[if !mso]>-->
-                    <th class="show-for-large" width="8" style="width: 8px;">&nbsp;</th>
-                    <!--<![endif]-->
-
-                    <th class="small-12 large-6 columns last">
-                      <!-- right article -->
-                      <table>
-                        <tr>
-                          <th>
-                            {{> article-light type="plant" labelTitle="PLANT" boxColorHex="8894a0"
-                            contentBoxClass="border-width-1" contentPartial="article-content-2"
-                            boxIconPath="Volkswagen:newsletter1:Plant_fc01dz"
-                            boxIconSrc="https://res.cloudinary.com/whynotearth/image/upload/v1585211750/Volkswagen/newsletter1/Plant_fc01dz.png"
-                            }}
-                          </th>
-                          <th class="expander"></th>
-                        </tr>
-                      </table>
-                    </th>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-
-      <spacer size="8"></spacer>
-
-      <row>
-        <columns>
-          {{> article-light-big type="plant" labelTitle="PLANT" boxColorHex="8894a0" contentBoxClass="border-width-1"
-          contentPartial="article-content-3" boxIconPath="Volkswagen:newsletter1:Plant_fc01dz"
-          boxIconSrc="https://res.cloudinary.com/whynotearth/image/upload/v1585211750/Volkswagen/newsletter1/Plant_fc01dz.png"
-          }}
-        </columns>
-      </row>
+     
     </columns>
+    
+    <!-- sidebar -->
 
-    {{> sidebar }}
+    <!-- <th class="small-12 large-12 columns first last">
+      <table>
+        <tr>
+          <th>This is a column. Columns contain your content.</th>
+          <th class="expander"></th>
+        </tr>
+      </table>
+    </th> -->
+    <columns small="12" large="3" class="sidebar-column" valign="top" width="128" style="width: 128px">
+      {{> sidebar }}
+    </columns>
   </row>
 
-  {{> footer }}
+
 </container>
