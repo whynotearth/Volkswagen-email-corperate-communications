@@ -1,56 +1,97 @@
-<!--[if mso]>
-<img
-  width="210"
-  class="show-for-large"
-  src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{boxColorHex}}/l_text:Work%20Sans_14_bold:{{labelTitle}},co_rgb:{{boxColorHex}},g_west,x_24,y_-6/l_{{boxIconPath}}{{boxIconTransformations}},e_colorize,co_rgb:{{boxColorHex}}/Volkswagen/newsletter1/box-label-light-small-2_zyacbp.png"
-  alt=""
-/>
-<![endif]-->
-
-<!--[if !mso]><!-->
 <row>
   <columns class="pb-0">
 
-    <table class="w-100 layout-fixed">
-      <tr height="26">
-        <td width="120px">
+    <table class="layout-fixed" cellspacing="0" cellpadding="0" border="0" width="100%" style="width:100%;">
+
+      <tr>
+        <th width="120" height="26" style="width:120px;height:26px;" valign="bottom">
           <!-- line left -->
           <img
-            width="120px"
+            style="width:120px; height:26px;"
+            width="120"
             height="26"
-            src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{boxColorHex}}/l_text:Work%20Sans_28_bold:{{this.labelTitle}},co_rgb:{{boxColorHex}},g_west,x_56,y_-4/v1585236221/Volkswagen/newsletter1/article-top-left-1px_dhhinz.png"
-            alt="{{this.labelTitle}}"
+            src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{boxColorHex}}/l_text:Work%20Sans_28_bold:{{labelTitle}},co_rgb:{{boxColorHex}},g_west,x_54,y_-4/v1585236222/Volkswagen/newsletter1/article-top-left-1px_dhhinz.png"
+            alt=""
           />
-        </td>
+        </th>
+
         <!-- line center -->
-        <td style="background-image: url('https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{boxColorHex}}/v1585254282/Volkswagen/newsletter1/line-1px.png')" class="article-tab-line {{this.type}}-text"></td>
-        <td width="32" class="">
+        <!--[if mso]>
+        <th
+          width="42"
+          height="26"
+          style="width:42px;height:26px;"
+          valign="bottom"
+          class="article-tab-line {{this.type}}-text"
+        >
+        <![endif]-->
+      
+        <!--[if !mso]>-->
+        <th
+          height="26"
+          style="height:26px; background:url(https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{boxColorHex}}/Volkswagen/newsletter1/line-42-1px-96dpi_r1hupo.png) repeat-x;"
+          valign="bottom"
+          class="article-tab-line {{this.type}}-text"
+          >
+        <!--<![endif]-->
+          <!--[if mso]>
+          <img
+              height="26"
+              width="42"
+              style="height:26px;width:42px;"
+              class="float-left"
+              src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{boxColorHex}}/Volkswagen/newsletter1/line-42-1px-96dpi_r1hupo.png"
+              alt=""
+            />
+          <![endif]-->
+        </th>
+
+        <!-- corner icon -->
+        <th valign="bottom" width="32" height="26" style="width:32px; height:26px;">
           <!-- corner icon -->
           <img
-            class="article-top-icon"
+            height="16"
+            width="32"
+            style="width: 32px; height:16px;"
+            class="article-top-icon float-left"
             src="{{boxIconSrc}}"
             alt=""
           />
-        </td>
+        </th>
+
         <!-- line right -->
-        <td style="background-image: url('https://res.cloudinary.com/whynotearth/image/upload/co_rgb:{{boxColorHex}},e_colorize/v1585257348/Volkswagen/newsletter1/article-top-right-1px.png');" width="14" class="article-top-right"></td>
+        <th valign="bottom" width="14" height="26" style="width: 14px;" class="article-top-right">
+          <img
+            class="float-right"
+            width="14"
+            height="26"
+            style="width: 14px; height:26px;"
+            src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{boxColorHex}}/Volkswagen/newsletter1/line-hv-14-1px-96dpi_azfdfc.png"
+            alt=""
+          />
+        </th>
       </tr>
     </table>
   </columns>
 </row>
-<!--<![endif]-->
 
-<wrapper class="article-content {{this.type}}-border p-2">
-  <table class="callout">
-    <tr>
-      <th
-        class="callout-inner"
-        class="article-callout {{this.contentBoxClass}}"
-        style="border-left:1px solid #{{this.boxColorHex}}; border-right:1px solid #{{this.boxColorHex}}; border-bottom:1px solid #{{this.boxColorHex}}; border-top: none;"
-      >
-        {{> (lookup . 'contentPartial') }}
-      </th>
-      <th class="expander"></th>
-    </tr>
-  </table>
-</wrapper>
+
+<table class="wrapper article-content {{this.type}}-border" width="100%" style="width:100%;" cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td class="wrapper-inner">
+      <table class="callout" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <th
+            class="callout-inner"
+            class="article-callout {{this.contentBoxClass}}"
+            style="border-left:1px solid #{{this.boxColorHex}}; border-right:1px solid #{{this.boxColorHex}}; border-bottom:1px solid #{{this.boxColorHex}}; border-top: none;"
+          >
+            {{> (lookup . 'contentPartial') }}
+          </th>
+          <th class="expander"></th>
+        </tr>
+      </table>
+
+    </td>
+  </tr>
+</table>

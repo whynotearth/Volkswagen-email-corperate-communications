@@ -2,7 +2,7 @@
   background-image: url("https://res.cloudinary.com/whynotearth/image/upload/v1585485531/Volkswagen/newsletter1/sidebar-bg-gray_wxbuid.png");
   background-repeat: no-repeat;
   background-position: bottom 20px left 10px;
-  background-size: 126px auto;
+  background-size: 128px auto;
   @media all and (max-width: $global-breakpoint) {
     background: $light-gray !important;
     padding: 0 !important;
@@ -67,7 +67,8 @@
 
 .article-tab-line {
   background-repeat: repeat-x;
-  background-position: bottom 8px left;
+  background-position: bottom left;
+  background-size: auto 26px;
 }
 
 .article-top-right {
@@ -76,9 +77,6 @@
 }
 
 .article-top-icon {
-  width: 16px !important;
-  height: 16px !important;
-  padding-left: 8px;
   padding-top: 8px;
   vertical-align: middle;
 }

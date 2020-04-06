@@ -1,55 +1,100 @@
-<!--[if mso]>
-  <img
-  class="show-for-large"
-  src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{boxColorHex}}/l_text:Work%20Sans_14_bold:{{labelTitle}},co_rgb:{{boxColorHex}},g_west,x_36,y_-6/l_{{boxIconPath}}{{boxIconTransformations}}/Volkswagen/newsletter1/box-top-nobg_rrroq5.png"
-  alt=""
-  />
-<![endif]-->
-
-<!--[if !mso]><!-->
-<row class="hide-for-large2">
+<row>
   <columns class="pb-0">
 
-    <table class="w-100 layout-fixed">
-      <tr height="26">
-        <td width="200px">
-          <!-- line left -->
+    <table class="layout-fixed" cellspacing="0" cellpadding="0" border="0" width="100%" style="width:100%;">
+
+
+      <tr>
+        <th width="200" height="26" style="width:200px;height:26px;" valign="bottom">
+          <!-- line left - NOTE: 201.5 is outlook fix -->
           <img
-            width="200px"
+            width="201.5"
             height="26"
-            src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{boxColorHex}}/l_text:Work%20Sans_14_bold:PRIORITY,co_rgb:d84e4e,g_west,x_36,y_-2/v1585236221/Volkswagen/newsletter1/article-tab_hmh3aj.png"
+            style="width:200px; height:26px;"
+            src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{boxColorHex}}/l_text:Work%20Sans_28_bold:{{this.labelTitle}},co_rgb:d84e4e,g_west,x_72,y_-4/v1585236222/Volkswagen/newsletter1/curve-tab-200-26-96dpi-2x_vhrnwv.png"
             alt=""
           />
-        </td>
-        <!-- line center -->
-        <td style="background-image: url('https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{boxColorHex}}/v1585254282/Volkswagen/newsletter1/line-2px.png')" class="article-tab-line {{this.type}}-text"></td>
-        <td width="32" class="">
-          <!-- corner icon -->
+        </th>
+
+        <!-- line center: th outlook -->
+        <!--[if mso]>
+        <th
+          width="160"
+          height="26"
+          style="width:160px;height:26px;"
+          valign="bottom"
+          class="article-tab-line {{this.type}}-text"
+        >
+        <![endif]-->
+      
+        <!-- line center: th non-outlook + bg -->
+        <!--[if !mso]>-->
+        <th
+          height="26"
+          style="height:26px; background:url(https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{boxColorHex}}/Volkswagen/newsletter1/line-160px-2px-96dpi_rdzowd.png) repeat-x;"
+          valign="bottom"
+          class="article-tab-line {{this.type}}-text"
+          >
+        <!--<![endif]-->
+        
+        <!-- line center: img outlook -->
+        <!--[if mso]>
+        <img
+            height="26"
+            width="160"
+            style="height:26px;width:160px;"
+            class="float-left"
+            src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{boxColorHex}}/Volkswagen/newsletter1/line-160px-2px-96dpi_rdzowd.png"
+            alt=""
+          />
+        <![endif]-->
+          
+        </th>
+
+        <!-- corner icon -->
+        <th valign="bottom" width="32" height="26" style="width:32px; height:26px;">
           <img
-            class="article-top-icon"
+            height="16"
+            width="32"
+            style="width: 32px; height:16px;"
+            class="article-top-icon float-left"
             src="{{boxIconSrc}}"
             alt=""
           />
-        </td>
+        </th>
+
         <!-- line right -->
-        <td style="background-image: url('https://res.cloudinary.com/whynotearth/image/upload/co_rgb:{{boxColorHex}},e_colorize/v1585257348/Volkswagen/newsletter1/article-top-right-2px.png');" width="32" class="article-top-right"></td>
+        <th valign="bottom" width="32" height="26" style="width: 32px;" class="article-top-right">
+          <img
+            class="float-right"
+            width="32"
+            height="26"
+            style="width: 32px; height:26px;"
+            src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{boxColorHex}}/Volkswagen/newsletter1/line-hv-32-26-96dpi_lewyes.png"
+            alt=""
+          />
+        </th>
       </tr>
     </table>
   </columns>
 </row>
-<!--<![endif]-->
 
-<wrapper class="article-content {{this.type}}-border p-2">
-  <table class="callout">
-    <tr>
-      <th
-        class="callout-inner"
-        class="article-callout {{this.contentBoxClass}}"
-        style="border-left:2px solid #{{this.boxColorHex}}; border-right:2px solid #{{this.boxColorHex}}; border-bottom:2px solid #{{this.boxColorHex}}; border-top: none;"
-      >
-        {{> (lookup . 'contentPartial') }}
-      </th>
-      <th class="expander"></th>
-    </tr>
-  </table>
-</wrapper>
+<table class="wrapper article-content {{this.type}}-border" width="100%" style="width:100%;" cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td class="wrapper-inner">
+      <table class="callout" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <th
+            class="callout-inner"
+            class="article-callout {{this.contentBoxClass}}"
+            style="border-left:2px solid #{{this.boxColorHex}}; border-right:2px solid #{{this.boxColorHex}}; border-bottom:2px solid #{{this.boxColorHex}}; border-top: none;"
+          >
+            {{> (lookup . 'contentPartial') }}
+          </th>
+          <th class="expander"></th>
+        </tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
