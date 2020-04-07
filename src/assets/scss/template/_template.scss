@@ -164,7 +164,8 @@ hr {
   @media all and (max-width: $global-breakpoint) {
     &,
     * {
-      font-size: 36px;
+      font-size: 36px !important;
+      line-height: 40px !important;
     }
   }
 }
