@@ -161,7 +161,7 @@ hr {
     font-weight: bold;
     line-height: 44px;
   }
-  @media all and (max-width: $global-breakpoint) {
+  @media screen and (max-width: $global-breakpoint) {
     &,
     * {
       font-size: 36px !important;
@@ -239,7 +239,7 @@ hr {
     font-size: 9px;
     font-weight: 400;
     line-height: 1.4;
-    @media only screen and (max-width: #{$global-breakpoint}) {
+    @media screen and (max-width: #{$global-breakpoint}) {
       font-size: 16px !important;
       line-height: 20px !important;
     }
@@ -267,7 +267,7 @@ hr {
     font-size: 12px;
     font-weight: 600;
     line-height: 14px;
-    @media only screen and (max-width: #{$global-breakpoint}) {
+    @media screen and (max-width: #{$global-breakpoint}) {
       font-size: 22px !important;
       line-height: 26px !important;
     }
@@ -279,7 +279,7 @@ hr {
     font-size: 10px;
     font-weight: 600;
     line-height: 1.4;
-    @media only screen and (max-width: #{$global-breakpoint}) {
+    @media screen and (max-width: #{$global-breakpoint}) {
       font-size: 22px !important;
       line-height: 26px !important;
     }
@@ -302,7 +302,7 @@ hr {
     font-weight: 600;
     font-size: 9px;
     line-height: 1.4;
-    @media only screen and (max-width: #{$global-breakpoint}) {
+    @media screen and (max-width: #{$global-breakpoint}) {
       font-size: 16px !important;
       line-height: 20px !important;
     }
@@ -491,7 +491,7 @@ th {
   width: 0;
   line-height: 0;
 
-  @media only screen and (max-width: #{$global-breakpoint}) {
+  @media screen and (max-width: #{$global-breakpoint}) {
     display: block !important;
     width: auto !important;
     overflow: visible !important;
