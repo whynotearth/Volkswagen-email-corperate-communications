@@ -1,0 +1,9 @@
+{
+  "id": 100,
+  "headline": "title of article one",
+  "description": "description of article one",
+  "image": "https://placehold.it/92x92",
+  "category": {
+    "name": "Priority"
+  }
+}

@@ -30,6 +30,8 @@
 
     <spacer class="hide-for-large2" size="16"></spacer>
 
+    {{#if article1}}
+    {{#with article1}}
     <row>
       <columns>
         {{> article-bold type="priority" labelTitle="PRIORITY"
@@ -37,15 +39,18 @@
         contentPartial="article-content-1"
         boxIconTransformations=",h_16,w_16,g_east,x_40"
         boxIconPath="Volkswagen:newsletter1:Priority_dpmg21"
-        boxLabelTextPath="Volkswagen:newsletter1:label_priority"
         boxIconSrc="https://res.cloudinary.com/whynotearth/image/upload/w_128,h_64,c_pad,b_white/Volkswagen/newsletter1/Priority_dpmg21.png"
         }}
       </columns>
     </row>
+    {{/with}}
+    {{/if}}
 
     <table class="row">
       <tbody>
         <tr>
+          {{#if article2}}
+          {{#with article2}}
           <th class="small-12 large-6 columns first">
             <table cellspacing="0" cellpadding="0" border="0">
               <tr>
@@ -55,7 +60,6 @@
                   contentPartial="article-content-2"
                   boxIconTransformations=",h_16,w_16,g_east,x_22"
                   boxIconPath="Volkswagen:newsletter1:One_Team_cplk6n"
-                  boxLabelTextPath="Volkswagen:newsletter1:label_plant"
                   boxIconSrc="https://res.cloudinary.com/whynotearth/image/upload/w_128,h_64,c_pad,b_white/Volkswagen/newsletter1/Plant_fc01dz.png"
                   }}
                 </th>
@@ -63,11 +67,15 @@
               </tr>
             </table>
           </th>
+          {{/with}}
+          {{/if}}
 
           <th class="show-for-large" style="font-size: 28px; line-height: 0;">
             &nbsp;
           </th>
 
+          {{#if article3}}
+          {{#with article3}}
           <th class="small-12 large-6 columns last">
             <table cellspacing="0" cellpadding="0" border="0">
               <tr>
@@ -77,7 +85,6 @@
                   contentPartial="article-content-2"
                   boxIconTransformations=",h_16,w_16,g_east,x_22"
                   boxIconPath="Volkswagen:newsletter1:Plant_fc01dz"
-                  boxLabelTextPath="Volkswagen:newsletter1:label_plant"
                   boxIconSrc="https://res.cloudinary.com/whynotearth/image/upload/w_128,h_64,c_pad,b_white/Volkswagen/newsletter1/Plant_fc01dz.png"
                   }}
                 </th>
@@ -85,10 +92,14 @@
               </tr>
             </table>
           </th>
+          {{/with}}
+          {{/if}}
         </tr>
       </tbody>
     </table>
 
+    {{#if article4}}
+    {{#with article4}}
     <table class="row">
       <tbody>
         <tr>
@@ -101,7 +112,6 @@
                   contentPartial="article-content-3"
                   boxIconTransformations=",h_16,w_16,g_east,x_22"
                   boxIconPath="Volkswagen:newsletter1:Plant_fc01dz"
-                  boxLabelTextPath="Volkswagen:newsletter1:label_plant"
                   boxIconSrc="https://res.cloudinary.com/whynotearth/image/upload/w_128,h_64,c_pad,b_white/Volkswagen/newsletter1/Plant_fc01dz.png"
                   }}
                 </th>
@@ -112,9 +122,13 @@
         </tr>
       </tbody>
     </table>
+    {{/with}}
+    {{/if}}
   </columns>
 
+  {{#with article0}}
   {{> sidebar }}
+  {{/with}}
 </row>
 
 {{> footer }}
