@@ -2,8 +2,12 @@
   "id": 100,
   "headline": "title of article one",
   "description": "description of article one",
-  "image": "https://placehold.it/92x92",
+  "image": {
+    "url": "https://placehold.it/92x92"
+  },
   "category": {
-    "name": "Priority"
+    "name": "Plant",
+    "color": "8894a0",
+    "image": "https://res.cloudinary.com/whynotearth/image/upload/v1585211750/Volkswagen/newsletter1/Plant_fc01dz.png"
   }
 }

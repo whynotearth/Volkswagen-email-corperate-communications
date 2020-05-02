@@ -1,4 +1,8 @@
 {
   "headline": "Why are fans on the bridge running even though it’s cold outside?",
-  "description": "We utilized fans to help dry condensation on the bridge floor. You may occasionally see these fans running despite the cooler temperature."
+  "description": "We utilized fans to help dry condensation on the bridge floor. You may occasionally see these fans running despite the cooler temperature.",
+  "category": {
+    "name": "Answers at a glance",
+    "color": "000000"
+  }
 }
