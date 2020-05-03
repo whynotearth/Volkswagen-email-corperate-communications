@@ -28,105 +28,22 @@
 
     <spacer class="hide-for-large2" size="16"></spacer>
 
-    \{{#if article1}}
-    \{{#with article1}}
-    {{#if article1}}
-    {{#with article1}}
-    <row>
-      <columns>
-        {{> article-bold type="priority"
-        contentBoxClass="border-width-2"
-        contentPartial="article-content-1"
-        }}
-      </columns>
-    </row>
-    {{/with}}
-    {{/if}}
-    \{{/with}}
-    \{{/if}}
+    \{{#each articlesTop as |article| }}
+    {{#each articlesTop as |article| }}
+    {{> group-article-big article=article }}
+    {{/each}}
+    \{{/each}}
+    
+    
+    {{> group-article-double articles=articlesDouble }}
     
 
-    <table class="row">
-      <tbody>
-        <tr>
-          \{{#if article2}}
-          \{{#with article2}}
-          {{#if article2}}
-          {{#with article2}}
-          <th class="small-12 large-6 columns first">
-            <table cellspacing="0" cellpadding="0" border="0">
-              <tr>
-                <th>
-                  {{> article-light type="oneteam"
-                  contentBoxClass="border-width-1"
-                  contentPartial="article-content-2"
-                  }}
-                </th>
-                <th class="expander"></th>
-              </tr>
-            </table>
-          </th>
-          {{/with}}
-          {{/if}}
-          \{{/with}}
-          \{{/if}}
+    \{{#each articlesBottom as |article| }}
+    {{#each articlesBottom as |article| }}
+      {{> group-article-big article=article }}
+    {{/each}}
+    \{{/each}}
 
-          <th class="show-for-large" style="font-size: 28px; line-height: 0;">
-            &nbsp;
-          </th>
-
-          \{{#if article3}}
-          \{{#with article3}}
-          {{#if article3}}
-          {{#with article3}}
-          <th class="small-12 large-6 columns last">
-            <table cellspacing="0" cellpadding="0" border="0">
-              <tr>
-                <th>
-                  {{> article-light type="plant"
-                  contentBoxClass="border-width-1"
-                  contentPartial="article-content-2"
-                  }}
-                </th>
-                <th class="expander"></th>
-              </tr>
-            </table>
-          </th>
-          {{/with}}
-          {{/if}}
-          \{{/with}}
-          \{{/if}}
-        </tr>
-      </tbody>
-    </table>
-
-    \{{#if article4}}
-    \{{#with article4}}
-    {{#if article4}}
-    {{#with article4}}
-    <table class="row">
-      <tbody>
-        <tr>
-          <th class="small-12 large-12 columns first last">
-            <table cellspacing="0" cellpadding="0" border="0">
-              <tr>
-                <th>
-                  {{> article-light-big type="plant"
-                  boxColorHex="8894a0" contentBoxClass="border-width-1"
-                  contentPartial="article-content-3"
-                  }}
-                </th>
-                <th class="expander"></th>
-              </tr>
-            </table>
-          </th>
-        </tr>
-      </tbody>
-    </table>
-    {{/with}}
-    {{/if}}
-    \{{/with}}
-    \{{/if}}
   </columns>
 
   \{{#with article0}}

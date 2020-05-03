@@ -1,0 +1,44 @@
+[
+  {
+    "id": 100,
+    "headline": "title of article one",
+    "description": "description of article one",
+    "image": {
+      "url": "https://placehold.it/92x92"
+    },
+    "category": {
+      "slug": "priority",
+      "name": "Priority",
+      "color": "d84e4e",
+      "image": "https://res.cloudinary.com/whynotearth/image/upload/v1585211750/Volkswagen/newsletter1/Priority_dpmg21.png"
+    }
+  },
+  {
+    "id": 101,
+    "headline": "title of article two",
+    "description": "description of article one",
+    "image": {
+      "url": "https://placehold.it/92x92"
+    },
+    "category": {
+      "slug": "priority",
+      "name": "Priority",
+      "color": "d84e4e",
+      "image": "https://res.cloudinary.com/whynotearth/image/upload/v1585211750/Volkswagen/newsletter1/Priority_dpmg21.png"
+    }
+  },
+  {
+    "id": 102,
+    "headline": "title of article three",
+    "description": "description of article one",
+    "image": {
+      "url": "https://placehold.it/92x92"
+    },
+    "category": {
+      "slug": "plant",
+      "name": "Plant",
+      "color": "8894a0",
+      "image": "https://res.cloudinary.com/whynotearth/image/upload/v1585211750/Volkswagen/newsletter1/Plant_fc01dz.png"
+    }
+  }
+]
