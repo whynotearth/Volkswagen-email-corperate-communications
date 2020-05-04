@@ -29,13 +29,9 @@
     <spacer class="hide-for-large2" size="16"></spacer>
 
     \{{#each articlesTop }}
-    \{{#with this}}
     {{#each articlesTop }}
-    {{#with this}}
     {{> group-article-big }}
-    {{/with}}
     {{/each}}
-    \{{/with}}
     \{{/each}}
     
     \{{#with articlesDouble}}
@@ -43,6 +39,12 @@
     {{> group-article-double }}
     {{/with}}
     \{{/with}}
+
+    \{{#each articlesBottom }}
+    {{#each articlesBottom }}
+    {{> group-article-big }}
+    {{/each}}
+    \{{/each}}
 
   </columns>
 
