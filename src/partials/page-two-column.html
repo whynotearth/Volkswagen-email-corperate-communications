@@ -28,21 +28,21 @@
 
     <spacer class="hide-for-large2" size="16"></spacer>
 
-    \{{#each articlesTop as |article| }}
-    {{#each articlesTop as |article| }}
-    {{> group-article-big article=article }}
+    \{{#each articlesTop }}
+    \{{#with this}}
+    {{#each articlesTop }}
+    {{#with this}}
+    {{> group-article-big }}
+    {{/with}}
     {{/each}}
+    \{{/with}}
     \{{/each}}
     
-    
-    {{> group-article-double articles=articlesDouble }}
-    
-
-    \{{#each articlesBottom as |article| }}
-    {{#each articlesBottom as |article| }}
-      {{> group-article-big article=article }}
-    {{/each}}
-    \{{/each}}
+    \{{#with articlesDouble}}
+    {{#with articlesDouble}}
+    {{> group-article-double }}
+    {{/with}}
+    \{{/with}}
 
   </columns>
 

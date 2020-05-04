@@ -1,5 +1,5 @@
 <!-- priority article -->
-{{#if (equals article.category.slug 'priority')}} {{#with article}}
+{{#if (equals this.category.slug 'priority')}} {{#with this}}
 <row>
   <columns>
     {{> article-bold type="priority" contentBoxClass="border-width-2"
@@ -10,7 +10,7 @@
 <!-- end priority article -->
 
 <!-- non-priority article -->
-{{#if (not_equals article.category.slug 'priority')}} {{#with article}}
+{{#if (not_equals this.category.slug 'priority')}} {{#with this}}
 <table class="row">
   <tbody>
     <tr>
