@@ -1,0 +1,48 @@
+.article-one-team {
+    border: none;
+    /* One Team Background */
+
+    background: $oneteam-card-back;
+    /* Print Shadow */
+
+    box-shadow: 0 1px 0 1px #C7C7C7,
+                0 2px 0 2px  #CDCDCD,
+                0 3px 0 3px  #DDDDDD,
+                0 5px 0 4px #EAEAEA,
+                0 6px 0 5px #F6F6F6,
+                0 7px 0 6px #FCFCFC;
+    border-radius: 3px 3px 15px 15px;    
+    margin-top: 19px;
+    position: relative;    
+
+    padding-top: 80px;
+    padding-bottom: 4px;
+
+    
+}
+.oneteam-logo {    
+    width: 100%;
+    position: absolute;
+    top:-19px;    
+    .circle {
+        border: solid 4px $primary;
+        width: 87px;
+        height: 87px;    
+        border-radius: 50%;
+        margin: auto;
+        background: $white;
+        box-shadow: 0 0 0 6px $background;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 76px;
+            height: 67px;
+            border-radius: 50%;
+            margin: auto;
+        }
+    }
+}
+.oneteam-body {    
+    margin: 16px;
+}
