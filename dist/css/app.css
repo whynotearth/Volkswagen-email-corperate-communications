@@ -478,6 +478,12 @@ h2 {
 .plant-text {
   color: #8894a0; }
 
+.community-border {
+  border-color: #52ae31 !important; }
+
+.community-text {
+  color: #52ae31; }
+
 .em-high {
   opacity: 0.84; }
 
