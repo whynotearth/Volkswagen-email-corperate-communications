@@ -466,6 +466,12 @@ h2 {
 .print-text {
   color: #000000; }
 
+.priority-border {
+  border-color: #D84E4E !important; }
+
+.priority-text {
+  color: #D84E4E; }
+
 .plant-border {
   border-color: #8894a0 !important; }
 
