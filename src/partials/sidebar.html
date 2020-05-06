@@ -42,6 +42,7 @@
     </tr>
   </table>
 
+  {{for_backend "{{#if headline}}" ""}}
   <table class="callout">
     <tr>
       <th class="callout-inner py-0" bgcolor="#ededed" style="background-color: #ededed;">
@@ -57,7 +58,7 @@
     <tr>
       <th class="callout-inner" bgcolor="#ededed" style="background-color: #ededed;">
         <p class="mb-4 print-body-em sidebar-content--text">
-          Why are fans on the bridge running even though it’s cold outside?
+          {{for_backend "{{headline}}" headline }}
         </p>
       </th>
       <th class="expander"></th>
@@ -77,13 +78,13 @@
     <tr>
       <th class="callout-inner" bgcolor="#ededed" style="background-color: #ededed;">
         <p class="mb-0 body-small sidebar-content--text">
-          We utilized fans to help dry condensation on the bridge floor. You may occasionally see these fans running
-          despite the cooler temperature.
+          {{for_backend "{{description}}" description }}
         </p>
       </th>
       <th class="expander"></th>
     </tr>
   </table>
+  {{for_backend "{{/if}}" ""}}
 
   <!--[if !mso]><!-->
   <div class="hide-for-large2">

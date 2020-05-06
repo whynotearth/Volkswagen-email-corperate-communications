@@ -1,0 +1,52 @@
+<table class="row">
+  <tbody>
+    <tr>
+      
+      {{for_backend "{{#if this.[0]}}" ""}}
+      {{for_backend "{{#with this.[0]}}" ""}}
+
+      {{#if this.[0]}}
+      {{#with this.[0]}}
+      <th class="small-12 large-6 columns first">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <th>
+              {{> article-light contentBoxClass="border-width-1"
+              contentPartial="article-content-2" }}
+            </th>
+            <th class="expander"></th>
+          </tr>
+        </table>
+      </th>
+      {{/with}}
+      {{/if}}
+      {{for_backend "{{/with}}" ""}}
+      {{for_backend "{{/if}}" ""}}
+
+      <th class="show-for-large" style="font-size: 28px; line-height: 0;">
+        &nbsp;
+      </th>
+      
+      {{for_backend "{{#if this.[1]}}" ""}}
+      {{for_backend "{{#with this.[1]}}" ""}}
+      {{#if this.[1]}}
+      {{#with this.[1]}}
+      <th class="small-12 large-6 columns last">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <th>
+              {{> article-light contentBoxClass="border-width-1"
+              contentPartial="article-content-2" }}
+            </th>
+            <th class="expander"></th>
+          </tr>
+        </table>
+      </th>
+      {{/with}}
+      {{/if}}
+      {{for_backend "{{/with}}" ""}}
+      {{for_backend "{{/if}}" ""}}
+      
+    </tr>
+  </tbody>
+</table>

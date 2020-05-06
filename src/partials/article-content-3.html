@@ -1,48 +1,18 @@
 <h2 class="print-title print-text em-high">
-  Annual computer-based refresher training now available in SuccessFactors
+  {{for_backend "{{headline}}" headline }}
 </h2>
 <table>
   <tr>
-    <td class="em-high body-small">
-      <p>
-        We received more than 200 entries during our newsletter-renaming
-        submission period. Our committee narrowed it down to six choices, but we
-        want you to decide the ultimate winner!
-      </p>
-      <h3 class="body-em-text mb-0">
-        What should we name our Company newsletter?
-      </h3>
-      <ul style="margin: 0; padding: 0;" align="left" type="disc">
-        <li class="print-body">
-          <span class="print-body">
-            Daily Drive
-          </span>
-        </li>
-        <li class="print-body">
-          <span class="print-body">
-            Accelerate
-          </span>
-        </li>
-        <li class="print-body">
-          <span class="print-body">
-            The Broadcast
-          </span>
-        </li>
-        <li class="print-body">
-          <span class="print-body">
-            V-Dub Hub
-          </span>
-        </li>
-      </ul>
-      <p>
-        Vote by scanning the QR code or by visiting pollev.com/vwchat!
-        <span class="body-em-text">Voting ends Friday, March 20.</span>
-      </p>
+    <td class="em-high body-small whitespace-pre-line break-words">
+      {{for_backend "{{description}}" description }}
     </td>
     <td width="100">
       <img
+        width="92"
+        height="92"
+        style="width: 92px; height: 92px;"
         class="pl-2 pb-2 d-inline ml-auto"
-        src="https://placehold.it/92x92"
+        src="{{for_backend "{{image.url}}" image.url}}"
         alt=""
       />
     </td>

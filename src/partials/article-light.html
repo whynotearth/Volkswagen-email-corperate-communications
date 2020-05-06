@@ -10,7 +10,7 @@
             style="width:120px; height:26px;"
             width="120"
             height="26"
-            src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{boxColorHex}}/l_{{boxLabelTextPath}},co_rgb:{{boxColorHex}},g_west,x_54,y_-2/v1585236222/Volkswagen/newsletter1/article-top-left-1px_dhhinz.png"
+            src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{category.color}}/l_Volkswagen:newsletter1:label_{{category.slug}},co_rgb:{{category.color}},g_west,x_54,y_-2/v1585236222/Volkswagen/newsletter1/article-top-left-1px_dhhinz.png"
             alt=""
           />
         </th>
@@ -22,16 +22,16 @@
           height="26"
           style="width:42px;height:26px;"
           valign="bottom"
-          class="article-tab-line {{this.type}}-text"
+          class="article-tab-line {{for_backend "{{category.slug}}" category.slug}}-text"
         >
         <![endif]-->
       
         <!--[if !mso]>-->
         <th
           height="26"
-          style="height:26px; background:url(https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{boxColorHex}}/Volkswagen/newsletter1/line-42-1px-96dpi_r1hupo.png) repeat-x;"
+          style="height:26px; background:url(https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{category.color}}/Volkswagen/newsletter1/line-42-1px-96dpi_r1hupo.png) repeat-x;"
           valign="bottom"
-          class="article-tab-line {{this.type}}-text"
+          class="article-tab-line {{for_backend "{{category.slug}}" category.slug}}-text"
           >
         <!--<![endif]-->
           <!--[if mso]>
@@ -40,7 +40,7 @@
               width="42"
               style="height:26px;width:42px;"
               class="float-left"
-              src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{boxColorHex}}/Volkswagen/newsletter1/line-42-1px-96dpi_r1hupo.png"
+              src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{category.color}}/Volkswagen/newsletter1/line-42-1px-96dpi_r1hupo.png"
               alt=""
             />
           <![endif]-->
@@ -54,7 +54,7 @@
             width="32"
             style="width: 32px; height:16px;"
             class="article-top-icon float-left"
-            src="{{boxIconSrc}}"
+            src="{{for_backend "{{cloudinary_transform category.image 'w_128,h_64,c_pad,b_white'}}" (cloudinary_transform category.image 'w_128,h_64,c_pad,b_white') }}"
             alt=""
           />
         </th>
@@ -66,7 +66,7 @@
             width="14"
             height="26"
             style="width: 14px; height:26px;"
-            src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{boxColorHex}}/Volkswagen/newsletter1/line-hv-14-1px-96dpi_azfdfc.png"
+            src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{category.color}}/Volkswagen/newsletter1/line-hv-14-1px-96dpi_azfdfc.png"
             alt=""
           />
         </th>
@@ -76,7 +76,7 @@
 </row>
 
 
-<table class="wrapper article-content {{this.type}}-border" width="100%" style="width:100%;" cellspacing="0" cellpadding="0" border="0">
+<table class="wrapper article-content {{for_backend "{{category.slug}}" category.slug}}-border" width="100%" style="width:100%;" cellspacing="0" cellpadding="0" border="0">
   <tr>
     <td class="wrapper-inner">
       <table class="callout" cellspacing="0" cellpadding="0" border="0">
@@ -84,7 +84,7 @@
           <th
             class="callout-inner"
             class="article-callout {{this.contentBoxClass}}"
-            style="border-left:1px solid #{{this.boxColorHex}}; border-right:1px solid #{{this.boxColorHex}}; border-bottom:1px solid #{{this.boxColorHex}}; border-top: none;"
+            style="border-left:1px solid #{{category.color}}; border-right:1px solid #{{category.color}}; border-bottom:1px solid #{{category.color}}; border-top: none;"
           >
             {{> (lookup . 'contentPartial') }}
           </th>
