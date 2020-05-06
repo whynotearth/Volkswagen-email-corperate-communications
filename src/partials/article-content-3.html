@@ -6,6 +6,9 @@
     <td class="em-high body-small whitespace-pre-line break-words">
       {{for_backend "{{description}}" description }}
     </td>
+
+    {{for_backend "{{#if image.url}}" ""}}
+    {{#if image.url}}
     <td width="100">
       <img
         width="92"
@@ -16,5 +19,7 @@
         alt=""
       />
     </td>
+    {{/if}}
+    {{for_backend "{{/if}}" ""}}
   </tr>
 </table>
