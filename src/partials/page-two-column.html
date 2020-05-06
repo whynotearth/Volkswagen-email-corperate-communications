@@ -28,31 +28,31 @@
 
     <spacer class="hide-for-large2" size="16"></spacer>
 
-    \{{#each articlesTop }}
+    {{for_backend "{{#each articlesTop }}" ""}}
     {{#each articlesTop }}
     {{> group-article-big }}
     {{/each}}
-    \{{/each}}
+    {{for_backend "{{/each}}" ""}}
     
-    \{{#with articlesDouble}}
+    {{for_backend "{{#with articlesDouble}}" ""}}
     {{#with articlesDouble}}
     {{> group-article-double }}
     {{/with}}
-    \{{/with}}
+    {{for_backend "{{/with}}" ""}}
 
-    \{{#each articlesBottom }}
+    {{for_backend "{{#each articlesBottom }}" ""}}
     {{#each articlesBottom }}
     {{> group-article-big }}
     {{/each}}
-    \{{/each}}
+    {{for_backend "{{/each}}" ""}}
 
   </columns>
 
-  \{{#with article0}}
+  {{for_backend "{{#with article0}}" ""}}
   {{#with article0}}
   {{> sidebar }}
   {{/with}}
-  \{{/with}}
+  {{for_backend "{{/with}}" ""}}
 </row>
 
 {{> footer }}

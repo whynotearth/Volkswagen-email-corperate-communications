@@ -2,8 +2,9 @@
   <tbody>
     <tr>
       
-      \{{#if this.[0]}}
-      \{{#with this.[0]}}
+      {{for_backend "{{#if this.[0]}}" ""}}
+      {{for_backend "{{#with this.[0]}}" ""}}
+
       {{#if this.[0]}}
       {{#with this.[0]}}
       <th class="small-12 large-6 columns first">
@@ -19,15 +20,15 @@
       </th>
       {{/with}}
       {{/if}}
-      \{{/with}}
-      \{{/if}}
+      {{for_backend "{{/with}}" ""}}
+      {{for_backend "{{/if}}" ""}}
 
       <th class="show-for-large" style="font-size: 28px; line-height: 0;">
         &nbsp;
       </th>
       
-      \{{#if this.[1]}}
-      \{{#with this.[1]}}
+      {{for_backend "{{#if this.[1]}}" ""}}
+      {{for_backend "{{#with this.[1]}}" ""}}
       {{#if this.[1]}}
       {{#with this.[1]}}
       <th class="small-12 large-6 columns last">
@@ -43,8 +44,8 @@
       </th>
       {{/with}}
       {{/if}}
-      \{{/with}}
-      \{{/if}}
+      {{for_backend "{{/with}}" ""}}
+      {{for_backend "{{/if}}" ""}}
       
     </tr>
   </tbody>

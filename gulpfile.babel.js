@@ -13,6 +13,13 @@ import merge    from 'merge-stream';
 import beep     from 'beepbeep';
 import colors   from 'colors';
 
+const result = require('dotenv').config()
+ 
+if (result.error) {
+  throw result.error
+}
+
+
 const $ = plugins();
 
 // Look for the --production flag
@@ -109,6 +116,7 @@ function server(done) {
 
 // Watch for file changes
 function watch() {
+  gulp.watch('src/pages/**/*.html').on('all', gulp.series(pages, inline, browser.reload));
   gulp.watch('src/pages/**/*.html').on('all', gulp.series(pages, inline, browser.reload));
   gulp.watch(['src/layouts/**/*', 'src/partials/**/*']).on('all', gulp.series(resetPages, pages, inline, browser.reload));
   gulp.watch(['../scss/**/*.scss', 'src/assets/scss/**/*.scss']).on('all', gulp.series(resetPages, sass, pages, inline, browser.reload));

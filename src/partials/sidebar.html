@@ -42,7 +42,7 @@
     </tr>
   </table>
 
-  \{{#if headline}}
+  {{for_backend "{{#if headline}}" ""}}
   <table class="callout">
     <tr>
       <th class="callout-inner py-0" bgcolor="#ededed" style="background-color: #ededed;">
@@ -84,7 +84,7 @@
       <th class="expander"></th>
     </tr>
   </table>
-  \{{/if}}
+  {{for_backend "{{/if}}" ""}}
 
   <!--[if !mso]><!-->
   <div class="hide-for-large2">

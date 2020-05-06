@@ -22,7 +22,7 @@
           height="26"
           style="width:42px;height:26px;"
           valign="bottom"
-          class="article-tab-line {{category.slug}}-text"
+          class="article-tab-line {{for_backend "{{category.slug}}" category.slug}}-text"
         >
         <![endif]-->
       
@@ -31,7 +31,7 @@
           height="26"
           style="height:26px; background:url(https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{category.color}}/Volkswagen/newsletter1/line-42-1px-96dpi_r1hupo.png) repeat-x;"
           valign="bottom"
-          class="article-tab-line {{category.slug}}-text"
+          class="article-tab-line {{for_backend "{{category.slug}}" category.slug}}-text"
           >
         <!--<![endif]-->
           <!--[if mso]>
@@ -54,7 +54,7 @@
             width="32"
             style="width: 32px; height:16px;"
             class="article-top-icon float-left"
-            src="{{cloudinary_transform category.image 'w_128,h_64,c_pad,b_white'}}"
+            src="{{for_backend "{{cloudinary_transform category.image 'w_128,h_64,c_pad,b_white'}}" (cloudinary_transform category.image 'w_128,h_64,c_pad,b_white') }}"
             alt=""
           />
         </th>
@@ -76,7 +76,7 @@
 </row>
 
 
-<table class="wrapper article-content {{category.slug}}-border" width="100%" style="width:100%;" cellspacing="0" cellpadding="0" border="0">
+<table class="wrapper article-content {{for_backend "{{category.slug}}" category.slug}}-border" width="100%" style="width:100%;" cellspacing="0" cellpadding="0" border="0">
   <tr>
     <td class="wrapper-inner">
       <table class="callout" cellspacing="0" cellpadding="0" border="0">

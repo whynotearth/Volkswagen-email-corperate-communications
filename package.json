@@ -25,6 +25,7 @@
     "beepbeep": "^1.2.0",
     "browser-sync": "^2.11.0",
     "colors": "^1.1.2",
+    "dotenv": "^8.2.0",
     "gulp": "^4.0.0",
     "gulp-awspublish": "^3.0.1",
     "gulp-cli": "^1.1.0",

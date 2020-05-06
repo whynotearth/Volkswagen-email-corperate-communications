@@ -11,7 +11,7 @@
             width="201.5"
             height="26"
             style="width:200px; height:26px;"
-            src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:\{{category.color}}/l_Volkswagen:newsletter1:label_\{{category.slug}},co_rgb:d84e4e,g_west,x_72,y_-2/v1585236222/Volkswagen/newsletter1/curve-tab-200-26-96dpi-2x_vhrnwv.png"
+            src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{for_backend '{{category.color}}' category.color}}/l_Volkswagen:newsletter1:label_{{for_backend '{{category.slug}}' category.slug}},co_rgb:d84e4e,g_west,x_72,y_-2/v1585236222/Volkswagen/newsletter1/curve-tab-200-26-96dpi-2x_vhrnwv.png"
             alt=""
           />
         </th>
@@ -23,7 +23,7 @@
           height="26"
           style="width:160px;height:26px;"
           valign="bottom"
-          class="article-tab-line {{category.slug}}-text"
+          class="article-tab-line {{for_backend "{{category.slug}}" category.slug}}-text"
         >
         <![endif]-->
       
@@ -31,9 +31,9 @@
         <!--[if !mso]>-->
         <th
           height="26"
-          style="height:26px; background:url(https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:\{{category.color}}/Volkswagen/newsletter1/line-160px-2px-96dpi_rdzowd.png) repeat-x;"
+          style="height:26px; background:url(https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{for_backend '{{category.color}}' category.color}}/Volkswagen/newsletter1/line-160px-2px-96dpi_rdzowd.png) repeat-x;"
           valign="bottom"
-          class="article-tab-line \{{category.slug}}-text"
+          class="article-tab-line {{for_backend '{{category.slug}}' category.slug}}-text"
           >
         <!--<![endif]-->
         
@@ -44,7 +44,7 @@
             width="160"
             style="height:26px;width:160px;"
             class="float-left"
-            src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:\{{category.color}}/Volkswagen/newsletter1/line-160px-2px-96dpi_rdzowd.png"
+            src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{for_backend '{{category.color}}' category.color}}/Volkswagen/newsletter1/line-160px-2px-96dpi_rdzowd.png"
             alt=""
           />
         <![endif]-->
@@ -58,7 +58,7 @@
             width="32"
             style="width: 32px; height:16px;"
             class="article-top-icon float-left"
-            src="\{{cloudinary_transform category.image 'w_128,h_64,c_pad,b_white'}}"
+            src="{{for_backend "{{cloudinary_transform category.image 'w_128,h_64,c_pad,b_white'}}" (cloudinary_transform category.image 'w_128,h_64,c_pad,b_white') }}"
             alt=""
           />
         </th>
@@ -70,7 +70,7 @@
             width="32"
             height="26"
             style="width: 32px; height:26px;"
-            src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:\{{category.color}}/Volkswagen/newsletter1/line-hv-32-26-96dpi_lewyes.png"
+            src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{for_backend '{{category.color}}' category.color}}/Volkswagen/newsletter1/line-hv-32-26-96dpi_lewyes.png"
             alt=""
           />
         </th>
@@ -79,7 +79,7 @@
   </columns>
 </row>
 
-<table class="wrapper article-content \{{category.slug}}-border" width="100%" style="width:100%;" cellspacing="0" cellpadding="0" border="0">
+<table class="wrapper article-content {{for_backend '{{category.slug}}' category.slug}}-border" width="100%" style="width:100%;" cellspacing="0" cellpadding="0" border="0">
   <tr>
     <td class="wrapper-inner">
       <table class="callout" cellspacing="0" cellpadding="0" border="0">
@@ -87,7 +87,7 @@
           <th
             class="callout-inner"
             class="article-callout \{{this.contentBoxClass}}"
-            style="border-left:2px solid #\{{category.color}}; border-right:2px solid #\{{category.color}}; border-bottom:2px solid #\{{category.color}}; border-top: none;"
+            style="border-left:2px solid #{{for_backend '{{category.color}}' category.color}}; border-right:2px solid #{{for_backend '{{category.color}}' category.color}}; border-bottom:2px solid #{{for_backend '{{category.color}}' category.color}}; border-top: none;"
           >
             {{> (lookup . 'contentPartial') }}
           </th>
