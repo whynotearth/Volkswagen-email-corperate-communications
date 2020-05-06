@@ -1,3 +1,5 @@
+{{for_backend "{{#if image.url}}" ""}}
+{{#if image.url}}
 <table class="wrapper">
   <tr>
     <th class="wrapper-inner">
@@ -12,8 +14,9 @@
     </th>
   </tr>
 </table>
-
 <spacer size="20"></spacer>
+{{/if}}
+{{for_backend "{{/if}}" ""}}
 
 <table class="em-high body-small">
   <tr>
