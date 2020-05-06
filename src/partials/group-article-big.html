@@ -1,16 +1,16 @@
 <!-- priority article -->
-{{#if (equals this.category.slug 'priority')}} {{#with this}}
+\{{#if (equals this.category.slug 'priority')}}
 <row>
   <columns>
     {{> article-bold type="priority" contentBoxClass="border-width-2"
     contentPartial="article-content-1" }}
   </columns>
 </row>
-{{/with}} {{/if}}
+\{{/if}}
 <!-- end priority article -->
 
 <!-- non-priority article -->
-{{#if (not_equals this.category.slug 'priority')}} {{#with this}}
+\{{#if (not_equals this.category.slug 'priority')}}
 <table class="row">
   <tbody>
     <tr>
@@ -18,7 +18,7 @@
         <table cellspacing="0" cellpadding="0" border="0">
           <tr>
             <th>
-              {{> article-light-big type="plant" boxColorHex="8894a0"
+              {{> article-light-big type="plant"
               contentBoxClass="border-width-1"
               contentPartial="article-content-3" }}
             </th>
@@ -29,5 +29,5 @@
     </tr>
   </tbody>
 </table>
-{{/with}} {{/if}}
+\{{/if}}
 <!-- end non-priority article -->
