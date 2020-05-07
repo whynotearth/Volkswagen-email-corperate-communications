@@ -12,8 +12,8 @@ Note: yarn start is faster but it's output is not reliable at all.
 
 ## Get output for backend
 
-When you want to get an output to use in backend, you should change environment variable FOR_BACKEND=true in .env file and build again.  
-There is a helper that works with this variable, When you enable this environment variable, `for_backend` helper returns it's first argument instead of second.
+When you want to get an output to use in backend, use `yarn build-backend`.  
+When you build for backend, `for_backend` helper returns it's first argument instead of second.
 
 ## Test backend output with a sample data
 

@@ -14,13 +14,6 @@ import beep     from 'beepbeep';
 import replace  from 'gulp-replace';
 import colors   from 'colors';
 
-const result = require('dotenv').config()
- 
-if (result.error) {
-  throw result.error
-}
-
-
 const $ = plugins();
 
 // Look for the --production flag
