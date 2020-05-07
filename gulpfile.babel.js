@@ -11,14 +11,8 @@ import siphon   from 'siphon-media-query';
 import path     from 'path';
 import merge    from 'merge-stream';
 import beep     from 'beepbeep';
+import replace  from 'gulp-replace';
 import colors   from 'colors';
-
-const result = require('dotenv').config()
- 
-if (result.error) {
-  throw result.error
-}
-
 
 const $ = plugins();
 
@@ -67,6 +61,8 @@ function pages() {
       data: 'src/data'
     }))
     .pipe(inky())
+    // Fix replace escaped single quote with single quote
+    .pipe(replace(/&#x27;/g, "'"))
     .pipe(gulp.dest('dist'));
 }
 
