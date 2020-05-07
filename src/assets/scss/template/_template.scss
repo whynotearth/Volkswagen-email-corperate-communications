@@ -106,7 +106,12 @@ hr {
 }
 
 .brand-gradient-1 {
-  background: radial-gradient(50% 49.2% at 0% 0.8%, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), $primary;
+  background: radial-gradient(
+      50% 49.2% at 0% 0.8%,
+      rgba(255, 255, 255, 0.25) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    $primary;
 }
 
 .primary {
@@ -432,40 +437,52 @@ hr {
   box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
 }
 .shadow-1--no-top {
-  box-shadow: 0px 3px 3px rgba($black, 0.075), 0px 3px 2px rgba($black, 0.08), 0px 3px 2px rgba($black, 0.045);
+  box-shadow: 0px 3px 3px rgba($black, 0.075), 0px 3px 2px rgba($black, 0.08),
+    0px 3px 2px rgba($black, 0.045);
 }
 .shadow-1 {
-  box-shadow: 0px 1px 3px rgba($black, 0.2), 0px 2px 2px rgba($black, 0.12), 0px 0px 2px rgba($black, 0.14);
+  box-shadow: 0px 1px 3px rgba($black, 0.2), 0px 2px 2px rgba($black, 0.12),
+    0px 0px 2px rgba($black, 0.14);
 }
 .shadow-2 {
-  box-shadow: 0px 1px 5px rgba($black, 0.2), 0px 3px 4px rgba($black, 0.12), 0px 2px 4px rgba($black, 0.14);
+  box-shadow: 0px 1px 5px rgba($black, 0.2), 0px 3px 4px rgba($black, 0.12),
+    0px 2px 4px rgba($black, 0.14);
 }
 .shadow-3 {
-  box-shadow: 0px 1px 8px rgba($black, 0.2), 0px 3px 4px rgba($black, 0.12), 0px 3px 3px rgba($black, 0.14);
+  box-shadow: 0px 1px 8px rgba($black, 0.2), 0px 3px 4px rgba($black, 0.12),
+    0px 3px 3px rgba($black, 0.14);
 }
 .shadow-4 {
-  box-shadow: 0px 1px 10px rgba($black, 0.2), 0px 4px 5px rgba($black, 0.12), 0px 2px 4px rgba($black, 0.14);
+  box-shadow: 0px 1px 10px rgba($black, 0.2), 0px 4px 5px rgba($black, 0.12),
+    0px 2px 4px rgba($black, 0.14);
 }
 .shadow-6 {
-  box-shadow: 0px 3px 5px rgba($black, 0.2), 0px 1px 18px rgba($black, 0.12), 0px 6px 10px rgba($black, 0.14);
+  box-shadow: 0px 3px 5px rgba($black, 0.2), 0px 1px 18px rgba($black, 0.12),
+    0px 6px 10px rgba($black, 0.14);
 }
 .shadow-8 {
-  box-shadow: 0px 4px 5px rgba($black, 0.2), 0px 3px 14px rgba($black, 0.12), 0px 8px 10px rgba($black, 0.14);
+  box-shadow: 0px 4px 5px rgba($black, 0.2), 0px 3px 14px rgba($black, 0.12),
+    0px 8px 10px rgba($black, 0.14);
 }
 .shadow-9 {
-  box-shadow: 0px 5px 6px rgba($black, 0.2), 0px 3px 16px rgba($black, 0.12), 0px 9px 12px rgba($black, 0.14);
+  box-shadow: 0px 5px 6px rgba($black, 0.2), 0px 3px 16px rgba($black, 0.12),
+    0px 9px 12px rgba($black, 0.14);
 }
 .shadow-12 {
-  box-shadow: 0px 7px 8px rgba($black, 0.2), 0px 5px 22px rgba($black, 0.12), 0px 12px 17px rgba($black, 0.14);
+  box-shadow: 0px 7px 8px rgba($black, 0.2), 0px 5px 22px rgba($black, 0.12),
+    0px 12px 17px rgba($black, 0.14);
 }
 .shadow-16 {
-  box-shadow: 0px 8px 10px rgba($black, 0.2), 0px 6px 30px rgba($black, 0.12), 0px 16px 24px rgba($black, 0.14);
+  box-shadow: 0px 8px 10px rgba($black, 0.2), 0px 6px 30px rgba($black, 0.12),
+    0px 16px 24px rgba($black, 0.14);
 }
 .shadow-24 {
-  box-shadow: 0px 11px 15px rgba($black, 0.2), 0px 9px 46px rgba($black, 0.12), 0px 24px 38px rgba($black, 0.14);
+  box-shadow: 0px 11px 15px rgba($black, 0.2), 0px 9px 46px rgba($black, 0.12),
+    0px 24px 38px rgba($black, 0.14);
 }
 .shadow-n8 {
-  box-shadow: 0px -4px 5px rgba($black, 0.2), 0px -3px 14px rgba($black, 0.12), 0px -8px 10px rgba($black, 0.14);
+  box-shadow: 0px -4px 5px rgba($black, 0.2), 0px -3px 14px rgba($black, 0.12),
+    0px -8px 10px rgba($black, 0.14);
 }
 
 // fix foundation center tag bug
@@ -501,7 +518,6 @@ th {
   }
 }
 
-
 .font-size-0 {
   font-size: 0 !important;
 }
@@ -514,4 +530,7 @@ th {
 }
 .break-words {
   overflow-wrap: break-word;
+}
+.shadow-bg {
+  background-color: $shadow;
 }
