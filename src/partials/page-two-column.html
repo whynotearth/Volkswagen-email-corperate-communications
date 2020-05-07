@@ -30,7 +30,14 @@
 
     {{for_backend "{{#each articlesTop }}" ""}}
     {{#each articlesTop }}
-    {{> group-article-big }}
+    <!-- priority article -->
+    <row>
+      <columns>
+        {{> article-bold contentBoxClass="border-width-2"
+        contentPartial="article-content-1" }}
+      </columns>
+    </row>
+    <!-- end priority article -->
     {{/each}}
     {{for_backend "{{/each}}" ""}}
     
@@ -42,17 +49,30 @@
 
     {{for_backend "{{#each articlesBottom }}" ""}}
     {{#each articlesBottom }}
-    {{> group-article-big }}
+    <table class="row">
+      <tbody>
+        <tr>
+          <th class="small-12 large-12 columns first last">
+            <table cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <th>
+                  {{> article-light-big
+                  contentBoxClass="border-width-1"
+                  contentPartial="article-content-3" }}
+                </th>
+                <th class="expander"></th>
+              </tr>
+            </table>
+          </th>
+        </tr>
+      </tbody>
+    </table>
     {{/each}}
     {{for_backend "{{/each}}" ""}}
 
   </columns>
 
-  {{for_backend "{{#with article0}}" ""}}
-  {{#with article0}}
   {{> sidebar }}
-  {{/with}}
-  {{for_backend "{{/with}}" ""}}
 </row>
 
 {{> footer }}
