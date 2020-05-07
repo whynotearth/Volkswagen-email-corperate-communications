@@ -1,0 +1,84 @@
+{
+  "general": {
+    "title": "Project Blue Delta",
+    "date": "Thursday | May. 7, 2020",
+    "print_url": ""
+  },
+  "article0": {},
+  "articlesTop": [
+    {
+      "id": 57,
+      "headline": "article 1",
+      "description": "desc 1",
+      "image": {
+        "url": ""
+      },
+      "category": {
+        "slug": "priority",
+        "name": "Priority",
+        "color": "d84e4e",
+        "image": "https://res.cloudinary.com/whynotearth/image/upload/v1585211750/Volkswagen/newsletter1/Priority_dpmg21.png"
+      }
+    }
+  ],
+  "articlesDouble": [
+    {
+      "id": 58,
+      "headline": "article 2",
+      "description": "desc 2",
+      "image": {
+        "url": ""
+      },
+      "category": {
+        "slug": "plant",
+        "name": "Plant",
+        "color": "8894a0",
+        "image": "https://res.cloudinary.com/whynotearth/image/upload/v1585211750/Volkswagen/newsletter1/Plant_fc01dz.png"
+      }
+    },
+    {
+      "id": 59,
+      "headline": "article 3",
+      "description": "desc 3",
+      "image": {
+        "url": ""
+      },
+      "category": {
+        "slug": "plant",
+        "name": "Plant",
+        "color": "8894a0",
+        "image": "https://res.cloudinary.com/whynotearth/image/upload/v1585211750/Volkswagen/newsletter1/Plant_fc01dz.png"
+      }
+    }
+  ],
+  "articlesBottom": [
+    {
+      "id": 62,
+      "headline": "article 4",
+      "description": "desc 4",
+      "image": {
+        "url": ""
+      },
+      "category": {
+        "slug": "plant",
+        "name": "Plant",
+        "color": "8894a0",
+        "image": "https://res.cloudinary.com/whynotearth/image/upload/v1585211750/Volkswagen/newsletter1/Plant_fc01dz.png"
+      }
+    },
+    {
+      "id": 63,
+      "headline": "article 5",
+      "description": "desc 5",
+      "image": {
+        "url": ""
+      },
+      "category": {
+        "slug": "plant",
+        "name": "Plant",
+        "color": "8894a0",
+        "image": "https://res.cloudinary.com/whynotearth/image/upload/v1585211750/Volkswagen/newsletter1/Plant_fc01dz.png"
+      }
+    }
+  ]
+}
