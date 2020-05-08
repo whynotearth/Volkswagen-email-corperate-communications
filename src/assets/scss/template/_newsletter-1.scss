@@ -66,16 +66,16 @@
 }
 .article-callout {
   &.border-width-1 {
-    border-left: 1px solid $plant !important;
-    border-right: 1px solid $plant !important;
-    border-bottom: 1px solid $plant !important;
-    border-top: none !important;
+    border-left: 1px solid $plant;
+    border-right: 1px solid $plant;
+    border-bottom: 1px solid $plant;
+    border-top: none;
   }
   &.border-width-2 {
-    border-left: 2px solid $priority !important;
-    border-right: 2px solid $priority !important;
-    border-bottom: 2px solid $priority !important;
-    border-top: none !important;
+    border-left: 2px solid $priority;
+    border-right: 2px solid $priority;
+    border-bottom: 2px solid $priority;
+    border-top: none;
   }
 }
 

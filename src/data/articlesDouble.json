@@ -16,13 +16,13 @@
   {
     "id": 100,
     "headline": "title of article middle 2",
-    "description": "description of article one",
+    "description": "description of article three",
     "image": {
       "url": "https://placehold.it/92x92"
     },
     "category": {
-      "slug": "plant",
-      "name": "Plant",
+      "slug": "community",
+      "name": "Community",
       "color": "8894a0",
       "image": "https://res.cloudinary.com/whynotearth/image/upload/v1585211750/Volkswagen/newsletter1/Plant_fc01dz.png"
     }
