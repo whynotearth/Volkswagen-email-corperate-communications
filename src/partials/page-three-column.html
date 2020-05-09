@@ -4,8 +4,8 @@
     small="12"
     large="9"
     class="main-column"
-    width="424"
-    style="width: 424px;"
+    width="100%"
+    style="width: 100%;"
     valign="top"
   >
     <spacer size="6"></spacer>
@@ -33,7 +33,7 @@
     <!-- priority article -->
     <row>
       <columns>
-        {{> article-bold articleWidth="424" contentBoxClass="border-width-2"
+        {{> article-bold articleWidth="572" contentBoxClass="border-width-2"
         contentPartial="article-content-1" }}
       </columns>
     </row>
@@ -71,8 +71,6 @@
     {{for_backend "{{/each}}" ""}}
 
   </columns>
-
-  {{> sidebar }}
 </row>
 
 {{> footer }}

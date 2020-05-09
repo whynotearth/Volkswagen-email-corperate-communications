@@ -2,7 +2,7 @@
   <columns class="pb-0">
 
     <!--[if mso]>
-      <table class="layout-fixed" cellspacing="0" cellpadding="0" border="0" width="424" style="width:424px;">
+      <table class="layout-fixed" cellspacing="0" cellpadding="0" border="0" width="{{articleWidth}}" style="width:{{articleWidth}}px;">
     <![endif]-->
 
     <!--[if !mso]>-->
@@ -23,9 +23,9 @@
         <!-- line center: th outlook -->
         <!--[if mso]>
         <th
-          width="{{math-minus 162 @root.settings.shadowSize}}"
+          width="{{math-minus articleWidth @root.settings.articleBoldStaticPartsWidth}}"
           height="26"
-          style="width:{{math-minus 162 @root.settings.shadowSize}}px;height:26px;"
+          style="width:{{math-minus articleWidth @root.settings.articleBoldStaticPartsWidth}}px;height:26px;"
           valign="bottom"
           class="article-tab-line {{for_backend "{{category.slug}}" category.slug}}-text"
         >
@@ -45,8 +45,8 @@
         <!--[if mso]>
         <img
             height="26"
-            width="{{math-minus 162 @root.settings.shadowSize}}"
-            style="height:26px;width:{{math-minus 162 @root.settings.shadowSize}}px;"
+            width="{{math-minus articleWidth @root.settings.articleBoldStaticPartsWidth}}"
+            style="height:26px;width:{{math-minus articleWidth @root.settings.articleBoldStaticPartsWidth}}px;"
             class="float-left"
             src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{for_backend '{{category.color}}' category.color}}/Volkswagen/newsletter1/line-160px-2px-96dpi_rdzowd.png"
             alt=""
@@ -94,7 +94,7 @@
 </row>
 
 <!--[if mso]>
-  <table class="wrapper article-content {{for_backend '{{category.slug}}' category.slug}}-border" width="424" style="width:424px;" cellspacing="0" cellpadding="0" border="0">
+  <table class="wrapper article-content {{for_backend '{{category.slug}}' category.slug}}-border" width="{{articleWidth}}" style="width:{{articleWidth}}px;" cellspacing="0" cellpadding="0" border="0">
 <![endif]-->
 <!--[if !mso]>-->
 <table class="wrapper article-content {{for_backend '{{category.slug}}' category.slug}}-border" width="100%" style="width:100%;" cellspacing="0" cellpadding="0" border="0">
@@ -116,7 +116,7 @@
 </table>
 
 <!--[if mso]>
-  <table class="wrapper" width="424" style="width:424px;" cellspacing="0" cellpadding="0" border="0">
+  <table class="wrapper" width="{{articleWidth}}" style="width:{{articleWidth}}px;" cellspacing="0" cellpadding="0" border="0">
 <![endif]-->
 <!--[if !mso]>-->
 <table class="wrapper" width="100%" style="width:100%;" cellspacing="0" cellpadding="0" border="0">
