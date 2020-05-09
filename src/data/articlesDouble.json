@@ -21,10 +21,11 @@
       "url": "https://placehold.it/92x92"
     },
     "category": {
-      "slug": "community",
-      "name": "Community",
-      "color": "8894a0",
-      "image": "https://res.cloudinary.com/whynotearth/image/upload/v1585211750/Volkswagen/newsletter1/Plant_fc01dz.png"
+      "color": "AD83C4",
+      "description": "One Team update and announcements",
+      "image": "https://res.cloudinary.com/whynotearth/image/upload/v1585211750/Volkswagen/newsletter1/One_Team_cplk6n.png",
+      "name": "One Team",
+      "slug": "one-team"
     }
   }
 ]
