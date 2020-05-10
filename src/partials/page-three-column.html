@@ -4,8 +4,8 @@
     small="12"
     large="9"
     class="main-column"
-    width="424"
-    style="width: 424px;"
+    width="100%"
+    style="width: 100%;"
     valign="top"
   >
     <spacer size="6"></spacer>
@@ -24,7 +24,7 @@
 
     <spacer class="show-for-large" size="16"></spacer>
 
-    {{> date-row-right }}
+    {{> date-row-center }}
 
     <spacer class="hide-for-large2" size="16"></spacer>
 
@@ -33,7 +33,7 @@
     <!-- priority article -->
     <row>
       <columns>
-        {{> article-bold articleWidth="424" contentBoxClass="border-width-2"
+        {{> article-bold articleWidth="572" contentBoxClass="border-width-2"
         contentPartial="article-content-1" }}
       </columns>
     </row>
@@ -43,7 +43,7 @@
     
     {{for_backend "{{#with articlesMiddle}}" ""}}
     {{#with articlesMiddle}}
-    {{> group-article-double articleWidth="208" }}
+    {{> group-article-triple articleWidth="185" }}
     {{/with}}
     {{for_backend "{{/with}}" ""}}
 
@@ -57,7 +57,7 @@
               <tr>
                 <th>
                   {{> article-light-big
-                  articleWidth="424"
+                  articleWidth="572"
                   contentBoxClass="border-width-1"
                   contentPartial="article-content-3" }}
                 </th>
@@ -72,8 +72,6 @@
     {{for_backend "{{/each}}" ""}}
 
   </columns>
-
-  {{> sidebar }}
 </row>
 
 {{> footer }}
