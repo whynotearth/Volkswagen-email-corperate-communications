@@ -1,3 +1,4 @@
+{{set_variable "articleLightLineCenterWidth" (math-minus articleWidth @root.settings.articleLightStaticPartsWidth)}}
 <row>
   <columns class="pb-0">
 
@@ -18,9 +19,9 @@
         <!-- line center -->
         <!--[if mso]>
         <th
-          width="12"
+          width="{{@root.articleLightLineCenterWidth}}"
           height="26"
-          style="width:12px;height:26px;"
+          style="width:{{@root.articleLightLineCenterWidth}}px;height:26px;"
           valign="bottom"
           class="article-tab-line {{for_backend "{{category.slug}}" category.slug}}-text"
         >
@@ -37,8 +38,8 @@
           <!--[if mso]>
           <img
               height="26"
-              width="12"
-              style="height:26px;width:12px;"
+              width="{{@root.articleLightLineCenterWidth}}"
+              style="height:26px;width:{{@root.articleLightLineCenterWidth}}px;"
               class="float-left"
               src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{category.color}}/Volkswagen/newsletter1/line-42-1px-96dpi_r1hupo.png"
               alt=""
