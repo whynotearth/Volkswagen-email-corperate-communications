@@ -49,13 +49,11 @@
         "color": "8894a0",
         "image": "https://res.cloudinary.com/whynotearth/image/upload/v1585211750/Volkswagen/newsletter1/Plant_fc01dz.png"
       }
-    }
-  ],
-  "articlesBottom": [
+    },
     {
-      "id": 62,
-      "headline": "article 4",
-      "description": "desc 4",
+      "id": 60,
+      "headline": "article 3",
+      "description": "desc 3",
       "image": {
         "url": ""
       },
@@ -65,7 +63,9 @@
         "color": "8894a0",
         "image": "https://res.cloudinary.com/whynotearth/image/upload/v1585211750/Volkswagen/newsletter1/Plant_fc01dz.png"
       }
-    },
+    }
+  ],
+  "articlesBottom": [
     {
       "id": 63,
       "headline": "article 5",
