@@ -1,0 +1,95 @@
+<table class="row">
+  <tbody>
+    <tr>
+      
+      {{for_backend "{{#if this.[0]}}" ""}}
+      {{for_backend "{{#with this.[0]}}" ""}}
+
+      {{#if this.[0]}}
+      {{#with this.[0]}}
+      <th class="columns first small-12">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <th>
+              {{> article-light articleWidth=../articleWidth contentBoxClass="border-width-1"
+              contentPartial="article-content-2" }}
+            </th>
+          </tr>
+        </table>
+      </th>
+      {{/with}}
+      {{/if}}
+      {{for_backend "{{/with}}" ""}}
+      {{for_backend "{{/if}}" ""}}
+
+      <th class="columns show-for-large" width="8" style="width: 8px;">
+        <table
+          cellspacing="0"
+          cellpadding="0"
+          border="0"
+          width="8px;"
+          style="width: 8px;"
+        >
+          <tr>
+            <td></td>
+          </tr>
+        </table>
+      </th>
+      
+      {{for_backend "{{#if this.[1]}}" ""}}
+      {{for_backend "{{#with this.[1]}}" ""}}
+      {{#if this.[1]}}
+      {{#with this.[1]}}
+      <th class="columns last small-12">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <th>
+              {{> article-light articleWidth=../articleWidth contentBoxClass="border-width-1"
+              contentPartial="article-content-2" }}
+            </th>
+            <th class="expander"></th>
+          </tr>
+        </table>
+      </th>
+      {{/with}}
+      {{/if}}
+      {{for_backend "{{/with}}" ""}}
+      {{for_backend "{{/if}}" ""}}
+
+      <th class="columns show-for-large" width="8" style="width: 8px;">
+        <table
+          cellspacing="0"
+          cellpadding="0"
+          border="0"
+          width="8px;"
+          style="width: 8px;"
+        >
+          <tr>
+            <td></td>
+          </tr>
+        </table>
+      </th>
+
+      {{for_backend "{{#if this.[2]}}" ""}}
+      {{for_backend "{{#with this.[2]}}" ""}}
+      {{#if this.[2]}}
+      {{#with this.[2]}}
+      <th class="columns last small-12">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <th>
+              {{> article-light articleWidth=../articleWidth contentBoxClass="border-width-1"
+              contentPartial="article-content-2" }}
+            </th>
+            <th class="expander"></th>
+          </tr>
+        </table>
+      </th>
+      {{/with}}
+      {{/if}}
+      {{for_backend "{{/with}}" ""}}
+      {{for_backend "{{/if}}" ""}}
+      
+    </tr>
+  </tbody>
+</table>

@@ -33,7 +33,7 @@
     <!-- priority article -->
     <row>
       <columns>
-        {{> article-bold articleWidth="572" contentBoxClass="border-width-2"
+        {{> article-bold articleWidth="571" contentBoxClass="border-width-2"
         contentPartial="article-content-1" }}
       </columns>
     </row>
@@ -41,9 +41,9 @@
     {{/each}}
     {{for_backend "{{/each}}" ""}}
     
-    {{for_backend "{{#with articlesDouble}}" ""}}
-    {{#with articlesDouble}}
-    {{> group-article-double articleWidth="208" }}
+    {{for_backend "{{#with articlesMiddle}}" ""}}
+    {{#with articlesMiddle}}
+    {{> group-article-triple articleWidth="185" }}
     {{/with}}
     {{for_backend "{{/with}}" ""}}
 
