@@ -2,7 +2,13 @@
 <row>
   <columns class="pb-0">
 
+    <!--[if mso]>
+      <table class="layout-fixed" cellspacing="0" cellpadding="0" border="0" width="{{articleWidth}}" style="width:{{articleWidth}}px;">
+    <![endif]-->
+
+    <!--[if !mso]>-->
     <table class="layout-fixed" cellspacing="0" cellpadding="0" border="0" width="100%" style="width:100%;">
+    <!--<![endif]-->
 
       <tr>
         <th width="128" height="26" style="width:128px;height:26px;" valign="bottom">
@@ -16,12 +22,12 @@
           />
         </th>
 
-        <!-- line center -->
+        <!-- line center: th outlook -->
         <!--[if mso]>
         <th
-          width="{{@root.articleLightLineCenterWidth}}"
+          width="{{math-minus articleWidth @root.settings.articleLightStaticPartsWidth}}"
           height="26"
-          style="width:{{@root.articleLightLineCenterWidth}}px;height:26px;"
+          style="width:{{math-minus articleWidth @root.settings.articleLightStaticPartsWidth}}px;height:26px;"
           valign="bottom"
           class="article-tab-line {{for_backend "{{category.slug}}" category.slug}}-text"
         >
@@ -71,27 +77,52 @@
             alt=""
           />
         </th>
+
+        <!-- shadow -->
+        <th valign="bottom" width="{{@root.settings.shadowSize}}" height="26" style="width: {{@root.settings.shadowSize}}px;" class="article-top-right">
+          <table cellspacing="0" cellpadding="0" border="0">
+            <tr>
+              <td width="{{@root.settings.shadowSize}}" height="{{math-minus 10 @root.settings.shadowSize}}" style="width:{{@root.settings.shadowSize}}px; height:{{math-minus 10 @root.settings.shadowSize}}px;" class="shadow-bg"></td>
+            </tr>
+          </table>
+        </th>
+
       </tr>
     </table>
   </columns>
 </row>
 
-<table class="wrapper article-content {{for_backend "{{category.slug}}" category.slug}}-border" width="100%" style="width:100%;" cellspacing="0" cellpadding="0" border="0">
+<!--[if mso]>
+  <table class="wrapper article-content {{for_backend '{{category.slug}}' category.slug}}-border" width="{{articleWidth}}" style="width:{{articleWidth}}px;" cellspacing="0" cellpadding="0" border="0">
+<![endif]-->
+<!--[if !mso]>-->
+<table class="wrapper article-content {{for_backend '{{category.slug}}' category.slug}}-border" width="100%" style="width:100%;" cellspacing="0" cellpadding="0" border="0">
+  <!--<![endif]-->
   <tr>
-    <td class="wrapper-inner">
+    <td class="wrapper-inner shadow-bg" style="padding-right:{{@root.settings.shadowSize}}px;">
       <table class="callout" cellspacing="0" cellpadding="0" border="0">
         <tr>
           <th
             class="callout-inner article-callout {{this.contentBoxClass}}"
-            style="border-left:1px solid #{{category.color}}; border-right:1px solid #{{category.color}}; border-bottom:1px solid #{{category.color}}; border-top: none;"
+            style="border-left:1px solid #{{for_backend '{{category.color}}' category.color}}; border-right:1px solid #{{for_backend '{{category.color}}' category.color}}; border-bottom:1px solid #{{for_backend '{{category.color}}' category.color}}; border-top: none;"
           >
             {{> (lookup . 'contentPartial') }}
           </th>
-          <th class="expander"></th>
         </tr>
       </table>
-
     </td>
+  </tr>
+</table>
+
+<!--[if mso]>
+  <table class="wrapper" width="{{articleWidth}}" style="width:{{articleWidth}}px;" cellspacing="0" cellpadding="0" border="0">
+<![endif]-->
+<!--[if !mso]>-->
+<table class="wrapper" width="100%" style="width:100%;" cellspacing="0" cellpadding="0" border="0">
+  <!--<![endif]-->
+  <tr>
+    <td height="{{@root.settings.shadowSize}}" width="{{@root.settings.shadowSize}}" style="height:{{@root.settings.shadowSize}}px;width:{{@root.settings.shadowSize}}px;"></td>
+    <td height="{{@root.settings.shadowSize}}"  class="wrapper-inner shadow-bg" style="height:{{@root.settings.shadowSize}}px;"></td>
   </tr>
 </table>
 
