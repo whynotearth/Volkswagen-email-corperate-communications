@@ -7,12 +7,17 @@
 
       {{#if this.[0]}}
       {{#with this.[0]}}
-      <th class="columns first small-12">
+      <th class="columns first small-12" valign="top">
         <table cellspacing="0" cellpadding="0" border="0">
           <tr>
             <th>
+              {{#if isOneTeam}}
+              {{> article-one-team articleWidth=../articleWidth contentBoxClass="border-width-0 one-team"
+              contentPartial="article-content-2" }}
+              {{else}}
               {{> article-light articleWidth=../articleWidth contentBoxClass="border-width-1"
               contentPartial="article-content-2" }}
+              {{/if}}
             </th>
           </tr>
         </table>
@@ -40,7 +45,7 @@
       {{for_backend "{{#with this.[1]}}" ""}}
       {{#if this.[1]}}
       {{#with this.[1]}}
-      <th class="columns last small-12">
+      <th class="columns last small-12" valign="top">
         <table cellspacing="0" cellpadding="0" border="0">
           <tr>
             <th>
@@ -73,7 +78,7 @@
       {{for_backend "{{#with this.[2]}}" ""}}
       {{#if this.[2]}}
       {{#with this.[2]}}
-      <th class="columns last small-12">
+      <th class="columns last small-12" valign="top">
         <table cellspacing="0" cellpadding="0" border="0">
           <tr>
             <th>
