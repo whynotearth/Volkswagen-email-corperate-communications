@@ -3,13 +3,14 @@
     "id": 100,
     "headline": "title of article middle 1",
     "description": "description of article two",
+    "isOneTeam": true,
     "image": {
       "url": "https://placehold.it/92x92"
     },
     "category": {
       "slug": "plant",
       "name": "Plant",
-      "color": "8894a0",
+      "color": "d9efff",
       "image": "https://res.cloudinary.com/whynotearth/image/upload/v1585211750/Volkswagen/newsletter1/Plant_fc01dz.png"
     }
   },

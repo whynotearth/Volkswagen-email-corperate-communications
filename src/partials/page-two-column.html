@@ -32,7 +32,7 @@
     {{#each articlesTop }}
     <!-- priority article -->
     <row>
-      <columns>
+      <columns class="pb-0">
         {{> article-bold articleWidth="424" contentBoxClass="border-width-2"
         contentPartial="article-content-1" }}
       </columns>
@@ -40,7 +40,7 @@
     <!-- end priority article -->
     {{/each}}
     {{for_backend "{{/each}}" ""}}
-    
+
     {{for_backend "{{#with articlesMiddle}}" ""}}
     {{#with articlesMiddle}}
     {{> group-article-double articleWidth="208" }}

@@ -65,6 +65,10 @@
   }
 }
 .article-callout {
+  &.border-width-0 {
+    border-width: 0;
+  }
+  // FIXME: border color is wrong
   &.border-width-1 {
     border-left: 1px solid $plant;
     border-right: 1px solid $plant;
