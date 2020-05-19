@@ -1,44 +1,56 @@
 <row class="footer d-print-none">
-  <columns class="primary" valign="middle" align="center">
-    <!--[if lte mso 16 ]>
-    <table
-      class="spacer"
-      style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%"
-    >
-      <tbody>
-        <tr style="padding:0;text-align:left;vertical-align:top">
-          <th
-            height="5px"
-            style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#000;font-family:Arial,sans-serif;font-size:5px;font-weight:400;hyphens:auto;line-height:5px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word"
+  <columns
+    small="12"
+    large="12"
+    valign="middle"
+    align="center"
+    valign="top"
+    class="pb-0"
+  >
+    <table class="primary w-100 layout-fixed">
+      <tr>
+        <th>
+          <table>
+            <tr>
+              <td height="22px;" style="height:22px;"></td>
+            </tr>
+          </table>
+        </th>
+        <th width="20" style="width:20px;"></th>
+        <th></th>
+      </tr>
+      <tr>
+        <th></th>
+        <th width="20" height="19" style="width:20px;height:19px;">
+          <a
+            title="Print"
+            download
+            href="{{for_backend '{{general.print_url}}' general.print_url }}"
+            class="footer-link"
           >
-            &#xA0;
-          </th>
-        </tr>
-      </tbody>
-    </table>
-    <![endif]-->
-    <!--[if !mso]><!-->
-    <spacer size="22"></spacer>
-    <!--<![endif]-->
-    <row>
-      <columns>
-        <a
-          title="Print"
-          download
-          href="{{for_backend '{{general.print_url}}' general.print_url }}"
-          class="footer-link"
-        >
-          <center>
             <img
-              class="d-block float-center"
-              align="center"
-              height="18"
+              class="d-block"
+              align="left"
+              width="20"
+              style="width: 20px;"
               src="https://res.cloudinary.com/whynotearth/image/upload/v1585304432/Volkswagen/newsletter1/icon-print_ywhb8r.png"
               alt=""
             />
-          </center>
-        </a>
-      </columns>
-    </row>
+          </a>
+        </th>
+        <th></th>
+      </tr>
+      <tr>
+        <th>
+          <table>
+            <tr>
+              <td height="22px;" style="height:22px;"></td>
+            </tr>
+          </table>
+        </th>
+        <th width="20" style="width:20px;"></th>
+        <th></th>
+      </tr>
+    </table>
   </columns>
 </row>
