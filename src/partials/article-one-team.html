@@ -91,7 +91,7 @@
           <!--<![endif]-->
           
           <!--[if mso]>
-            <td class="one-team" height="16" style="background-color:#{{for_backend '{{category.color}}' category.color}};height:16px;"></td>
+            <td class="one-team" height="{{math-minus 18 @root.settings.shadowSize}}" style="background-color:#{{for_backend '{{category.color}}' category.color}};height:{{math-minus 18 @root.settings.shadowSize}}px;"></td>
           <![endif]-->
         </tr>
         <tr>
