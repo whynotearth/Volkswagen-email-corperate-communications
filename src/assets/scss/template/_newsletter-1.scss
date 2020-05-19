@@ -83,6 +83,11 @@
   }
 }
 
+.footer {
+  @media screen and (max-width: $global-breakpoint) {
+    background-color: $primary;
+  }
+}
 .footer-link:hover {
   cursor: pointer;
 }
