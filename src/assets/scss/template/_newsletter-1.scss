@@ -106,3 +106,8 @@
   float: none !important;
   text-align: center !important;
 }
+
+.border-x-shadow {
+  border-left: 1px solid $shadow;
+  border-right: 1px solid $shadow;
+}
