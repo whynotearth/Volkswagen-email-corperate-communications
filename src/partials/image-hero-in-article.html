@@ -1,0 +1,17 @@
+<tr>
+  <td>
+  {{for_backend "{{#if image.url}}" ""}}
+  {{#if image.url}}
+
+  <center><img class="float-center" src="{{for_backend "{{image.url}}" image.url}}" alt="" /></center>
+
+  {{/if}}
+  {{for_backend "{{/if}}" ""}}
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <spacer size="10"></spacer>
+  </td>
+</tr>
