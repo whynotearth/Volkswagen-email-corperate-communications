@@ -107,7 +107,7 @@
             class="callout-inner article-callout {{this.contentBoxClass}}"
             style="border-left:2px solid #{{for_backend '{{category.color}}' category.color}}; border-right:2px solid #{{for_backend '{{category.color}}' category.color}}; border-bottom:2px solid #{{for_backend '{{category.color}}' category.color}}; border-top: none;"
           >
-            {{> (lookup . 'contentPartial') }}
+            {{> article-content-1 articleWidth=articleWidth }}
           </th>
         </tr>
       </table>
