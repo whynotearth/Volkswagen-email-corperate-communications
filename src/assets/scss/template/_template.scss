@@ -529,7 +529,7 @@ th {
   white-space: pre-line;
 }
 .break-words {
-  overflow-wrap: break-word;
+  word-break: break-word;
 }
 .shadow-bg {
   background-color: $shadow;
