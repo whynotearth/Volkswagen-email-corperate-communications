@@ -10,22 +10,24 @@
   <!-- with image -->
   {{for_backend "{{#if image.url}}" ""}}
 
+  <!--[if !mso]><!-->
   <tr>
     <td class="hide-for-large2">
       {{> image-beside-in-article image=image}}
     </td>
   </tr>
+  <!--<![endif]-->
+  
   <tr>
     <td>
       <table>
         <tr>
           <td
-            width="50%"
             class="em-high body-small whitespace-pre-line break-words article-content-1--desc1"
           >
             {{for_backend "{{description_part1}}" description_part1 }}
           </td>
-          <td width="50%" class="show-for-large">
+          <td width="{{for_backend '{{image.wrapperWidth}}' image.wrapperWidth}}" class="show-for-large">
             {{> image-beside-in-article image=image}}
           </td>
         </tr>

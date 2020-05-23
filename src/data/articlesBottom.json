@@ -6,6 +6,7 @@
     "description_part1": "DESC1 of article one description of article one description of article one description of article one description of article one description of article onedescription of article one description of article one description of article one description of article one description of article one description of article one description of article one description of article one description of article one one description of article one a",
     "description_part2": "DESC2 description of article one description of article one description of article one description of article one description of article one description of article one description of article one",
     "image": {
+      "wrapperWidth": "200",
       "url": "https://placehold.it/400x200",
       "width": "200",
       "height": "100"
