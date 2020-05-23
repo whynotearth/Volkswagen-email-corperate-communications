@@ -6,6 +6,10 @@
       </h2>
     </td>
   </tr>
+
+  <!-- with image -->
+  {{for_backend "{{#if image.url}}" ""}}
+
   <tr>
     <td class="hide-for-large2">
       {{> image-beside-in-article image=image}}
@@ -19,7 +23,7 @@
             width="50%"
             class="em-high body-small whitespace-pre-line break-words article-content-1--desc1"
           >
-            {{for_backend "{{description}}" description }}
+            {{for_backend "{{description_part1}}" description_part1 }}
           </td>
           <td width="50%" class="show-for-large">
             {{> image-beside-in-article image=image}}
@@ -28,10 +32,21 @@
       </table>
     </td>
   </tr>
+  <tr>
+    <td class="em-high body-small whitespace-pre-line break-words">
+      {{for_backend "{{description_part2}}" description_part2 }}
+    </td>
+  </tr>
+
+  <!-- without image -->
+  {{for_backend "{{else}}" ""}}
 
   <tr>
     <td class="em-high body-small whitespace-pre-line break-words">
-      {{for_backend "{{description_more}}" description_more }}
+      {{for_backend "{{description}}" description }}
     </td>
   </tr>
+
+  {{for_backend "{{/if}}" ""}}
 </table>
+
