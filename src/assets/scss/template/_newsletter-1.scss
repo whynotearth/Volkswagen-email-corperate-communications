@@ -116,3 +116,16 @@
   border-left: 1px solid $shadow;
   border-right: 1px solid $shadow;
 }
+
+.article-content-1--desc1 {
+  padding-right: 8px;
+  @media screen and (max-width: $global-breakpoint) {
+    padding-right: 0 !important;
+  }
+}
+.article-content-1--image {
+  @media screen and (max-width: $global-breakpoint) {
+    width: 100% !important;
+    height: auto !important;
+  }
+}

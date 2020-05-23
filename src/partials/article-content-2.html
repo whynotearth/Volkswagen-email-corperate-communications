@@ -1,35 +1,15 @@
-{{for_backend "{{#if image.url}}" ""}}
-{{#if image.url}}
-<table class="wrapper">
-  <tr>
-    <th class="wrapper-inner">
-      <center>
-        <img
-          class="d-block float-center"
-          align="center"
-          src="{{for_backend "{{image.url}}" image.url}}"
-          alt=""
-        />
-      </center>
-    </th>
-  </tr>
-</table>
-<spacer size="20"></spacer>
-{{/if}}
-{{for_backend "{{/if}}" ""}}
+<table class="layout-fixed">
+  {{> image-hero-in-article image=image}}
 
-<table class="em-high body-small">
   <tr>
     <td>
-      <div>
-        <h2 class="print-title print-text em-high">
-          {{for_backend "{{headline}}" headline }}
-        </h2>
-        
-        <div class="whitespace-pre-line break-words">
-          {{for_backend "{{description}}" description }}
-        </div>
-      </div>
+      <h2 class="large-title primary-text">{{for_backend "{{headline}}" headline }}</h2>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="em-high body-small whitespace-pre-line break-words">
+      {{for_backend "{{description}}" description }}
     </td>
   </tr>
 </table>
