@@ -1,12 +1,12 @@
 <table>
 <tr>
-  <td align="center">
+  <td align="right">
   {{for_backend "{{#if image.url}}" ""}}
   {{#if image.url}}
 
   <img
     class="article-content-1--image"
-    align="center"
+    align="right"
     width="{{for_backend '{{image.width}}' image.width}}"
     height="{{for_backend '{{image.height}}' image.height}}"
     style="width:{{for_backend '{{image.width}}' image.width}}px;height:{{for_backend '{{image.height}}' image.height}}px;"
