@@ -99,16 +99,34 @@
   <tr>
     <td class="wrapper-inner" style="background:tomato;">
 
-      <table width="571" style="width:571px;border-left:1px solid #{{for_backend '{{category.color}}' category.color}}; border-right:1px solid #{{for_backend '{{category.color}}' category.color}}; border-bottom:1px solid #{{for_backend '{{category.color}}' category.color}}; border-top: none;">
+      <table width="569" style="width:569px;border-left:1px solid #{{for_backend '{{category.color}}' category.color}}; border-right:1px solid #{{for_backend '{{category.color}}' category.color}}; border-bottom:1px solid #{{for_backend '{{category.color}}' category.color}}; border-top: none;">
         <tr>
           <td>
-            <p class="print-title">
-              this is example text.... Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos obcaecati voluptas nam accusantium, similique non aperiam, a, eos consequatur tempora in hic voluptate fugiat corporis et quod ab ut numquam tenetur facilis beatae culpa quae? Vitae harum, quam soluta quibusdam laudantium, et amet sed ad voluptatem velit repudiandae praesentium cupiditate.
-            </p>
+            <table>
+              <tr>
+                <th width="569" style="width:569px;padding:10px;">
+                  <p class="print-title">
+                    this is example text.... Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos obcaecati voluptas nam accusantium, similique non aperiam, a, eos consequatur tempora in hic voluptate fugiat corporis et quod ab ut numquam tenetur facilis beatae culpa quae? Vitae harum, quam soluta quibusdam laudantium, et amet sed ad voluptatem velit repudiandae praesentium cupiditate.
+                  </p>
+                </th>
+
+                {{! shadow right }}
+              </tr>
+            </table>
           </td>
         </tr>
       </table>
     </td>
+
+    <th class="shadow-bg shadow-border-color" width="{{@root.settings.shadowSize}}" style="width:{{@root.settings.shadowSize}}px;">
+    <table cellspacing="0" cellpadding="0" border="0"
+        width="{{@root.settings.shadowSize}}" style="width:{{@root.settings.shadowSize}}px;"
+    >
+        <tr>
+        <td></td>
+        </tr>
+    </table>
+    </th>
   </tr>
 </table>
 
