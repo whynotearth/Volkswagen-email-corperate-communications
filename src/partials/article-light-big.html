@@ -91,21 +91,21 @@
 </row>
 
 <!--[if mso]>
-  <table class="wrapper article-content {{for_backend '{{category.slug}}' category.slug}}-border" width="{{articleWidth}}" style="width:{{articleWidth}}px;" cellspacing="0" cellpadding="0" border="0">
+  <table class="wrapper article-content layout-fixed" width="{{articleWidth}}" style="width:{{articleWidth}}px;" cellspacing="0" cellpadding="0" border="0">
 <![endif]-->
 <!--[if !mso]>-->
-<table class="wrapper article-content {{for_backend '{{category.slug}}' category.slug}}-border" width="100%" style="width:100%;" cellspacing="0" cellpadding="0" border="0">
-  <!--<![endif]-->
+<table class="wrapper article-content layout-fixed" width="100%" style="width:100%;" cellspacing="0" cellpadding="0" border="0">
+<!--<![endif]-->
   <tr>
-    <td class="wrapper-inner shadow-bg" style="padding-right:{{@root.settings.shadowSize}}px;">
-      <table class="callout" cellspacing="0" cellpadding="0" border="0">
+    <td class="wrapper-inner" style="background:tomato;">
+
+      <table width="571" style="width:571px;border-left:1px solid #{{for_backend '{{category.color}}' category.color}}; border-right:1px solid #{{for_backend '{{category.color}}' category.color}}; border-bottom:1px solid #{{for_backend '{{category.color}}' category.color}}; border-top: none;">
         <tr>
-          <th
-            class="callout-inner article-callout {{this.contentBoxClass}}"
-            style="border-left:1px solid #{{for_backend '{{category.color}}' category.color}}; border-right:1px solid #{{for_backend '{{category.color}}' category.color}}; border-bottom:1px solid #{{for_backend '{{category.color}}' category.color}}; border-top: none;"
-          >
-          {{> article-content-1 articleWidth=articleWidth }}
-          </th>
+          <td>
+            <p class="print-title">
+              this is example text.... Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos obcaecati voluptas nam accusantium, similique non aperiam, a, eos consequatur tempora in hic voluptate fugiat corporis et quod ab ut numquam tenetur facilis beatae culpa quae? Vitae harum, quam soluta quibusdam laudantium, et amet sed ad voluptatem velit repudiandae praesentium cupiditate.
+            </p>
+          </td>
         </tr>
       </table>
     </td>

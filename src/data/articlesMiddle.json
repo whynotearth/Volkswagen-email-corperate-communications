@@ -5,9 +5,9 @@
     "description": "description of article two",
     "isOneTeam": true,
     "image": {
-      "url": "https://placehold.it/92x92",
-      "width": "92",
-      "height": "92"
+      "url": "https://placehold.it/161x161",
+      "width": "161",
+      "height": "161"
     },
     "category": {
       "slug": "plant",
@@ -21,9 +21,9 @@
     "headline": "title of article middle 2",
     "description": "description of article three",
     "image": {
-      "url": "https://placehold.it/163x163",
-      "width": "163",
-      "height": "163"
+      "url": "https://placehold.it/161x161",
+      "width": "161",
+      "height": "161"
     },
     "category": {
       "color": "AD83C4",
@@ -38,9 +38,9 @@
     "headline": "title of article middle 3",
     "description": "description of article three",
     "image": {
-      "url": "https://placehold.it/163x163",
-      "width": "163",
-      "height": "163"
+      "url": "https://placehold.it/161x161",
+      "width": "161",
+      "height": "161"
     },
     "category": {
       "color": "ffba03",
