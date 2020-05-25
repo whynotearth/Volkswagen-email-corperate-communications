@@ -2,7 +2,7 @@
   {
     "id": 100,
     "headline": "title of article one",
-    "description": "description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aut ullam vel amet exercitationem, iusto minus quo repellat tempora voluptatum laborum error, id, hic totam accusamus unde corrupti temporibus officiis?",
+    "description": "description: <b>Lorem</b> ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aut ullam vel amet exercitationem, iusto minus quo repellat tempora voluptatum laborum error, id, hic totam accusamus unde corrupti temporibus officiis?",
     "imageCaption": "imageCaption: description of article one description of article one description of article one description of article one description of article one description of article one description of article one",
     "image": {
       "wrapperWidth": "280",
