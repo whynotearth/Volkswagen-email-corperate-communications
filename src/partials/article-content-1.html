@@ -25,7 +25,7 @@
           <td
             class="em-high body-small whitespace-pre-line break-words article-content-1--desc1"
           >
-            {{for_backend "{{description_part1}}" description_part1 }}
+            {{for_backend "{{imageCaption}}" imageCaption }}
           </td>
           <td width="{{for_backend '{{image.wrapperWidth}}' image.wrapperWidth}}" class="show-for-large">
             {{> image-beside-in-article image=image}}
@@ -36,7 +36,7 @@
   </tr>
   <tr>
     <td class="em-high body-small whitespace-pre-line break-words">
-      {{for_backend "{{description_part2}}" description_part2 }}
+      {{for_backend "{{description}}" description }}
     </td>
   </tr>
 
