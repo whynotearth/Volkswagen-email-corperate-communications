@@ -3,7 +3,7 @@
   {{for_backend "{{#if image.url}}" ""}}
   {{#if image.url}}
 
-  <center><img class="float-center" src="{{for_backend "{{image.url}}" image.url}}" alt="" /></center>
+  <center><img width="{{for_backend '{{image.width}}' image.width}}" class="float-center" src="{{for_backend "{{image.url}}" image.url}}" alt="" /></center>
 
   {{/if}}
   {{for_backend "{{/if}}" ""}}

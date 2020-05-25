@@ -1,5 +1,5 @@
 {{set_variable "articleLightLineCenterWidth" (math-minus articleWidth @root.settings.articleLightStaticPartsWidth)}}
-<spacer size="20"></spacer>
+<spacer class="show-for-large" size="20"></spacer>
 <row>
   <columns class="pb-0">
 
@@ -107,7 +107,7 @@
             class="callout-inner article-callout {{this.contentBoxClass}}"
             style="border-left:1px solid #{{for_backend '{{category.color}}' category.color}}; border-right:1px solid #{{for_backend '{{category.color}}' category.color}}; border-bottom:1px solid #{{for_backend '{{category.color}}' category.color}}; border-top: none;"
           >
-          {{> article-content-1 articleWidth=articleWidth }}
+          {{> article-content-2 articleWidth=articleWidth }}
           </th>
         </tr>
       </table>
@@ -127,4 +127,4 @@
   </tr>
 </table>
 
-<spacer class="hide-for-large2" size="30"></spacer>
+<spacer class="hide-for-large2" size="22"></spacer>

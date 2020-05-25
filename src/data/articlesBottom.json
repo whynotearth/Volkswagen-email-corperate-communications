@@ -2,9 +2,13 @@
   {
     "id": 100,
     "headline": "title of article one",
-    "description": "description of article one",
+    "description": "description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aut ullam vel amet exercitationem, iusto minus quo repellat tempora voluptatum laborum error, id, hic totam accusamus unde corrupti temporibus officiis?",
+    "imageCaption": "imageCaption: description of article one description of article one description of article one description of article one description of article one description of article one description of article one",
     "image": {
-      "url": "https://placehold.it/92x92"
+      "wrapperWidth": "200",
+      "url": "https://placehold.it/400x200",
+      "width": "200",
+      "height": "100"
     },
     "category": {
       "slug": "community",

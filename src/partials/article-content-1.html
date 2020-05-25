@@ -1,15 +1,54 @@
 <table class="layout-fixed">
-  {{> image-hero-in-article image=image}}
-
   <tr>
     <td>
-      <h2 class="large-title primary-text">{{for_backend "{{headline}}" headline }}</h2>
+      <h2 class="large-title primary-text">
+        {{for_backend "{{headline}}" headline }}
+      </h2>
     </td>
   </tr>
+
+  <!-- with image -->
+  {{for_backend "{{#if image.url}}" ""}}
+
+  <!--[if !mso]><!-->
+  <tr>
+    <td class="hide-for-large2">
+      {{> image-beside-in-article image=image}}
+    </td>
+  </tr>
+  <!--<![endif]-->
+  
+  <tr>
+    <td>
+      <table>
+        <tr>
+          <td
+            class="em-high body-small whitespace-pre-line break-words article-content-1--desc1"
+          >
+            {{for_backend "{{imageCaption}}" imageCaption }}
+          </td>
+          <td width="{{for_backend '{{image.wrapperWidth}}' image.wrapperWidth}}" class="show-for-large">
+            {{> image-beside-in-article image=image}}
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="em-high body-small whitespace-pre-line break-words">
+      {{{for_backend "{{{description}}}" description }}}
+    </td>
+  </tr>
+
+  <!-- without image -->
+  {{for_backend "{{else}}" ""}}
 
   <tr>
     <td class="em-high body-small whitespace-pre-line break-words">
-      {{for_backend "{{description}}" description }}
+      {{{for_backend "{{{description}}}" description }}}
     </td>
   </tr>
+
+  {{for_backend "{{/if}}" ""}}
 </table>
+
