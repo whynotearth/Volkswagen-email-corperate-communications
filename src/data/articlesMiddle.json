@@ -27,10 +27,10 @@
     },
     "category": {
       "color": "AD83C4",
-      "description": "One Team update and announcements",
+      "description": "Plant update and announcements",
       "image": "https://res.cloudinary.com/whynotearth/image/upload/v1585211750/Volkswagen/newsletter1/One_Team_cplk6n.png",
-      "name": "One Team",
-      "slug": "one-team"
+      "name": "Plant",
+      "slug": "plant"
     }
   },
   {
@@ -43,11 +43,11 @@
       "height": "163"
     },
     "category": {
-      "color": "AD83C4",
-      "description": "One Team update and announcements",
+      "color": "ffba03",
+      "description": "Events update and announcements",
       "image": "https://res.cloudinary.com/whynotearth/image/upload/v1585211750/Volkswagen/newsletter1/One_Team_cplk6n.png",
-      "name": "One Team",
-      "slug": "one-team"
+      "name": "Events",
+      "slug": "events"
     }
   }
 ]
