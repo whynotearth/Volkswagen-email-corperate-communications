@@ -7,7 +7,9 @@
   "articleBoldStaticPartsWidth": 264,
   "articleLightBigStaticPartsWidth": 248,
   "articleLightBigContentStaticPartsWidth": 20,
+  "articleBoldContentStaticPartsWidth": 22,
   "articleLightContentStaticPartsWidth": 20,
   "articleOneTeamContentStaticPartsWidth": 18,
-  "articleLightStaticPartsWidth": 176
+  "articleLightStaticPartsWidth": 176,
+  "shadowColor": "bfbfbf"
 }

@@ -65,6 +65,19 @@ b {
   font-weight: bold !important;
 }
 
+.border-left {
+  border-left: 1px solid;
+}
+.border-right {
+  border-right: 1px solid;
+}
+.border-top {
+  border-top: 1px solid;
+}
+.border-bottom {
+  border-bottom: 1px solid;
+}
+
 .text-underline {
   text-decoration: underline;
   text-decoration-skip: ink;
@@ -380,10 +393,13 @@ b {
 }
 .one-team {
   background-color: $one-team;
-  border-color: $one-team !important;
+  border-color: $one-team;
 }
 .one-team-border {
-  border-color: $one-team !important;
+  border-color: $one-team;
+}
+.shadow-border {
+  border-color: $shadow !important;
 }
 .one-team-text {
   color: $one-team;

@@ -54,14 +54,13 @@
   <tr>
     <td class="wrapper-inner">
 
-      <table class="layout-fixed" style="border-left:1px solid #{{for_backend '{{category.color}}' category.color}}; border-right:1px solid #{{for_backend '{{category.color}}' category.color}}; border-bottom:1px solid #{{for_backend '{{category.color}}' category.color}}; border-top: none;">
+      <table class="layout-fixed" style="border-left:1px solid #{{for_backend '{{@root.settings.shadowColor}}' @root.settings.shadowColor}}; border-right:1px solid #{{for_backend '{{@root.settings.shadowColor}}' @root.settings.shadowColor}};">
         <tr>
           <td>
             <table class="layout-fixed">
               <tr>
                 <th class="content-wrapper {{contentBoxClass}}">
                   {{> article-content-2 contentWidth=@root.loccalContentWidth }}
-                  <p class="print-title">@root.loccalContentWidth: {{@root.loccalContentWidth}}</p>
                 </th>
               </tr>
             </table>

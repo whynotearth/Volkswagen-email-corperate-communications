@@ -98,14 +98,13 @@
   <tr>
     <td class="wrapper-inner">
 
-      <table class="layout-fixed" style="border-left:1px solid #{{for_backend '{{category.color}}' category.color}}; border-right:1px solid #{{for_backend '{{category.color}}' category.color}}; border-bottom:1px solid #{{for_backend '{{category.color}}' category.color}}; border-top: none;">
+      <table class="layout-fixed" style="border-left:1px solid #{{for_backend '{{category.color}}' category.color}}; border-right:1px solid #{{for_backend '{{category.color}}' category.color}}; border-bottom:1px solid #{{for_backend '{{category.color}}' category.color}};">
         <tr>
           <td>
             <table class="layout-fixed">
               <tr>
                 <th class="content-wrapper {{contentBoxClass}}">
                   {{> article-content-2 contentWidth=@root.loccalContentWidth }}
-                  <p class="print-title">@root.loccalContentWidth: {{@root.loccalContentWidth}}</p>
                 </th>
               </tr>
             </table>
@@ -114,15 +113,7 @@
       </table>
     </td>
 
-    <th class="shadow-bg shadow-border-color" width="{{@root.settings.shadowSize}}" style="width:{{@root.settings.shadowSize}}px;">
-    <table cellspacing="0" cellpadding="0" border="0"
-        width="{{@root.settings.shadowSize}}" style="width:{{@root.settings.shadowSize}}px;"
-    >
-        <tr>
-        <td></td>
-        </tr>
-    </table>
-    </th>
+    {{> spacer-horizontal width=@root.settings.shadowSize classes="shadow-bg" }}
   </tr>
 </table>
 
