@@ -7,5 +7,7 @@
   "articleBoldStaticPartsWidth": 264,
   "articleLightBigStaticPartsWidth": 248,
   "articleLightBigContentStaticPartsWidth": 20,
+  "articleLightContentStaticPartsWidth": 20,
+  "articleOneTeamContentStaticPartsWidth": 18,
   "articleLightStaticPartsWidth": 176
 }
