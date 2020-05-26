@@ -1,5 +1,8 @@
 {
-  "threeColumnContentWidth": 572,
+  "twoColumnWidth": 612,
+  "twoColumnContentWidth": 424,
+  "threeColumnWidth": 611,
+  "threeColumnContentWidth": 571,
   "shadowSize": 2,
   "articleBoldStaticPartsWidth": 264,
   "articleLightBigStaticPartsWidth": 248,
