@@ -6,5 +6,6 @@
   "shadowSize": 2,
   "articleBoldStaticPartsWidth": 264,
   "articleLightBigStaticPartsWidth": 248,
+  "articleLightBigContentStaticPartsWidth": 20,
   "articleLightStaticPartsWidth": 176
 }

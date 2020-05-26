@@ -1,4 +1,4 @@
-{{set_variable "loccalContentWidth" (math-minus articleWidth 20)}}
+{{set_variable "loccalContentWidth" (math-minus articleWidth articleLightBigContentStaticPartsWidth)}}
 
 <row>
   <columns class="pb-0">
@@ -99,9 +99,9 @@
       <table class="layout-fixed" style="border-left:1px solid #{{for_backend '{{category.color}}' category.color}}; border-right:1px solid #{{for_backend '{{category.color}}' category.color}}; border-bottom:1px solid #{{for_backend '{{category.color}}' category.color}}; border-top: none;">
         <tr>
           <td>
-            <table class="layout-fixed" style="background:tomato;">
+            <table class="layout-fixed">
               <tr>
-                <th class="content-wrapper" style="background:gray;">
+                <th class="content-wrapper">
                   {{> article-content-1 contentWidth=@root.loccalContentWidth }}
                 </th>
               </tr>
