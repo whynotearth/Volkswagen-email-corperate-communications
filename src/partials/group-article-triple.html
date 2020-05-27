@@ -26,19 +26,10 @@
       {{/if}}
       {{for_backend "{{/with}}" ""}}
       {{for_backend "{{/if}}" ""}}
-
-      <th class="columns show-for-large" width="8" style="width: 8px;">
-        <table cellspacing="0" cellpadding="0" border="0"
-          width="8"
-          style="width: 8px;"
-        >
-          <tr>
-            <td></td>
-          </tr>
-        </table>
-      </th>
       
       {{for_backend "{{#if this.[1]}}" ""}}
+      {{! <!-- spacer --> }}
+      {{> spacer-horizontal width=8 classes="show-for-large" }}
       {{for_backend "{{#with this.[1]}}" ""}}
       {{#if this.[1]}}
       {{#with this.[1]}}
@@ -57,18 +48,10 @@
       {{for_backend "{{/with}}" ""}}
       {{for_backend "{{/if}}" ""}}
 
-      <th class="columns show-for-large" width="8" style="width: 8px;">
-        <table cellspacing="0" cellpadding="0" border="0"
-          width="8"
-          style="width: 8px;"
-        >
-          <tr>
-            <td></td>
-          </tr>
-        </table>
-      </th>
 
       {{for_backend "{{#if this.[2]}}" ""}}
+      {{! <!-- spacer --> }}
+      {{> spacer-horizontal width=8 classes="show-for-large" }}
       {{for_backend "{{#with this.[2]}}" ""}}
       {{#if this.[2]}}
       {{#with this.[2]}}
