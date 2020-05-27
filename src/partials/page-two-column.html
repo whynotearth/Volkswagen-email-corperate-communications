@@ -47,25 +47,36 @@
     {{/with}}
     {{for_backend "{{/with}}" ""}}
 
+    
+
     {{for_backend "{{#each articlesBottom }}" ""}}
     {{#each articlesBottom }}
-    <table class="row" cellspacing="0" cellpadding="0" border="0">
-      <tbody>
+    <!--[if !mso]>-->
+    <table cellspacing="0" cellpadding="0" border="0">
+    <!--<![endif]-->
+    
+    <!--[if mso]>
+      <table class="row" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;border-spacing:0;display:table;padding:0;position:relative;text-align:left;vertical-align:top;width:{{@root.settings.twoColumnContentWidth}}%" width="{{@root.settings.twoColumnContentWidth}}">
+    <![endif]-->
         <tr>
           <th class="small-12 large-12 columns first last">
+            <!--[if !mso]>-->
             <table cellspacing="0" cellpadding="0" border="0">
+            <!--<![endif]-->
+            
+            <!--[if mso]>
+              <table class="row" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;border-spacing:0;display:table;padding:0;position:relative;text-align:left;vertical-align:top;width:{{@root.settings.twoColumnContentWidth}}%" width="{{@root.settings.twoColumnContentWidth}}">
+            <![endif]-->
               <tr>
                 <th>
                   {{> article-light-big
-                    articleWidth=@root.settings.twoColumnContentWidth
-                    contentBoxClass="border-width-1" }}
+                  articleWidth=@root.settings.twoColumnContentWidth
+                  contentBoxClass="border-width-1" }}
                 </th>
-                <th class="expander"></th>
               </tr>
             </table>
           </th>
         </tr>
-      </tbody>
     </table>
     {{/each}}
     {{for_backend "{{/each}}" ""}}
