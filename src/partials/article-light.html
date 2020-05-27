@@ -1,3 +1,4 @@
+{{set_variable "loccalContentWidth" (math-minus articleWidth @root.settings.articleLightContentStaticPartsWidth)}}
 {{set_variable "articleLightLineCenterWidth" (math-minus articleWidth @root.settings.articleLightStaticPartsWidth)}}
 <spacer class="show-for-large" size="20"></spacer>
 <row>
@@ -93,25 +94,26 @@
   </columns>
 </row>
 
-<!--[if mso]>
-  <table class="wrapper article-content {{for_backend '{{category.slug}}' category.slug}}-border" width="{{articleWidth}}" style="width:{{articleWidth}}px;" cellspacing="0" cellpadding="0" border="0">
-<![endif]-->
-<!--[if !mso]>-->
-<table class="wrapper article-content {{for_backend '{{category.slug}}' category.slug}}-border" width="100%" style="width:100%;" cellspacing="0" cellpadding="0" border="0">
-  <!--<![endif]-->
+<table class="wrapper article-content layout-fixed" width="100%" style="width:100%;" cellspacing="0" cellpadding="0" border="0">
   <tr>
-    <td class="wrapper-inner shadow-bg" style="padding-right:{{@root.settings.shadowSize}}px;">
-      <table class="callout" cellspacing="0" cellpadding="0" border="0">
+    <td class="wrapper-inner">
+
+      <table class="layout-fixed" style="border-left:1px solid #{{for_backend '{{category.color}}' category.color}}; border-right:1px solid #{{for_backend '{{category.color}}' category.color}}; border-bottom:1px solid #{{for_backend '{{category.color}}' category.color}};">
         <tr>
-          <th
-            class="callout-inner article-callout {{this.contentBoxClass}}"
-            style="border-left:1px solid #{{for_backend '{{category.color}}' category.color}}; border-right:1px solid #{{for_backend '{{category.color}}' category.color}}; border-bottom:1px solid #{{for_backend '{{category.color}}' category.color}}; border-top: none;"
-          >
-          {{> article-content-2 articleWidth=articleWidth }}
-          </th>
+          <td>
+            <table class="layout-fixed">
+              <tr>
+                <th class="content-wrapper {{contentBoxClass}}">
+                  {{> article-content-2 contentWidth=@root.loccalContentWidth }}
+                </th>
+              </tr>
+            </table>
+          </td>
         </tr>
       </table>
     </td>
+
+    {{> spacer-horizontal width=@root.settings.shadowSize classes="shadow-bg" }}
   </tr>
 </table>
 

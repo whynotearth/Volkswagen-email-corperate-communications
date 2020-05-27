@@ -11,7 +11,7 @@
     <spacer size="6"></spacer>
     <row>
       <th class="columns first last py-0">
-        <table>
+        <table cellspacing="0" cellpadding="0" border="0">
           <tr>
             <th class="text-center">
               <h1 class="primary-text text-center display-3 mb-0 pb-0">{{for_backend "{{general.title}}" general.title}}</h1>
@@ -49,7 +49,7 @@
 
     {{for_backend "{{#each articlesBottom }}" ""}}
     {{#each articlesBottom }}
-    <table class="row">
+    <table class="row" cellspacing="0" cellpadding="0" border="0">
       <tbody>
         <tr>
           <th class="small-12 large-12 columns first last">
@@ -57,9 +57,8 @@
               <tr>
                 <th>
                   {{> article-light-big
-                  articleWidth="424"
-                  contentBoxClass="border-width-1"
-                  }}
+                    articleWidth=@root.settings.twoColumnContentWidth
+                    contentBoxClass="border-width-1" }}
                 </th>
                 <th class="expander"></th>
               </tr>

@@ -1,6 +1,15 @@
 {
+  "twoColumnWidth": 612,
+  "twoColumnContentWidth": 424,
+  "threeColumnWidth": 611,
+  "threeColumnContentWidth": 571,
   "shadowSize": 2,
   "articleBoldStaticPartsWidth": 264,
   "articleLightBigStaticPartsWidth": 248,
-  "articleLightStaticPartsWidth": 176
+  "articleLightBigContentStaticPartsWidth": 20,
+  "articleBoldContentStaticPartsWidth": 22,
+  "articleLightContentStaticPartsWidth": 20,
+  "articleOneTeamContentStaticPartsWidth": 18,
+  "articleLightStaticPartsWidth": 176,
+  "shadowColor": "bfbfbf"
 }

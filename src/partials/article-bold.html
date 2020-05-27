@@ -1,3 +1,5 @@
+{{set_variable "loccalContentWidth" (math-minus articleWidth @root.settings.articleBoldContentStaticPartsWidth)}}
+
 <row>
   <columns class="pb-0">
 
@@ -107,7 +109,7 @@
             class="callout-inner article-callout {{this.contentBoxClass}}"
             style="border-left:2px solid #{{for_backend '{{category.color}}' category.color}}; border-right:2px solid #{{for_backend '{{category.color}}' category.color}}; border-bottom:2px solid #{{for_backend '{{category.color}}' category.color}}; border-top: none;"
           >
-            {{> article-content-1 articleWidth=articleWidth }}
+            {{> article-content-1 contentWidth=@root.loccalContentWidth }}
           </th>
         </tr>
       </table>
