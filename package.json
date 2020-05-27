@@ -8,6 +8,7 @@
     "start": "gulp",
     "build": "cross-env FOR_BACKEND=false gulp --production",
     "build-backend": "cross-env FOR_BACKEND=true gulp --production",
+    "test-backend": "node test-backend/handlebars-compile.js",
     "zip": "gulp zip --production",
     "litmus": "gulp litmus --production",
     "mail": "gulp mail --production"
