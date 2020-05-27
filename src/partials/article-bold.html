@@ -81,15 +81,7 @@
           />
         </th>
 
-        <!-- shadow -->
-        <th valign="bottom" width="{{@root.settings.shadowSize}}" height="26" style="width: {{@root.settings.shadowSize}}px;" class="article-top-right">
-          <table cellspacing="0" cellpadding="0" border="0">
-            <tr>
-              <td width="{{@root.settings.shadowSize}}" height="{{math-minus 10 @root.settings.shadowSize}}" style="width:{{@root.settings.shadowSize}}px; height:{{math-minus 10 @root.settings.shadowSize}}px;" class="shadow-bg"></td>
-            </tr>
-          </table>
-        </th>
-
+        {{> shadow-right-articles shadowSize=@root.settings.shadowSize}}
       </tr>
     </table>
   </columns>
