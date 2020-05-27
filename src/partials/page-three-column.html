@@ -30,16 +30,36 @@
 
     {{for_backend "{{#each articlesTop }}" ""}}
     {{#each articlesTop }}
-    <!-- priority article -->
-    <row>
-      <columns>
-        {{> article-bold articleWidth=@root.settings.threeColumnContentWidth contentBoxClass="border-width-2"
-        }}
-      </columns>
-    </row>
-    <!-- end priority article -->
+    <!--[if !mso]>-->
+    <table cellspacing="0" cellpadding="0" border="0">
+    <!--<![endif]-->
+    
+    <!--[if mso]>
+      <table class="row" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;border-spacing:0;display:table;padding:0;position:relative;text-align:left;vertical-align:top;width:{{@root.settings.threeColumnContentWidth}}%" width="{{@root.settings.threeColumnContentWidth}}">
+    <![endif]-->
+        <tr>
+          <th class="small-12 large-12 columns first last">
+            <!--[if !mso]>-->
+            <table cellspacing="0" cellpadding="0" border="0">
+            <!--<![endif]-->
+            
+            <!--[if mso]>
+              <table class="row" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;border-spacing:0;display:table;padding:0;position:relative;text-align:left;vertical-align:top;width:{{@root.settings.threeColumnContentWidth}}%" width="{{@root.settings.threeColumnContentWidth}}">
+            <![endif]-->
+              <tr>
+                <th>
+                  {{> article-bold
+                  articleWidth=@root.settings.threeColumnContentWidth
+                  contentBoxClass="border-width-2" }}
+                </th>
+              </tr>
+            </table>
+          </th>
+        </tr>
+    </table>
     {{/each}}
     {{for_backend "{{/each}}" ""}}
+
     
     {{for_backend "{{#with articlesMiddle}}" ""}}
     {{#with articlesMiddle}}
@@ -56,7 +76,6 @@
     <!--[if mso]>
       <table class="row" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;border-spacing:0;display:table;padding:0;position:relative;text-align:left;vertical-align:top;width:{{@root.settings.threeColumnContentWidth}}%" width="{{@root.settings.threeColumnContentWidth}}">
     <![endif]-->
-      <tbody>
         <tr>
           <th class="small-12 large-12 columns first last">
             <!--[if !mso]>-->
@@ -76,7 +95,6 @@
             </table>
           </th>
         </tr>
-      </tbody>
     </table>
     {{/each}}
     {{for_backend "{{/each}}" ""}}
