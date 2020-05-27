@@ -96,7 +96,7 @@
   <tr>
     <td class="wrapper-inner">
 
-      <table class="layout-fixed" style="border-left:1px solid #{{for_backend '{{category.color}}' category.color}}; border-right:1px solid #{{for_backend '{{category.color}}' category.color}}; border-bottom:1px solid #{{for_backend '{{category.color}}' category.color}}; border-top: none;">
+      <table class="layout-fixed" style="border-left:1px solid #{{for_backend '{{category.color}}' category.color}}; border-right:1px solid #{{for_backend '{{category.color}}' category.color}}; border-bottom:1px solid #{{for_backend '{{category.color}}' category.color}};">
         <tr>
           <td>
             <table class="layout-fixed">
@@ -123,11 +123,6 @@
   </tr>
 </table>
 
-<table class="wrapper" width="100%" style="width:100%;" cellspacing="0" cellpadding="0" border="0">
-  <tr>
-    <td height="{{@root.settings.shadowSize}}" width="{{@root.settings.shadowSize}}" style="height:{{@root.settings.shadowSize}}px;width:{{@root.settings.shadowSize}}px;"></td>
-    <td height="{{@root.settings.shadowSize}}"  class="wrapper-inner shadow-bg" style="height:{{@root.settings.shadowSize}}px;"></td>
-  </tr>
-</table>
+{{> shadow-bottom-articles totalWidth=articleWidth shadowSize=@root.settings.shadowSize }}
 
-<spacer class="hide-for-large2" size="30"></spacer>
+<spacer class="hide-for-large2" size="22"></spacer>

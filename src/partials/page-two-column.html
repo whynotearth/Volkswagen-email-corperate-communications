@@ -28,18 +28,41 @@
 
     <spacer class="hide-for-large2" size="16"></spacer>
 
+
     {{for_backend "{{#each articlesTop }}" ""}}
     {{#each articlesTop }}
-    <!-- priority article -->
-    <row>
-      <columns class="pb-0">
-        {{> article-bold articleWidth="424" contentBoxClass="border-width-2"}}
-      </columns>
-    </row>
-    <spacer size="10"></spacer>
-    <!-- end priority article -->
+    <!--[if !mso]>-->
+    <table cellspacing="0" cellpadding="0" border="0">
+    <!--<![endif]-->
+    
+    <!--[if mso]>
+      <table class="row" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;border-spacing:0;display:table;padding:0;position:relative;text-align:left;vertical-align:top;width:{{@root.settings.twoColumnContentWidth}}%" width="{{@root.settings.twoColumnContentWidth}}">
+    <![endif]-->
+        <tr>
+          <th class="small-12 large-12 columns first last">
+            <!--[if !mso]>-->
+            <table cellspacing="0" cellpadding="0" border="0">
+            <!--<![endif]-->
+            
+            <!--[if mso]>
+              <table class="row" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;border-spacing:0;display:table;padding:0;position:relative;text-align:left;vertical-align:top;width:{{@root.settings.twoColumnContentWidth}}%" width="{{@root.settings.twoColumnContentWidth}}">
+            <![endif]-->
+              <tr>
+                <th>
+                  {{> article-bold
+                  articleWidth=@root.settings.twoColumnContentWidth
+                  contentBoxClass="border-width-2" }}
+                </th>
+              </tr>
+            </table>
+          </th>
+        </tr>
+    </table>
     {{/each}}
     {{for_backend "{{/each}}" ""}}
+
+
+
 
     {{for_backend "{{#with articlesMiddle}}" ""}}
     {{#with articlesMiddle}}
