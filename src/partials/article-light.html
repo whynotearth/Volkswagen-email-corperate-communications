@@ -1,6 +1,6 @@
 {{set_variable "loccalContentWidth" (math-minus articleWidth @root.settings.articleLightContentStaticPartsWidth)}}
 {{set_variable "articleLightLineCenterWidth" (math-minus articleWidth @root.settings.articleLightStaticPartsWidth)}}
-<spacer class="show-for-large" size="20"></spacer>
+
 <row>
   <columns class="pb-0">
 
@@ -111,4 +111,4 @@
 
 {{> shadow-bottom-articles totalWidth=articleWidth shadowSize=@root.settings.shadowSize }}
 
-<spacer class="hide-for-large2" size="22"></spacer>
+<spacer size="{{@root.settings.spacerBottomArticles}}"></spacer>
