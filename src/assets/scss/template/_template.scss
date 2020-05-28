@@ -1,3 +1,4 @@
+
 body {
   background: $body-background;
 }
@@ -9,10 +10,10 @@ img {
   text-decoration: none;
   -ms-interpolation-mode: bicubic;
 }
-ul {
-  padding-left: 0;
-  list-style-position: inside;
-  margin: 0;
+ul, ol {
+  //padding-left: 18px;
+  //list-style-position: inside;
+  //margin: 0;
 }
 td {
   // fix outlook
@@ -166,6 +167,9 @@ b {
 .error-text {
   color: $error;
 }
+.link-text {
+  color: $body-em; 
+}
 .sans-serif {
   font-family: "Work Sans", Arial, "sans-serif";
 }
@@ -210,8 +214,8 @@ b {
   &,
   * {
     font-size: 32px;
-    font-weight: normal;
-    line-height: 38px;
+    font-weight: 700;
+    line-height: 20px;
   }
 }
 .h2 {
@@ -242,7 +246,7 @@ b {
   &,
   * {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 20px;
   }
 }
@@ -251,6 +255,14 @@ b {
   * {
     font-size: 16px;
     font-weight: 500;
+    line-height: 20px;
+  }
+}
+.body-1-em-low {
+  &,
+  * {
+    font-size: 16px;
+    font-weight: 400;
     line-height: 20px;
   }
 }
@@ -433,6 +445,9 @@ b {
 }
 .events-text {
   color: $events;
+}
+.text-black {
+  color: $black;
 }
 
 .em-high {
