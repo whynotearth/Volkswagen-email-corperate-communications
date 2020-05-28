@@ -54,8 +54,10 @@
   <tr>
     <td class="wrapper-inner">
 
-      <table class="layout-fixed" style="border-left:1px solid #{{for_backend '{{@root.settings.shadowColor}}' @root.settings.shadowColor}}; border-right:1px solid #{{for_backend '{{@root.settings.shadowColor}}' @root.settings.shadowColor}};">
+      <table class="layout-fixed">
         <tr>
+          {{> shadow-side-articles size=@root.settings.shadowSideSize }}
+
           <td>
             <table class="layout-fixed">
               <tr>
@@ -65,6 +67,8 @@
               </tr>
             </table>
           </td>
+
+          {{> shadow-side-articles size=@root.settings.shadowSideSize }}
         </tr>
       </table>
     </td>
@@ -87,15 +91,15 @@
       <table cellspacing="0" cellpadding="0" border="0">
         <tr>
           <!--[if !mso]>-->
-          <td class="one-team" height="{{math-minus 20 @root.settings.shadowSize}}" style="height:{{math-minus 20 @root.settings.shadowSize}}px;"></td>
+          <td class="one-team" height="{{math-minus 20 @root.settings.shadowBottomSize}}" style="height:{{math-minus 20 @root.settings.shadowBottomSize}}px;"></td>
           <!--<![endif]-->
           
           <!--[if mso]>
-            <td class="one-team" height="{{math-minus 18 @root.settings.shadowSize}}" style="background-color:#{{@root.settings.oneTeamColor}};height:{{math-minus 18 @root.settings.shadowSize}}px;"></td>
+            <td class="one-team" height="{{math-minus 18 @root.settings.shadowBottomSize}}" style="background-color:#{{@root.settings.oneTeamColor}};height:{{math-minus 18 @root.settings.shadowBottomSize}}px;"></td>
           <![endif]-->
         </tr>
         <tr>
-          <td class="shadow-bg" height="2" style="height:2px;"></td>
+          <td class="shadow-bg" height="{{@root.settings.shadowBottomSize}}" style="height:{{@root.settings.shadowBottomSize}}px;"></td>
         </tr>
       </table>
     </td>

@@ -12,6 +12,8 @@
     <!--<![endif]-->
 
       <tr>
+        {{> shadow-right-articles size=@root.settings.shadowSideSize}}
+
         <th width="200" height="26" style="width:200px;height:26px;" valign="bottom" align="right">
           <img
             style="width:200px; height:26px;"
@@ -79,7 +81,7 @@
           />
         </th>
 
-        {{> shadow-right-articles shadowSize=@root.settings.shadowSize}}
+        {{> shadow-right-articles size=@root.settings.shadowSideSize}}
       </tr>
     </table>
   </columns>
@@ -87,6 +89,8 @@
 
 <table class="wrapper article-content layout-fixed" width="100%" style="width:100%;" cellspacing="0" cellpadding="0" border="0">
   <tr>
+    {{> shadow-side-articles size=@root.settings.shadowSideSize }}
+
     <td class="wrapper-inner">
 
       <table class="layout-fixed" style="border-left:1px solid #{{for_backend '{{category.color}}' category.color}}; border-right:1px solid #{{for_backend '{{category.color}}' category.color}}; border-bottom:1px solid #{{for_backend '{{category.color}}' category.color}};">
@@ -104,18 +108,11 @@
       </table>
     </td>
 
-    <th class="shadow-bg shadow-border-color" width="{{@root.settings.shadowSize}}" style="width:{{@root.settings.shadowSize}}px;">
-    <table cellspacing="0" cellpadding="0" border="0"
-        width="{{@root.settings.shadowSize}}" style="width:{{@root.settings.shadowSize}}px;"
-    >
-        <tr>
-        <td></td>
-        </tr>
-    </table>
-    </th>
+    {{> shadow-side-articles size=@root.settings.shadowSideSize }}
+    
   </tr>
 </table>
 
-{{> shadow-bottom-articles totalWidth=articleWidth shadowSize=@root.settings.shadowSize }}
+{{> shadow-bottom-articles totalWidth=articleWidth size=@root.settings.shadowBottomSize }}
 
 <spacer size="{{@root.settings.spacerBottomArticles}}"></spacer>
