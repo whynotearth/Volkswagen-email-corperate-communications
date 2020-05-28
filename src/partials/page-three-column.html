@@ -1,11 +1,10 @@
 <row class="layout-fixed main-row">
-  <!-- main-column -->
   <columns
     small="12"
     large="9"
-    class="main-column"
+    class="main-column pb-0"
     width="100%"
-    style="width: 100%;"
+    style="width:100%;"
     valign="top"
   >
     <spacer size="6"></spacer>
@@ -38,7 +37,7 @@
       <table class="row" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;border-spacing:0;display:table;padding:0;position:relative;text-align:left;vertical-align:top;width:{{@root.settings.threeColumnContentWidth}}%" width="{{@root.settings.threeColumnContentWidth}}">
     <![endif]-->
         <tr>
-          <th class="small-12 large-12 columns first last">
+          <th class="small-12 large-12 columns first last pb-0">
             <!--[if !mso]>-->
             <table cellspacing="0" cellpadding="0" border="0">
             <!--<![endif]-->
@@ -63,39 +62,13 @@
     
     {{for_backend "{{#with articlesMiddle}}" ""}}
     {{#with articlesMiddle}}
-    {{> group-article-triple articleWidth="185" }}
+    {{> group-article-middle isThreeColumn=true articleWidth="185" }}
     {{/with}}
     {{for_backend "{{/with}}" ""}}
 
     {{for_backend "{{#each articlesBottom }}" ""}}
     {{#each articlesBottom }}
-    <!--[if !mso]>-->
-    <table cellspacing="0" cellpadding="0" border="0">
-    <!--<![endif]-->
-    
-    <!--[if mso]>
-      <table class="row" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;border-spacing:0;display:table;padding:0;position:relative;text-align:left;vertical-align:top;width:{{@root.settings.threeColumnContentWidth}}%" width="{{@root.settings.threeColumnContentWidth}}">
-    <![endif]-->
-        <tr>
-          <th class="small-12 large-12 columns first last">
-            <!--[if !mso]>-->
-            <table cellspacing="0" cellpadding="0" border="0">
-            <!--<![endif]-->
-            
-            <!--[if mso]>
-              <table class="row" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;border-spacing:0;display:table;padding:0;position:relative;text-align:left;vertical-align:top;width:{{@root.settings.threeColumnContentWidth}}%" width="{{@root.settings.threeColumnContentWidth}}">
-            <![endif]-->
-              <tr>
-                <th>
-                  {{> article-light-big
-                  articleWidth=@root.settings.threeColumnContentWidth
-                  contentBoxClass="border-width-1" }}
-                </th>
-              </tr>
-            </table>
-          </th>
-        </tr>
-    </table>
+    {{> article-light-big--switcher articleWidth=@root.settings.threeColumnContentWidth}}
     {{/each}}
     {{for_backend "{{/each}}" ""}}
 
