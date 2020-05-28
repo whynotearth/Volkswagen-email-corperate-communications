@@ -9,3 +9,4 @@ config.json
 dist/
 test-backend/*.html
 .env
+*.sw?
