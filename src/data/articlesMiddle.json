@@ -1,22 +1,5 @@
 [
   {
-    "id": 100,
-    "headline": "title of article middle 1",
-    "description": "description of article two",
-    "isOneTeam": true,
-    "image": {
-      "url": "https://placehold.it/161x161",
-      "width": "161",
-      "height": "161"
-    },
-    "category": {
-      "slug": "plant",
-      "name": "Plant",
-      "color": "d9efff",
-      "image": "https://res.cloudinary.com/whynotearth/image/upload/v1585211750/Volkswagen/newsletter1/Plant_fc01dz.png"
-    }
-  },
-  {
     "id": 101,
     "headline": "title of article middle 2",
     "description": "description of article three",
@@ -31,6 +14,23 @@
       "image": "https://res.cloudinary.com/whynotearth/image/upload/v1585211750/Volkswagen/newsletter1/One_Team_cplk6n.png",
       "name": "Plant",
       "slug": "plant"
+    }
+  },
+  {
+    "id": 100,
+    "headline": "title of article middle 1",
+    "description": "description of article two",
+    "isOneTeam": true,
+    "image": {
+      "url": "https://placehold.it/161x161",
+      "width": "161",
+      "height": "161"
+    },
+    "category": {
+      "slug": "plant",
+      "name": "Plant",
+      "color": "d9efff",
+      "image": "https://res.cloudinary.com/whynotearth/image/upload/v1585211750/Volkswagen/newsletter1/Plant_fc01dz.png"
     }
   },
   {
