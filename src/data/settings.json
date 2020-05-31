@@ -12,5 +12,6 @@
   "articleOneTeamContentStaticPartsWidth": 18,
   "articleLightStaticPartsWidth": 176,
   "shadowColor": "bfbfbf",
-  "oneTeamColor": "d9efff"
+  "oneTeamColor": "d9efff",
+  "spacerBottomArticles": 20
 }

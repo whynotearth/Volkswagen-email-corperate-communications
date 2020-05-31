@@ -13,13 +13,7 @@
 
       <tr>
         <th width="198" height="26" style="width:198px;height:26px;" valign="bottom">
-          <img
-            width="198"
-            height="26"
-            style="width:198px; height:26px;"
-            src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{for_backend '{{category.color}}' category.color}}/l_Volkswagen:newsletter1:label_{{for_backend '{{category.slug}}' category.slug}},co_rgb:{{for_backend '{{category.color}}' category.color}},g_west,x_66,y_-2/v1585236222/Volkswagen/newsletter1/curve-tab-198-26-96dpi-2x_uiq7gv.png"
-            alt=""
-          />
+          <img width="198" height="26" style="width:198px; height:26px;" src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{for_backend '{{category.color}}' category.color}}/l_Volkswagen:newsletter1:label_{{for_backend '{{category.slug}}' category.slug}}_1x_ecd7py,co_rgb:{{for_backend '{{category.color}}' category.color}},g_west,x_50,y_-1/v1585236222/Volkswagen/newsletter1/curve-tab-198-26-72dpi-1x_uiq7gv_svi9t1.png" alt="" />
         </th>
 
         <!-- line center: th outlook -->
@@ -120,4 +114,4 @@
 
 {{> shadow-bottom-articles totalWidth=articleWidth shadowSize=@root.settings.shadowSize }}
 
-<spacer class="hide-for-large2" size="22"></spacer>
+<spacer size="{{@root.settings.spacerBottomArticles}}"></spacer>
