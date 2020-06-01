@@ -12,10 +12,10 @@
     <!--<![endif]-->
 
       <tr>
-        {{> shadow-top-side-articles size=@root.settings.shadowSideSize}}
+        {{> shadow-top-side-articles left=true size=@root.settings.shadowSideSize}}
 
-        <th width="200" height="26" style="width:200px;height:26px;" valign="bottom">
-          <img width="200" height="26" style="width:200px; height:26px;" src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{for_backend '{{category.color}}' category.color}}/l_Volkswagen:newsletter1:label_{{for_backend '{{category.slug}}' category.slug}},co_rgb:{{for_backend '{{category.color}}' category.color}},g_west,x_66,y_-1/v1588841378/Volkswagen/newsletter1/curve-tab-198-26-96dpi-2x_uiq7gv.png" alt="" />
+        <th width="{{@root.settings.articleBold_labelWidth}}" height="26" style="width:{{@root.settings.articleBold_labelWidth}}px;height:26px;" valign="bottom">
+          <img width="{{@root.settings.articleBold_labelWidth}}" height="26" style="width:{{@root.settings.articleBold_labelWidth}}px; height:26px;" src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{for_backend '{{category.color}}' category.color}}/l_Volkswagen:newsletter1:label_{{for_backend '{{category.slug}}' category.slug}},co_rgb:{{for_backend '{{category.color}}' category.color}},g_west,x_66,y_-1/v1588841378/Volkswagen/newsletter1/curve-tab-198-26-96dpi-2x_uiq7gv.png" alt="" />
         </th>
 
         <!-- line center: th outlook -->
@@ -54,11 +54,11 @@
         </th>
 
         <!-- corner icon -->
-        <th valign="bottom" width="32" height="26" style="width:32px; height:26px;">
+        <th valign="bottom" width="{{@root.settings.articleBold_iconWidth}}" height="26" style="width:{{@root.settings.articleBold_iconWidth}}px; height:26px;">
           <img
             height="16"
-            width="32"
-            style="width: 32px; height:16px;"
+            width="{{@root.settings.articleBold_iconWidth}}"
+            style="width: {{@root.settings.articleBold_iconWidth}}px; height:16px;"
             class="article-top-icon float-left"
             src="{{for_backend "{{cloudinary_transform category.image 'w_128,h_64,c_pad,b_white'}}" (cloudinary_transform category.image 'w_128,h_64,c_pad,b_white') }}"
             alt=""
@@ -66,29 +66,28 @@
         </th>
 
         <!-- line right -->
-        <th valign="bottom" width="30" height="26" style="width: 30px;" class="article-top-right">
+        <th valign="bottom" width="{{@root.settings.articleBold_lineRightWidth}}" height="26" style="width: {{@root.settings.articleBold_lineRightWidth}}px;" class="article-top-right">
           <img 
             class="float-right"
-            width="30"
+            width="{{@root.settings.articleBold_lineRightWidth}}"
             height="26"
-            style="width: 30px; height:26px;"
+            style="width: {{@root.settings.articleBold_lineRightWidth}}px; height:26px;"
             src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{for_backend '{{category.color}}' category.color}}/Volkswagen/newsletter1/line-hv-32-26-72dpi_lewyes_ctrbxn.png"
             alt=""
           />
         </th>
 
-        {{> shadow-top-side-articles size=@root.settings.shadowSideSize}}
+        {{> shadow-top-side-articles right=true size=@root.settings.shadowSideSize}}
       </tr>
     </table>
   </columns>
 </row>
 
-<table class="wrapper layout-fixed" width="100%" style="width:100%;" cellspacing="0" cellpadding="0" border="0">
+{{#> table-mso width=articleWidth }}
   <tr>
     {{> shadow-side-articles left=true size=@root.settings.shadowSideSize }}
 
-    <td class="wrapper-inner">
-
+    <td>
       <table class="layout-fixed" style="border-left:2px solid #{{for_backend '{{category.color}}' category.color}}; border-right:2px solid #{{for_backend '{{category.color}}' category.color}}; border-bottom:2px solid #{{for_backend '{{category.color}}' category.color}};">
         <tr>
           <td>
@@ -106,7 +105,7 @@
 
     {{> shadow-side-articles right=true size=@root.settings.shadowSideSize }}
   </tr>
-</table>
+{{/table-mso }}
 
 {{> shadow-bottom-articles totalWidth=articleWidth size=@root.settings.shadowBottomSize }}
 

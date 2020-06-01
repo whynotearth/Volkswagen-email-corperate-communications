@@ -1,11 +1,14 @@
 {
   "twoColumnWidth": 612,
+  "sidebarWidth": 128,
   "twoColumnContentWidth": 424,
   "threeColumnWidth": 611,
   "threeColumnContentWidth": 571,
-
   "shadowSideSize": 4,
   "shadowBottomSize": 6,
+  "articleBold_labelWidth": 200,
+  "articleBold_iconWidth": 32,
+  "articleBold_lineRightWidth": 30,
   "articleBoldStaticPartsWidth": 270,
   "articleLightBigStaticPartsWidth": 252,
   "articleLightBigContentStaticPartsWidth": 24,
@@ -13,7 +16,6 @@
   "articleBoldContentStaticPartsWidth": 28,
   "articleOneTeamContentStaticPartsWidth": 22,
   "articleLightStaticPartsWidth": 180,
-
   "shadowColor": "bfbfbf",
   "oneTeamColor": "d9efff",
   "spacerBottomArticles": 20

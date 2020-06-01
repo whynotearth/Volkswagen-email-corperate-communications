@@ -1,14 +1,20 @@
 <th
   class="{{classes}}"
   width="{{width}}"
-  style="width:{{width}}px;"
+  {{#if height}}
+  height="{{height}}"
+  {{/if}}
+  style="width:{{width}}px;{{#if height}}height:{{height}}px{{/if}}"
 >
   <table
     cellspacing="0"
     cellpadding="0"
     border="0"
     width="{{width}}"
-    style="width:{{width}}px;"
+    {{#if height}}
+    height="{{height}}"
+    {{/if}}
+    style="width:{{width}}px;{{#if height}}height:{{height}}px{{/if}}"
   >
     <tr>
       <td></td>

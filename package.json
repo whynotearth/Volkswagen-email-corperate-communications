@@ -6,8 +6,9 @@
   "main": "gulpfile.babel.js",
   "scripts": {
     "start": "gulp",
-    "build": "cross-env FOR_BACKEND=false gulp --production",
-    "build-backend": "cross-env FOR_BACKEND=true gulp --production",
+    "update-settings": "node src/data/settingsGenerator.js",
+    "build": "cross-env FOR_BACKEND=false yarn update-settings && gulp --production",
+    "build-backend": "cross-env FOR_BACKEND=true yarn update-settings && gulp --production",
     "test-backend": "node test-backend/handlebars-compile.js",
     "zip": "gulp zip --production",
     "litmus": "gulp litmus --production",
