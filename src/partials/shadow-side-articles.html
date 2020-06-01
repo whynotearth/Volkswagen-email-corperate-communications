@@ -1,8 +1,7 @@
-<th class="shadow-bg shadow-border-color" width="{{size}}" style="width:{{size}}px;">
-<table cellspacing="0" cellpadding="0" border="0" width="{{size}}" style="width:{{size}}px;"
-    >
-    <tr>
-    <td></td>
-    </tr>
-</table>
-</th>
+{{#if left}}
+{{> spacer-horizontal classes="shadow-bg-1" width="2"}}
+{{> spacer-horizontal classes="shadow-bg-2" width="2"}}
+{{else}}
+{{> spacer-horizontal classes="shadow-bg-2" width="2"}}
+{{> spacer-horizontal classes="shadow-bg-1" width="2"}}
+{{/if}}

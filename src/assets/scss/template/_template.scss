@@ -550,13 +550,23 @@ th {
 .break-words {
   word-break: break-word;
 }
-.shadow-bg {
-  background-color: $shadow;
-}
 .shadow-border-color {
   border-color: $shadow;
 }
 
 .content-wrapper {
   padding: 8px;
+}
+
+.shadow-bg-1 {
+  background: $shadow-1;
+}
+.shadow-bg-2 {
+  background: $shadow-2;
+}
+.shadow-bg-3 {
+  background: $shadow-3;
+}
+.shadow-bg-4 {
+  background: $shadow-4;
 }

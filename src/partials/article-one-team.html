@@ -56,7 +56,7 @@
 
       <table class="layout-fixed">
         <tr>
-          {{> shadow-side-articles size=@root.settings.shadowSideSize }}
+          {{> shadow-side-articles left=true size=@root.settings.shadowSideSize }}
 
           <td>
             <table class="layout-fixed">
@@ -68,7 +68,7 @@
             </table>
           </td>
 
-          {{> shadow-side-articles size=@root.settings.shadowSideSize }}
+          {{> shadow-side-articles right=true size=@root.settings.shadowSideSize }}
         </tr>
       </table>
     </td>

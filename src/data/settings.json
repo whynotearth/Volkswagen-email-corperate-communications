@@ -4,16 +4,16 @@
   "threeColumnWidth": 611,
   "threeColumnContentWidth": 571,
 
-  "shadowSideSize": 3,
+  "shadowSideSize": 4,
   "shadowBottomSize": 6,
   "articleBoldStaticPartsWidth": 268,
   "articleLightBigStaticPartsWidth": 252,
   "articleLightBigContentStaticPartsWidth": 24,
-  "articleBoldContentStaticPartsWidth": 26,
   "articleLightContentStaticPartsWidth": 24,
+  "articleBoldContentStaticPartsWidth": 26,
   "articleOneTeamContentStaticPartsWidth": 22,
   "articleLightStaticPartsWidth": 180,
-  
+
   "shadowColor": "bfbfbf",
   "oneTeamColor": "d9efff",
   "spacerBottomArticles": 20
