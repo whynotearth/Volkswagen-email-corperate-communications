@@ -6,11 +6,11 @@
 
   "shadowSideSize": 4,
   "shadowBottomSize": 6,
-  "articleBoldStaticPartsWidth": 268,
+  "articleBoldStaticPartsWidth": 270,
   "articleLightBigStaticPartsWidth": 252,
   "articleLightBigContentStaticPartsWidth": 24,
   "articleLightContentStaticPartsWidth": 24,
-  "articleBoldContentStaticPartsWidth": 26,
+  "articleBoldContentStaticPartsWidth": 28,
   "articleOneTeamContentStaticPartsWidth": 22,
   "articleLightStaticPartsWidth": 180,
 
