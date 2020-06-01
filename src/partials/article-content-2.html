@@ -9,18 +9,26 @@
 
   <tr>
     <td>
-      <h2 class="large-title primary-text">{{for_backend "{{headline}}" headline }}</h2>
+      <h2 class="large-title primary-text work-sans">
+        <font face="'Work Sans', Arial, sans-serif;">
+          {{for_backend "{{headline}}" headline }}
+        </font>
+      </h2>
     </td>
   </tr>
 
   <tr>
-    <td class="em-high body-small whitespace-pre-line break-words">
-      {{for_backend "{{imageCaption}}" imageCaption }}
+    <td class="em-high body-small whitespace-pre-line break-words work-sans">
+      <font face="'Work Sans', Arial, sans-serif;">
+        {{for_backend "{{imageCaption}}" imageCaption }}
+      </font>
     </td>
   </tr>
   <tr>
-    <td class="em-high body-small whitespace-pre-line break-words">
-      {{{for_backend "{{{description}}}" description }}}
+    <td class="em-high body-small whitespace-pre-line break-words work-sans">
+      <font face="'Work Sans', Arial, sans-serif;">
+        {{{for_backend "{{{description}}}" description }}}
+      </font>
     </td>
   </tr>
 </table>
