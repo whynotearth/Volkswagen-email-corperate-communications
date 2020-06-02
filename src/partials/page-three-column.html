@@ -29,33 +29,23 @@
 
     {{for_backend "{{#each articlesTop }}" ""}}
     {{#each articlesTop }}
-    <!--[if !mso]>-->
-    <table cellspacing="0" cellpadding="0" border="0">
-    <!--<![endif]-->
     
-    <!--[if mso]>
-      <table class="row" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;border-spacing:0;display:table;padding:0;position:relative;text-align:left;vertical-align:top;width:{{@root.settings.threeColumnContentWidth}}%" width="{{@root.settings.threeColumnContentWidth}}">
-    <![endif]-->
-        <tr>
-          <th class="small-12 large-12 columns first last pb-0">
-            <!--[if !mso]>-->
-            <table cellspacing="0" cellpadding="0" border="0">
-            <!--<![endif]-->
-            
-            <!--[if mso]>
-              <table class="row" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;border-spacing:0;display:table;padding:0;position:relative;text-align:left;vertical-align:top;width:{{@root.settings.threeColumnContentWidth}}%" width="{{@root.settings.threeColumnContentWidth}}">
-            <![endif]-->
-              <tr>
-                <th>
-                  {{> article-bold
-                  articleWidth=@root.settings.threeColumnContentWidth
-                  contentBoxClass="border-width-2" }}
-                </th>
-              </tr>
-            </table>
-          </th>
-        </tr>
-    </table>
+    {{#> table-mso width=@root.settings.threeColumnContentWidth }}
+      <tr>
+        <th class="small-12 large-12 columns first last pb-0">
+          {{#> table-mso width=@root.settings.threeColumnContentWidth }}
+          <tr>
+            <th>
+              {{> article-bold
+              articleWidth=@root.settings.threeColumnContentWidth
+              contentBoxClass="border-width-2" }}
+            </th>
+          </tr>
+          {{/table-mso }}
+        </th>
+      </tr>
+    {{/table-mso }}
+
     {{/each}}
     {{for_backend "{{/each}}" ""}}
 
