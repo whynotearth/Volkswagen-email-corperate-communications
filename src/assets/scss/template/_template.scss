@@ -170,6 +170,9 @@ b {
 .link-text {
   color: $body-em; 
 }
+.black-text {
+  color: $black;
+}
 .sans-serif {
   font-family: "Work Sans", Arial, "sans-serif";
 }
@@ -572,3 +575,4 @@ th {
 .content-wrapper {
   padding: 8px;
 }
+

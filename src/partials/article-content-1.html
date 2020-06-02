@@ -7,54 +7,25 @@
 <![endif]-->
   <tr>
     <td>
-      <h2 class="large-title primary-text">
-        {{for_backend "{{headline}}" headline }}
-      </h2>
+      <h2 class="h2 bb-16 m-0">Help us recognize outstanding women in the workplace | Women Who Rock event</h2>
+
+      <p class="body-1-em-low bb-8" width="100%">
+        In celebration of Women’s History Month, we are honoring Volkswagen Women Who Rock! <a class="body-1-em-low link-text" href="https://app.emailonacid.com/app/editor/project/kejjS7TXjuroljGTHBjqKyU3W9UfGqh9SihJbtT5yrvGA" rel="nofollow">We are accepting nominations now through March 13.</a> By submitting a name for consideration, you help us identify female role models with leadership potential!
+      </p> 
+
+      <p class="body-1-em-low bb-8" >Nominate today by…</p> 
+      <ol class="body-1-em-low bb-8 m-0" style="padding-left: 18px;">
+        <li class="black-text">Scanning the QR code</li>
+        <li class="black-text">Visiting <a class="body-1-em-low link-text" href="https://linktr.ee/WomenWhoRock" rel="nofollow">https://linktr.ee/WomenWhoRock</a></li>
+        <li class="black-text">Submitting a paper nomination form to the drop boxes in Paint and 10-meter level Main Stair well (available for hourly employees only. Forms are prefilled with employee information)</li>
+      </ol>
+
+      <p class="body-1-em-low bb-8">
+        Employees who submit a nomination are entered to win an Apple iPad! Nomination winners receive over $200 in prizes and will be announced at the awards brunch on Saturday, March 21, 11 a.m. in the Volkswagen Conference Center.
+        Questions? Email <a class="body-1-em-low link-text" href="vwgoa.womeninmotion@vw.com"
+          rel="nofollow">vwgoa.womeninmotion@vw.com</a>.
+      </p> 
     </td>
   </tr>
-
-  <!-- with image -->
-  {{for_backend "{{#if image.url}}" ""}}
-
-  <!--[if !mso]><!-->
-  <tr>
-    <td class="hide-for-large2">
-      {{> image-beside-in-article image=image}}
-    </td>
-  </tr>
-  <!--<![endif]-->
-  
-  <tr>
-    <td>
-      <table cellspacing="0" cellpadding="0" border="0">
-        <tr>
-          <td
-            class="em-high body-small whitespace-pre-line break-words article-content-1--desc1"
-          >
-            {{for_backend "{{imageCaption}}" imageCaption }}
-          </td>
-          <td width="{{for_backend '{{image.wrapperWidth}}' image.wrapperWidth}}" class="show-for-large">
-            {{> image-beside-in-article image=image}}
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-  <tr>
-    <td class="em-high body-small whitespace-pre-line break-words">
-      {{{for_backend "{{{description}}}" description }}}
-    </td>
-  </tr>
-
-  <!-- without image -->
-  {{for_backend "{{else}}" ""}}
-
-  <tr>
-    <td class="em-high body-small whitespace-pre-line break-words">
-      {{{for_backend "{{{description}}}" description }}}
-    </td>
-  </tr>
-
-  {{for_backend "{{/if}}" ""}}
 </table>
 
