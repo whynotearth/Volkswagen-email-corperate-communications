@@ -1,3 +1,4 @@
+{{#if left}}
 <th valign="bottom" width="{{size}}" height="26" style="width: {{size}}px;">
   <table cellspacing="0" cellpadding="0" border="0" height="{{math-minus (math-minus 26 16) size}}">
     <tr>
@@ -6,3 +7,13 @@
     </tr>
   </table>
 </th>
+{{else}}
+<th valign="bottom" width="{{size}}" height="26" style="width: {{size}}px;">
+  <table cellspacing="0" cellpadding="0" border="0" height="{{math-minus (math-minus 26 16) size}}">
+    <tr>
+    {{> spacer-horizontal classes="shadow-bg-2" width="2" height="6"}}
+    {{> spacer-horizontal classes="shadow-bg-1" width="2" height="6"}}
+    </tr>
+  </table>
+</th>
+{{/if}}
