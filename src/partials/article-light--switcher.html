@@ -3,7 +3,7 @@
     <tr>
       <th>
         {{for_backend "{{#if isOneTeam}}" ""}}
-          
+          {{> article-one-team articleWidth=articleWidth contentBoxClass="border-width-0 one-team"}}
         {{for_backend "{{else}}" ""}}
           {{> article-light articleWidth=articleWidth contentBoxClass="border-width-1"}}
         {{for_backend "{{/if}}" ""}}

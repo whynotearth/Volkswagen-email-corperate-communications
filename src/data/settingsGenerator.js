@@ -59,16 +59,25 @@ const articleLightBig_ContentStaticPartsWidth =
 // -----------------
 const _articleLight_borderWidth = 1;
 // > 26
-const articleLight_ContentStaticPartsWidth = shadowSideSize * 2 + _articleLight_borderWidth * 2 + contentPadding * 2;
 const articleLight_labelWidth = 128;
 const articleLight_iconWidth = 32;
 const articleLight_lineRightWidth = 14;
 const articleLight_StaticPartsWidth =
   shadowSideSize * 2 + articleLight_labelWidth + articleLight_iconWidth + articleLight_lineRightWidth;
+const articleLight_ContentStaticPartsWidth = shadowSideSize * 2 + _articleLight_borderWidth * 2 + contentPadding * 2;
 
 // article one-team
 // -----------------
-const articleOneTeam_ContentStaticPartsWidth = 22;
+const _articleOneTeam_borderWidth = 0;
+const articleOneTeam_imageWidth = 98;
+const articleOneTeam_topCornerImageWidth = 8;
+const articleOneTeam_headerSectionHeight = 68;
+const articleOneTeam_bottomCornerImageWidth = 20;
+const articleOneTeam_bottomCornerImageHeight = 20;
+// > 26
+const articleOneTeam_StaticPartsWidth = shadowSideSize * 2 + articleOneTeam_imageWidth;
+const articleOneTeam_ContentStaticPartsWidth =
+  shadowSideSize * 2 + _articleOneTeam_borderWidth * 2 + contentPadding * 2;
 
 const shadowColor = 'bfbfbf';
 const oneTeamColor = 'd9efff';
@@ -98,7 +107,14 @@ const settings = {
   articleLight_StaticPartsWidth,
   articleLight_lineRightWidth,
 
+  articleOneTeam_imageWidth,
   articleOneTeam_ContentStaticPartsWidth,
+  articleOneTeam_topCornerImageWidth,
+  articleOneTeam_headerSectionHeight,
+  articleOneTeam_bottomCornerImageWidth,
+  articleOneTeam_bottomCornerImageHeight,
+  // TODO: use:
+  articleOneTeam_StaticPartsWidth,
 
   shadowSideSize,
   shadowBottomSize,
