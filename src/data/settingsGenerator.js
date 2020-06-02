@@ -27,6 +27,7 @@ const threeColumnContentWidth = threeColumnWidth - (_mainColumnPaddingLeft_3col 
 
 const shadowSideSize = 4;
 const shadowBottomSize = 6;
+const contentPadding = 8;
 
 // article bold
 // -------------
@@ -40,6 +41,7 @@ const articleBold_ContentStaticPartsWidth = 28;
 
 // article light big
 // -----------------
+const _articleLightBig_borderWidth = 1;
 const articleLightBig_labelWidth = 200;
 const articleLightBig_iconWidth = 32;
 const articleLightBig_lineRightWidth = 14;
@@ -49,12 +51,20 @@ const articleLightBig_StaticPartsWidth =
   articleLightBig_iconWidth +
   articleLightBig_lineRightWidth +
   shadowSideSize;
-const articleLightBig_ContentStaticPartsWidth = 24;
+// > 26
+const articleLightBig_ContentStaticPartsWidth =
+  shadowSideSize * 2 + _articleLightBig_borderWidth * 2 + contentPadding * 2;
 
 // article light (small)
 // -----------------
-const articleLight_ContentStaticPartsWidth = 24;
-const articleLight_StaticPartsWidth = 180;
+const _articleLight_borderWidth = 1;
+// > 26
+const articleLight_ContentStaticPartsWidth = shadowSideSize * 2 + _articleLight_borderWidth * 2 + contentPadding * 2;
+const articleLight_labelWidth = 128;
+const articleLight_iconWidth = 32;
+const articleLight_lineRightWidth = 14;
+const articleLight_StaticPartsWidth =
+  shadowSideSize * 2 + articleLight_labelWidth + articleLight_iconWidth + articleLight_lineRightWidth;
 
 // article one-team
 // -----------------
@@ -83,8 +93,10 @@ const settings = {
   articleLightBig_StaticPartsWidth,
   articleLightBig_ContentStaticPartsWidth,
 
+  articleLight_labelWidth,
   articleLight_ContentStaticPartsWidth,
   articleLight_StaticPartsWidth,
+  articleLight_lineRightWidth,
 
   articleOneTeam_ContentStaticPartsWidth,
 
