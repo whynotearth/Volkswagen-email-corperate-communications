@@ -1,45 +1,43 @@
-<table class="row layout-fixed" cellspacing="0" cellpadding="0" border="0">
-  <tbody>
-    <tr>
-      
-      {{for_backend "{{#if this.[0]}}" ""}}
-      {{for_backend "{{#with this.[0]}}" ""}}
+{{#> table-mso width=articleWidth }}
+  <tr>
+    
+    {{for_backend "{{#if this.[0]}}" ""}}
+    {{for_backend "{{#with this.[0]}}" ""}}
 
-      {{#if this.[0]}}
-      {{#with this.[0]}}
-      {{> article-light--switcher articleWidth=../articleWidth}}
-      {{/with}}
-      {{/if}}
-      {{for_backend "{{/with}}" ""}}
-      {{for_backend "{{/if}}" ""}}
-      
-      {{for_backend "{{#if this.[1]}}" ""}}
-      {{! <!-- spacer --> }}
-      {{> spacer-horizontal width=8 classes="show-for-large" }}
-      {{for_backend "{{#with this.[1]}}" ""}}
-      {{#if this.[1]}}
-      {{#with this.[1]}}
-      {{> article-light--switcher articleWidth=../articleWidth}}
-      {{/with}}
-      {{/if}}
-      {{for_backend "{{/with}}" ""}}
-      {{for_backend "{{/if}}" ""}}
+    {{#if this.[0]}}
+    {{#with this.[0]}}
+    {{> article-light--switcher articleWidth=../articleWidth}}
+    {{/with}}
+    {{/if}}
+    {{for_backend "{{/with}}" ""}}
+    {{for_backend "{{/if}}" ""}}
+    
+    {{for_backend "{{#if this.[1]}}" ""}}
+    {{! <!-- spacer --> }}
+    {{> spacer-horizontal width=8 classes="show-for-large" }}
+    {{for_backend "{{#with this.[1]}}" ""}}
+    {{#if this.[1]}}
+    {{#with this.[1]}}
+    {{> article-light--switcher articleWidth=../articleWidth}}
+    {{/with}}
+    {{/if}}
+    {{for_backend "{{/with}}" ""}}
+    {{for_backend "{{/if}}" ""}}
 
-      {{! <!-- three column only --> }}
-      {{#if isThreeColumn}}
-      {{for_backend "{{#if this.[2]}}" ""}}
-      {{! <!-- spacer --> }}
-      {{> spacer-horizontal width=8 classes="show-for-large" }}
-      {{for_backend "{{#with this.[2]}}" ""}}
-      {{#if this.[2]}}
-      {{#with this.[2]}}
-      {{> article-light--switcher articleWidth=../articleWidth}}
-      {{/with}}
-      {{/if}}
-      {{for_backend "{{/with}}" ""}}
-      {{for_backend "{{/if}}" ""}}
-      {{/if}}
-      
-    </tr>
-  </tbody>
-</table>
+    {{! <!-- three column only --> }}
+    {{#if isThreeColumn}}
+    {{for_backend "{{#if this.[2]}}" ""}}
+    {{! <!-- spacer --> }}
+    {{> spacer-horizontal width=8 classes="show-for-large" }}
+    {{for_backend "{{#with this.[2]}}" ""}}
+    {{#if this.[2]}}
+    {{#with this.[2]}}
+    {{> article-light--switcher articleWidth=../articleWidth}}
+    {{/with}}
+    {{/if}}
+    {{for_backend "{{/with}}" ""}}
+    {{for_backend "{{/if}}" ""}}
+    {{/if}}
+    
+  </tr>
+{{/table-mso }}

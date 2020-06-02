@@ -7,8 +7,10 @@
 <![endif]-->
   <tr>
     <td>
-      <h2 class="large-title primary-text">
-        {{for_backend "{{headline}}" headline }}
+      <h2 class="large-title primary-text work-sans">
+        <font face="'Work Sans', Arial, sans-serif;">
+          {{for_backend "{{headline}}" headline }}
+        </font>
       </h2>
     </td>
   </tr>
@@ -29,9 +31,11 @@
       <table cellspacing="0" cellpadding="0" border="0">
         <tr>
           <td
-            class="em-high body-small whitespace-pre-line break-words article-content-1--desc1"
+            class="em-high body-small whitespace-pre-line break-words article-content-1--desc1 work-sans"
           >
-            {{for_backend "{{imageCaption}}" imageCaption }}
+            <font face="'Work Sans', Arial, sans-serif;">
+              {{for_backend "{{imageCaption}}" imageCaption }}
+            </font>
           </td>
           <td width="{{for_backend '{{image.wrapperWidth}}' image.wrapperWidth}}" class="show-for-large">
             {{> image-beside-in-article image=image}}
@@ -41,8 +45,10 @@
     </td>
   </tr>
   <tr>
-    <td class="em-high body-small whitespace-pre-line break-words">
-      {{{for_backend "{{{description}}}" description }}}
+    <td class="em-high body-small whitespace-pre-line break-words work-sans">
+      <font face="'Work Sans', Arial, sans-serif;">
+        {{{for_backend "{{{description}}}" description }}}
+      </font>
     </td>
   </tr>
 
@@ -50,8 +56,10 @@
   {{for_backend "{{else}}" ""}}
 
   <tr>
-    <td class="em-high body-small whitespace-pre-line break-words">
-      {{{for_backend "{{{description}}}" description }}}
+    <td class="em-high body-small whitespace-pre-line break-words work-sans">
+      <font face="'Work Sans', Arial, sans-serif;">
+        {{{for_backend "{{{description}}}" description }}}
+      </font>
     </td>
   </tr>
 
