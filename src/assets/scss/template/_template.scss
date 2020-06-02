@@ -12,7 +12,7 @@ img {
 }
 ul, ol {
   //padding-left: 18px;
-  //list-style-position: inside;
+  list-style-position: inside;
   //margin: 0;
 }
 td {
@@ -258,14 +258,6 @@ b {
   * {
     font-size: 16px;
     font-weight: 500;
-    line-height: 20px;
-  }
-}
-.body-1-em-low {
-  &,
-  * {
-    font-size: 16px;
-    font-weight: 400;
     line-height: 20px;
   }
 }
