@@ -1,4 +1,4 @@
-{{set_variable "loccalContentWidth" (math-minus articleWidth @root.settings.articleOneTeamContentStaticPartsWidth)}}
+{{set_variable "localContentWidth" (math-minus articleWidth @root.settings.articleOneTeam_ContentStaticPartsWidth)}}
 <row>
   <columns class="pb-0">
 
@@ -62,7 +62,7 @@
             <table class="layout-fixed">
               <tr>
                 <th class="content-wrapper {{contentBoxClass}}">
-                  {{> article-content-2 contentWidth=@root.loccalContentWidth }}
+                  {{> article-content-2 contentWidth=@root.localContentWidth }}
                 </th>
               </tr>
             </table>

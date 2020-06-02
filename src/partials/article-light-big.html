@@ -1,24 +1,18 @@
-{{set_variable "loccalContentWidth" (math-minus articleWidth @root.settings.articleLightBigContentStaticPartsWidth)}}
+{{set_variable "localContentWidth" (math-minus articleWidth @root.settings.articleLightBig_ContentStaticPartsWidth)}}
 
 <row>
   <columns class="pb-0">
 
-    <!--[if mso]>
-      <table class="layout-fixed" cellspacing="0" cellpadding="0" border="0" width="{{articleWidth}}" style="width:{{articleWidth}}px;">
-    <![endif]-->
-
-    <!--[if !mso]>-->
-    <table class="layout-fixed" cellspacing="0" cellpadding="0" border="0" width="100%" style="width:100%;">
-    <!--<![endif]-->
+    {{#> table-mso width=articleWidth }}
 
       <tr>
         {{> shadow-top-side-articles size=@root.settings.shadowSideSize}}
 
-        <th width="200" height="26" style="width:200px;height:26px;" valign="bottom" align="right">
+        <th width="{{@root.settings.articleLightBig_labelWidth}}" height="26" style="width:{{@root.settings.articleLightBig_labelWidth}}px;height:26px;" valign="bottom" align="right">
           <img
-            style="width:200px; height:26px;"
+            style="width:{{@root.settings.articleLightBig_labelWidth}}px; height:26px;"
             class="float-right"
-            width="200"
+            width="{{@root.settings.articleLightBig_labelWidth}}"
             height="26"
             src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{for_backend '{{category.color}}' category.color}}/l_Volkswagen:newsletter1:label_{{for_backend '{{category.slug}}' category.slug}},co_rgb:{{for_backend '{{category.color}}' category.color}},g_west,x_54,y_-2/v1585236223/Volkswagen/newsletter1/article-top-left-200-1px_xjdqgd.png"
             alt=""
@@ -28,9 +22,9 @@
         <!-- line center -->
         <!--[if mso]>
         <th
-          width="{{math-minus articleWidth @root.settings.articleLightBigStaticPartsWidth}}"
+          width="{{math-minus articleWidth @root.settings.articleLightBig_StaticPartsWidth}}"
           height="26"
-          style="width:{{math-minus articleWidth @root.settings.articleLightBigStaticPartsWidth}}px;height:26px;"
+          style="width:{{math-minus articleWidth @root.settings.articleLightBig_StaticPartsWidth}}px;height:26px;"
           valign="bottom"
           class="article-tab-line {{for_backend '{{category.slug}}' category.slug}}-text"
         >
@@ -47,8 +41,8 @@
           <!--[if mso]>
           <img
               height="26"
-              width="{{math-minus articleWidth @root.settings.articleLightBigStaticPartsWidth}}"
-              style="height:26px;width:{{math-minus articleWidth @root.settings.articleLightBigStaticPartsWidth}}px;"
+              width="{{math-minus articleWidth @root.settings.articleLightBig_StaticPartsWidth}}"
+              style="height:26px;width:{{math-minus articleWidth @root.settings.articleLightBig_StaticPartsWidth}}px;"
               class="float-left"
               src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{for_backend '{{category.color}}' category.color}}/Volkswagen/newsletter1/line-258-1px_ohv8oj.png"
               alt=""
@@ -57,12 +51,12 @@
         </th>
 
         <!-- corner icon -->
-        <th valign="bottom" width="32" height="26" style="width:32px; height:26px;">
+        <th valign="bottom" width="{{@root.settings.articleLightBig_iconWidth}}" height="26" style="width:{{@root.settings.articleLightBig_iconWidth}}px; height:26px;">
           <!-- corner icon -->
           <img
             height="16"
-            width="32"
-            style="width: 32px; height:16px;"
+            width="{{@root.settings.articleLightBig_iconWidth}}"
+            style="width: {{@root.settings.articleLightBig_iconWidth}}px; height:16px;"
             class="article-top-icon float-left"
             src="{{for_backend "{{cloudinary_transform category.image 'w_128,h_64,c_pad,b_white'}}" (cloudinary_transform category.image 'w_128,h_64,c_pad,b_white') }}"
             alt=""
@@ -70,12 +64,12 @@
         </th>
 
         <!-- line right -->
-        <th valign="bottom" width="14" height="26" style="width: 14px;" class="article-top-right">
+        <th valign="bottom" width="{{@root.settings.articleLightBig_lineRightWidth}}" height="26" style="width: {{@root.settings.articleLightBig_lineRightWidth}}px;" class="article-top-right">
           <img
             class="float-right"
-            width="14"
+            width="{{@root.settings.articleLightBig_lineRightWidth}}"
             height="26"
-            style="width: 14px; height:26px;"
+            style="width: {{@root.settings.articleLightBig_lineRightWidth}}px; height:26px;"
             src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{for_backend '{{category.color}}' category.color}}/Volkswagen/newsletter1/line-hv-14-1px-96dpi_azfdfc.png"
             alt=""
           />
@@ -83,7 +77,7 @@
 
         {{> shadow-top-side-articles size=@root.settings.shadowSideSize}}
       </tr>
-    </table>
+    {{/table-mso }}
   </columns>
 </row>
 
@@ -98,7 +92,7 @@
             <table class="layout-fixed">
               <tr>
                 <th class="content-wrapper">
-                  {{> article-content-1 contentWidth=@root.loccalContentWidth }}
+                  {{> article-content-1 contentWidth=@root.localContentWidth }}
                 </th>
               </tr>
             </table>

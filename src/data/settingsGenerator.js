@@ -34,18 +34,31 @@ const articleBold_labelWidth = 200;
 const articleBold_iconWidth = 32;
 const articleBold_lineRightWidth = 30;
 // > 270
-const articleBoldStaticPartsWidth =
+const articleBold_StaticPartsWidth =
   shadowSideSize + articleBold_labelWidth + articleBold_iconWidth + articleBold_lineRightWidth + shadowSideSize;
+const articleBold_ContentStaticPartsWidth = 28;
 
 // article light big
 // -----------------
-// const articleLightBig_labelWidth = 200; // TODO: use in template
-const articleLightBigStaticPartsWidth = 252;
-const articleLightBigContentStaticPartsWidth = 24;
-const articleLightContentStaticPartsWidth = 24;
-const articleBoldContentStaticPartsWidth = 28;
-const articleOneTeamContentStaticPartsWidth = 22;
-const articleLightStaticPartsWidth = 180;
+const articleLightBig_labelWidth = 200;
+const articleLightBig_iconWidth = 32;
+const articleLightBig_lineRightWidth = 14;
+const articleLightBig_StaticPartsWidth =
+  shadowSideSize +
+  articleLightBig_labelWidth +
+  articleLightBig_iconWidth +
+  articleLightBig_lineRightWidth +
+  shadowSideSize;
+const articleLightBig_ContentStaticPartsWidth = 24;
+
+// article light (small)
+// -----------------
+const articleLight_ContentStaticPartsWidth = 24;
+const articleLight_StaticPartsWidth = 180;
+
+// article one-team
+// -----------------
+const articleOneTeam_ContentStaticPartsWidth = 22;
 
 const shadowColor = 'bfbfbf';
 const oneTeamColor = 'd9efff';
@@ -58,20 +71,25 @@ const settings = {
   threeColumnWidth,
   threeColumnContentWidth,
 
-  shadowSideSize,
-  shadowBottomSize,
-
   articleBold_labelWidth,
   articleBold_iconWidth,
   articleBold_lineRightWidth,
+  articleBold_StaticPartsWidth,
+  articleBold_ContentStaticPartsWidth,
 
-  articleBoldStaticPartsWidth,
-  articleLightBigStaticPartsWidth,
-  articleLightBigContentStaticPartsWidth,
-  articleLightContentStaticPartsWidth,
-  articleBoldContentStaticPartsWidth,
-  articleOneTeamContentStaticPartsWidth,
-  articleLightStaticPartsWidth,
+  articleLightBig_labelWidth,
+  articleLightBig_iconWidth,
+  articleLightBig_lineRightWidth,
+  articleLightBig_StaticPartsWidth,
+  articleLightBig_ContentStaticPartsWidth,
+
+  articleLight_ContentStaticPartsWidth,
+  articleLight_StaticPartsWidth,
+
+  articleOneTeam_ContentStaticPartsWidth,
+
+  shadowSideSize,
+  shadowBottomSize,
 
   shadowColor,
   oneTeamColor,

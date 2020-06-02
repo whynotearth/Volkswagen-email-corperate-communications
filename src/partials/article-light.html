@@ -1,16 +1,10 @@
-{{set_variable "loccalContentWidth" (math-minus articleWidth @root.settings.articleLightContentStaticPartsWidth)}}
-{{set_variable "articleLightLineCenterWidth" (math-minus articleWidth @root.settings.articleLightStaticPartsWidth)}}
+{{set_variable "localContentWidth" (math-minus articleWidth @root.settings.articleLight_ContentStaticPartsWidth)}}
+{{set_variable "localLineCenterWidth" (math-minus articleWidth @root.settings.articleLight_StaticPartsWidth)}}
 
 <row>
   <columns class="pb-0">
 
-    <!--[if mso]>
-      <table class="layout-fixed" cellspacing="0" cellpadding="0" border="0" width="{{articleWidth}}" style="width:{{articleWidth}}px;">
-    <![endif]-->
-
-    <!--[if !mso]>-->
-    <table class="layout-fixed" cellspacing="0" cellpadding="0" border="0" width="100%" style="width:100%;">
-    <!--<![endif]-->
+    {{#> table-mso width=articleWidth }}
 
       <tr>
         {{> shadow-top-side-articles size=@root.settings.shadowSideSize}}
@@ -29,9 +23,9 @@
         <!-- line center: th outlook -->
         <!--[if mso]>
         <th
-          width="{{math-minus articleWidth @root.settings.articleLightStaticPartsWidth}}"
+          width="{{math-minus articleWidth @root.settings.articleLight_StaticPartsWidth}}"
           height="26"
-          style="width:{{math-minus articleWidth @root.settings.articleLightStaticPartsWidth}}px;height:26px;"
+          style="width:{{math-minus articleWidth @root.settings.articleLight_StaticPartsWidth}}px;height:26px;"
           valign="bottom"
           class="article-tab-line {{for_backend "{{category.slug}}" category.slug}}-text"
         >
@@ -48,8 +42,8 @@
           <!--[if mso]>
           <img
               height="26"
-              width="{{@root.articleLightLineCenterWidth}}"
-              style="height:26px;width:{{@root.articleLightLineCenterWidth}}px;"
+              width="{{@root.localLineCenterWidth}}"
+              style="height:26px;width:{{@root.localLineCenterWidth}}px;"
               class="float-left"
               src="https://res.cloudinary.com/whynotearth/image/upload/e_colorize,co_rgb:{{category.color}}/Volkswagen/newsletter1/line-42-1px-96dpi_r1hupo.png"
               alt=""
@@ -84,11 +78,11 @@
 
         {{> shadow-top-side-articles size=@root.settings.shadowSideSize}}
       </tr>
-    </table>
+    {{/table-mso }}
   </columns>
 </row>
 
-<table class="wrapper article-content layout-fixed" width="100%" style="width:100%;" cellspacing="0" cellpadding="0" border="0">
+{{#> table-mso width=articleWidth }}
   <tr>
     {{> shadow-side-articles left=true size=@root.settings.shadowSideSize }}
 
@@ -100,7 +94,7 @@
             <table class="layout-fixed">
               <tr>
                 <th class="content-wrapper {{contentBoxClass}}">
-                  {{> article-content-2 contentWidth=@root.loccalContentWidth }}
+                  {{> article-content-2 contentWidth=@root.localContentWidth }}
                 </th>
               </tr>
             </table>
@@ -111,7 +105,7 @@
 
     {{> shadow-side-articles right=true size=@root.settings.shadowSideSize }}
   </tr>
-</table>
+{{/table-mso }}
 
 {{> shadow-bottom-articles totalWidth=articleWidth size=@root.settings.shadowBottomSize }}
 
