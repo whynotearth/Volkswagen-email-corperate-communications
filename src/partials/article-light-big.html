@@ -6,7 +6,7 @@
     {{#> table-mso width=articleWidth }}
 
       <tr>
-        {{> shadow-top-side-articles size=@root.settings.shadowSideSize}}
+        {{> shadow-top-side-articles left=true size=@root.settings.shadowSideSize}}
 
         <th width="{{@root.settings.articleLightBig_labelWidth}}" height="26" style="width:{{@root.settings.articleLightBig_labelWidth}}px;height:26px;" valign="bottom" align="right">
           <img
@@ -75,7 +75,7 @@
           />
         </th>
 
-        {{> shadow-top-side-articles size=@root.settings.shadowSideSize}}
+        {{> shadow-top-side-articles right=true size=@root.settings.shadowSideSize}}
       </tr>
     {{/table-mso }}
   </columns>
