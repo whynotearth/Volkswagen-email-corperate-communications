@@ -9,10 +9,8 @@ img {
   text-decoration: none;
   -ms-interpolation-mode: bicubic;
 }
-ul {
-  padding-left: 0;
+ul, ol {
   list-style-position: inside;
-  margin: 0;
 }
 td {
   // fix outlook
@@ -45,8 +43,8 @@ h1 {
   line-height: 1;
 }
 h2 {
-  font-weight: 800;
-  line-height: 1.25;
+//  font-weight: 800;
+//  line-height: 1.25;
 }
 h3 {
   font-weight: normal;
@@ -166,6 +164,12 @@ b {
 .error-text {
   color: $error;
 }
+.link-text {
+  color: $body-em; 
+}
+.black-text {
+  color: $black;
+}
 .work-sans {
   font-family: "Work Sans", Arial, "sans-serif";
 }
@@ -210,16 +214,16 @@ b {
   &,
   * {
     font-size: 32px;
-    font-weight: normal;
-    line-height: 38px;
+    font-weight: 700;
+    line-height: 20px;
   }
 }
 .h2 {
   &,
   * {
     font-size: 22px;
-    font-weight: 600;
-    line-height: 26px;
+    font-weight: 700;
+    line-height: 27px;
   }
 }
 .h3 {
@@ -242,7 +246,7 @@ b {
   &,
   * {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 20px;
   }
 }
