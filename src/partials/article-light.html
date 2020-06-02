@@ -7,7 +7,7 @@
     {{#> table-mso width=articleWidth }}
 
       <tr>
-        {{> shadow-top-side-articles size=@root.settings.shadowSideSize}}
+        {{> shadow-top-side-articles left=true size=@root.settings.shadowSideSize}}
 
         <th width="{{@root.settings.articleLight_labelWidth}}" height="26" style="width:{{@root.settings.articleLight_labelWidth}}px;height:26px;" valign="bottom">
           <!-- line left -->
@@ -76,7 +76,7 @@
           />
         </th>
 
-        {{> shadow-top-side-articles size=@root.settings.shadowSideSize}}
+        {{> shadow-top-side-articles right=true size=@root.settings.shadowSideSize}}
       </tr>
     {{/table-mso }}
   </columns>
