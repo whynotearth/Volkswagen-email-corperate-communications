@@ -18,13 +18,12 @@ td {
   line-height: 0;
   font-size: 0;
 }
-p,
 span,
 a {
   margin-bottom: 0;
-  line-height: 1.2;
-  font-weight: 500;
-  font-size: $global-font-size;
+}
+p {
+  margin-bottom: 8px;
 }
 // small font size like prices
 .font-size-small {
