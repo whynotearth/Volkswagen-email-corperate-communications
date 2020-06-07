@@ -6,6 +6,8 @@ layout: default
 <table align="center" class="memo container float-center">
   <tr>
     <td class="memo-wrapper">
+      <spacer size="4"></spacer>
+
       <img
         class="memo-logo"
         src="https://res.cloudinary.com/whynotearth/image/upload/v1591417660/Volkswagen/Dark_Blue_-_VW_Chatt_2020_logo_wide_-_landscape_1_2_hexbfa.png"
@@ -16,20 +18,24 @@ layout: default
 
       <spacer size="16"></spacer>
 
-      <hr />
+      <table width="100%">
+        <tr>
+          <td style="border-bottom: 1px solid #ddd;"></td>
+        </tr>
+      </table>
 
       <spacer size="16"></spacer>
 
-      <p class="body-1 whitespace-pre-line break-words work-sans">
-        <font face="'Work Sans', Arial, sans-serif;"><strong class="body-1-em-high work-sans">Date:</strong></font>
-        <font face="'Work Sans', Arial, sans-serif;">\{{date}}</font>
+      <p class="body-1 whitespace-pre-line break-words font-sans">
+        <strong class="body-1-em-high font-sans">Date:</strong>
+        \{{date}}
       </p>
-      <p class="body-1 whitespace-pre-line break-words work-sans">
-        <font face="'Work Sans', Arial, sans-serif;"><strong class="body-1-em-high work-sans">To:</strong></font>
-        <font face="'Work Sans', Arial, sans-serif;">\{{to}}</font>
+      <p class="body-1 whitespace-pre-line break-words font-sans">
+        <strong class="body-1-em-high font-sans">To:</strong>
+        \{{to}}
       </p>
-      <p class="body-1 whitespace-pre-line break-words work-sans">
-        <font face="'Work Sans', Arial, sans-serif;">\{{{description}}}</font>
+      <p class="body-1 whitespace-pre-line break-words font-sans">
+        \{{{description}}}
       </p>
     </td>
   </tr>
