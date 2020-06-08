@@ -1,0 +1,10 @@
+.memo-wrapper {
+  padding: 16px;
+}
+.memo-logo {
+  @media screen and (max-width: $global-breakpoint) {
+    width: 120px !important;
+    height: 32px !important;
+  }
+}
+
